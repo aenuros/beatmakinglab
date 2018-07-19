@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import '../../App.css'
+import { Navbar, NavItem } from 'react-materialize';
 
 class NavBar extends Component {
   render() {
     return (
-<div class="navigation">
-<ul>
-  <li><a href="#">Learn</a></li>
-  <li><a href="#">Sell</a></li>
-  <li><a href="#">Compete</a></li>
-  <li><a href="#">Sounds</a></li>
-  <li><a href="#">Social</a></li>
-</ul>
-</div>
-  )
+      <div class="navigation">
+        <Navbar left>
+          <NavItem onClick={() => console.log('test click')}>Learn</NavItem>
+          <NavItem href='#'>Sounds</NavItem>
+          <NavItem href='#'>Compete</NavItem>
+          <NavItem href='#'>Social</NavItem>
+          <NavItem href='#'>Sell</NavItem>
+          <NavItem href='#'>About</NavItem>
+        </Navbar>
+      </div>
+    )
   }
 }
 
