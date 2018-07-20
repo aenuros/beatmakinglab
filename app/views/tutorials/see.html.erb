@@ -1,0 +1,17 @@
+<a href="/admin">Admin</a>
+
+<% @tutorials.each do |tutorial| %>
+
+<div class="tut">
+
+  <h2><a href="<%=tutorial.link%>"><%=tutorial.name%></a></h2>
+  <p><%=tutorial.description%></p>
+  <div class="youtube">
+    <iframe width="200" height="115"
+  src="https://www.youtube.com/embed/<%=tutorial.link.partition("=").last.partition("&").first%>"
+  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+  </iframe>
+
+  </div>
+</div>
+<%end%>

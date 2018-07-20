@@ -1,0 +1,17 @@
+<h1>New Tutorial</h1>
+
+<%= render 'form', tutorial: @tutorial %>
+<% @tutorials.each do |tutorial| %>
+
+<tr>
+  <td><%= tutorial.name%></td>
+  <td><%= tutorial.description%></td>
+  <td><%= tutorial.link%></td>
+  <td><%= link_to 'Edit', edit_tutorial_path(tutorial) %></td>
+  <td><%= link_to 'Destroy', tutorial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>
+<%end%>
+
+</table>
+
+<%= link_to 'Back', tutorials_path %>
