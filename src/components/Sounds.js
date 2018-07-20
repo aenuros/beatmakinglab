@@ -1,2 +1,2 @@
 import React, { Component } from 'react';
-import { } from 'react-materialize';
+import {} from 'react-materialize';

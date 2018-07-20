@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import NavBar from './components/elements/NavBar';
+import Sell from './components/Sell';
 import './App.css'
+import {Card, CardTitle} from 'react-materialize'
 
 class App extends Component {
   render() {
@@ -9,8 +11,8 @@ class App extends Component {
         <header>
         </header>
         <NavBar/>
-        <p>Welcome to my website!
-        </p>
+        <Sell/>
+        
       </div>
     );
   }
