@@ -6,7 +6,7 @@ class NavBar extends Component {
   render() {
     return (
       <div class="navigation">
-        <Navbar left>
+        <Navbar>
           <NavItem onClick={() => console.log('test click')}>Learn</NavItem>
           <NavItem href='#'>Sounds</NavItem>
           <NavItem href='#'>Compete</NavItem>

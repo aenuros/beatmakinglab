@@ -31,5 +31,3 @@ options={{height: 500, width: 400}}
   }
   
   export default Social;
-
-

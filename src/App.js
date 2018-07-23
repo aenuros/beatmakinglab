@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from './components/elements/NavBar';
+import Sounds from './components/Sounds';
 import Sell from './components/Sell';
 import Compete from './components/Compete';
 import Social from './components/Social';
@@ -13,8 +14,6 @@ class App extends Component {
         <header>
         </header>
         <NavBar/>
-        {/* <Social/> */}
-        
       </div>
     );
   }
