@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { } from 'react-materialize';
 import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
-import InstagramEmbed from 'react-instagram-embed'  
+import InstagramEmbed from 'react-instagram-embed';
 
 class Social extends Component {
     render() {
@@ -29,7 +29,5 @@ options={{height: 500, width: 400}}
       );
     }
   }
-  
+
   export default Social;
-
-

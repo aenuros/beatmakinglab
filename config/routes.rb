@@ -6,11 +6,18 @@ resources :tutorials
 
 get '/' => 'pages#index'
 get '/welcome' => 'pages#index'
-#get '/tutorials' => 'tutorials#new'
-get '/admin' => 'tutorials#admin'
-get '/react' => 'tutorials#react'
+
+# Learn and tutorials
 get '/learn' => 'tutorials#learn'
 get '/seeadmin' => 'tutorials#seeadmin'
-get '/trythis' => 'tutorials#trythis'
+
+# Compete
+get '/compete' => 'pages#compete'
+
+get '/sell' => 'pages#sell'
+
+get '/social' => 'pages#social'
+
+get '/sounds' => 'pages#sounds'
 
 end

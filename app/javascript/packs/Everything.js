@@ -1,15 +1,19 @@
 import ReactOnRails from 'react-on-rails';
 import App from '../bundles/App/App';
-import Trythis from '../bundles/App/components/Trythis';
 import Seeadmin from '../bundles/App/components/Seeadmin';
 
 import React, { Component } from 'react';
 import axios from 'axios';
 import Tutorials from '../bundles/App/components/Tutorials';
 import Form from '../bundles/App/components/Form';
-import NavBar from '../bundles/App/components/elements/NavBar';
+
+import Navigation from '../bundles/App/components/elements/Navigation';
+import Header from '../bundles/App/components/elements/Header';
+
 import Sell from '../bundles/App/components/Sell';
 import Compete from '../bundles/App/components/Compete';
+import Social from '../bundles/App/components/Social';
+import Sounds from '../bundles/App/components/Sounds';
 import {Card, CardTitle} from 'react-materialize'
 
 
@@ -17,11 +21,13 @@ import {Card, CardTitle} from 'react-materialize'
 
 ReactOnRails.register({
 App,
-Trythis,
 Tutorials,
 Form,
-NavBar,
+Navigation,
 Sell,
 Compete,
-Seeadmin
+Seeadmin,
+Social,
+Sounds,
+Header
 });

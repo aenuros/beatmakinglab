@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+ .header {
+   text-align:center;
+ }
 
  .App {
    text-align: center;

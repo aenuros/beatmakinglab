@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Tutorials from './components/Tutorials';
 import Form from './components/Form';
-import NavBar from './components/elements/NavBar';
+import Navigation from './components/elements/Navigation';
+import Header from './components/elements/Header';
 import Sell from './components/Sell';
 import Compete from './components/Compete';
 import './App.css'
@@ -22,9 +23,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>Welcome
-        </header>
-        <NavBar/>
+
         {/* <Social/> */}
 
       </div>
