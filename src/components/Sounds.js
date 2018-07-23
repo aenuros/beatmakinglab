@@ -10,7 +10,7 @@ export default class Sounds extends Component {
               Explore these sites to find the best drum kits, loops, samples and more!
             </h3>
 
-<div><h5>Free Sounds:</h5></div>
+            <div><h5>Free Sounds:</h5></div>
 
          <Row>
            <Col s={12} m={2}>
@@ -29,7 +29,7 @@ export default class Sounds extends Component {
            </Col>
            <Col s={12} m={2}>
              <Card className='small'
-               header={<CardTitle image='https://imgur.com/c3inZJM'></CardTitle>}
+               header={<CardTitle image='https://i.imgur.com/c3inZJM.png'></CardTitle>}
                actions={[<a href='https://soundpacks.com'>www.soundpacks.com</a>]}>
                SoundPacks.com is a comprehensive source for free sound packs, drum kits, sample packs, and presets created by music producers and sound designers.
              </Card>
@@ -39,11 +39,11 @@ export default class Sounds extends Component {
                header={<CardTitle image='https://producergrind.com/wp-content/uploads/2017/01/logo.png'></CardTitle>}
                actions={[<a href='https://producergrind.com/category/free-downloads/drumsound-kits/'>www.producergrind.com</a>]}>
                We Help Producers Get to Business
-       </Card>
+             </Card>
            </Col>
            <Col s={12} m={2}>
            <Card className='small'
-               header={<CardTitle image='https://imgur.com/IKBVMdv'></CardTitle>}
+               header={<CardTitle image='https://i.imgur.com/UNiS75V.png'></CardTitle>}
                actions={[<a href='https://hiphopmakers.com/40-free-music-producer-free-drum-kits'>www.musicfeedpro.com</a>]}>
                Here are over 40 free drum kits from your favorite music producers. You will find over 2GB of free drums samples.
            </Card>
@@ -78,7 +78,7 @@ export default class Sounds extends Component {
          </Col>
          <Col s={12} m={2}>
            <Card className='small'
-             header={<CardTitle image='https://imgur.com/l4DEYqK'></CardTitle>}
+             header={<CardTitle image='https://i.imgur.com/l4DEYqK.png'></CardTitle>}
              actions={[<a href='https://www.platinumloops.com/'>www.platinumloops.com</a>]}>
              Platinumloops is the producers choice when it comes to finding musical inspiration when you need it the most. Since 2001
            </Card>
@@ -99,7 +99,7 @@ export default class Sounds extends Component {
          </Col>
          <Col s={12} m={2}>
          <Card className='small'
-             header={<CardTitle image='https://imgur.com/tlppvuD'></CardTitle>}
+             header={<CardTitle image='https://i.imgur.com/tlppvuD.png'></CardTitle>}
              actions={[<a href='https://theproducersplug.com/'>www.theproducersplug.com</a>]}>
              We find the best Drum Kits, Plugins, Sample Packs, Virtual Instruments, Products & Gear on the market so you don't have to.
          </Card>
