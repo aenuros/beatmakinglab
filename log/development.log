@@ -9932,3 +9932,1873 @@ Processing by PagesController#sounds as HTML
 Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:08:47 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (50.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 10349ms (Views: 10340.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-23 14:09:02 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:4
+  Rendered tutorials/learn.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 46ms (Views: 40.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 14:09:05 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 14:09:06 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20180723181329)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180723181329_devise_create_users.rb:5
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180723181329_devise_create_users.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20180723181329_devise_create_users.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20180723181329_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180723181329"]]
+  ↳ bin/rails:9
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:14:54 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+Completed 401 Unauthorized in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:14:54 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 1398ms (Views: 1372.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-07-23 14:15:13 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-07-23 14:15:17 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BqJMtX+7kCBfe5H7iomSekOzKjmUZmMgmCkcHFw+HbhKPWLV0rZalHAXZXP5msQfeQSEITgOHA7f8+ZNLmqGxw==", "user"=>{"email"=>"karen@burgos.us", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "karen@burgos.us"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 255ms (Views: 30.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-07-23 14:15:27 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ynJN6KH90IY563KSAx2qyoEEOqEOC4/L+rofwUUl4B0M15866tSaOl5EHJ7yrdDVfjYtZDFNI4i/eEzFBaRnkQ==", "user"=>{"email"=>"karen@burgos.us", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "karen@burgos.us"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "karen@burgos.us"], ["encrypted_password", "$2a$11$Ow5xzfhzC/eS.HvKKyRLbeJ3M89GOVAPGIIk19v6/MJuDHCDs38Ia"], ["created_at", "2018-07-23 18:15:28.085789"], ["updated_at", "2018-07-23 18:15:28.085789"]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2018-07-23 18:15:28.097869"], ["last_sign_in_at", "2018-07-23 18:15:28.097869"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2018-07-23 18:15:28.098496"], ["id", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (32.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 232ms (ActiveRecord: 41.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:15:28 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 33ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-23 14:15:34 -0400
+Processing by TutorialsController#learn as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:4
+  Rendered tutorials/learn.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 36ms (Views: 30.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 14:15:44 -0400
+Processing by TutorialsController#seeadmin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 38ms (Views: 34.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 14:15:44 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 14:16:49 -0400
+Processing by TutorialsController#seeadmin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 14:16:49 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-07-23 14:16:51 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UqyC9WcO3jgvepusCmiym1T3uwSv65b9KOeE6L3P4P+UCVAnLCeUhEjV9aD72MiEq8WswZCtOr5tJdfs/U5ncw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 34ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:16:51 -0400
+Processing by PagesController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:16:52 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    23: 
+    24:   <body>
+    25:     <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+    26:     (<%= current_user.email %>)
+    27: <%= react_component "Header" %>
+    28: <%= react_component "Navigation" %>
+    29: 
+  
+app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb___3477912908290229418_70118853616780'
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:19:05 -0400
+Processing by PagesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:19:05 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/karen/Documents/experiments/beatmakinglab/app/views/layouts/application.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+...act_component "Navigation" user={this.props.user} );@output_...
+...                           ^~~~
+/home/karen/Documents/experiments/beatmakinglab/app/views/layouts/application.html.erb:27: syntax error, unexpected '}', expecting =>
+...igation" user={this.props.user} );@output_buffer.safe_append...
+...                              ^
+/home/karen/Documents/experiments/beatmakinglab/app/views/layouts/application.html.erb:34: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/karen/Documents/experiments/beatmakinglab/app/views/layouts/application.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected '}', expecting =>
+app/views/layouts/application.html.erb:34: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:19:51 -0400
+Processing by PagesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:19:51 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (3.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6189ms (Views: 6188.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials" for 127.0.0.1 at 2018-07-23 14:20:30 -0400
+Processing by TutorialsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:20:30 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (2.8ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (6.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 7056ms (Views: 7055.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:25:36 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (5.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6752ms (Views: 6750.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:25:46 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MrQ5+mfPFAZ6jWF9Bpon5lQS+LU5Q1jynuuNLKjuN/2Hd6scEpxK8g8is2DTZQz4fJ39X2FNUXW8zbHV2p5Tgg==", "user"=>{"email"=>"karen@burgos.us", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "karen@burgos.us"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-07-23 18:25:46.904194"], ["sign_in_count", 2], ["updated_at", "2018-07-23 18:25:46.905079"], ["id", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 221ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:25:46 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-07-23 14:25:53 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FtepihXI8aGuy1XW5t3rUFLq0hio+rj2L3Ngm9o0hXrFSD8Ks6wrZyQmlmLWBg1KAK05YDlJ+FqrXrmFjwQCFQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:25:53 -0400
+Processing by PagesController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:25:53 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:25:56 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"30+9466YfzFZRR1e0IUzo4Qv/Om303Oy0aPCK/naKiaWUNJU+GKFov7NnJa7Ay2V1nBQh2mMOvtoG7IU0274Iw==", "user"=>{"email"=>"karen@burgos.us", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "karen@burgos.us"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-07-23 18:25:56.187868"], ["last_sign_in_at", "2018-07-23 18:25:46.904194"], ["sign_in_count", 3], ["updated_at", "2018-07-23 18:25:56.188704"], ["id", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 200ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:25:56 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 35ms (Views: 31.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:26:19 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6033ms (Views: 6031.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-23 14:26:36 -0400
+Processing by TutorialsController#learn as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:4
+  Rendered tutorials/learn.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 34ms (Views: 29.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sounds" for 127.0.0.1 at 2018-07-23 14:26:51 -0400
+Processing by PagesController#sounds as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/sounds.html.erb within layouts/application
+  Rendered pages/sounds.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 44ms (Views: 40.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 14:26:56 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 14:27:23 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 5850ms (Views: 5847.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 14:28:32 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 14:28:47 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 39.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-23 14:28:51 -0400
+Processing by TutorialsController#learn as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:4
+  Rendered tutorials/learn.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 32ms (Views: 28.3ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-07-23 14:28:58 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pxwe6ukMY8XACLAI3mDt0G7py06XR5SAtp6OyUZ1N3p3boHU6y7bzrXby+kIbk4yXTYca5Q6MUc82LbgoW2fiQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:28:58 -0400
+Processing by PagesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:28:58 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    25: 
+    26: <%= react_component 'App', props: {user: current_user} %>
+    27: <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+    28: (<%= current_user.email %>)
+    29:     <%= yield %>
+    30:   </body>
+    31: </html>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___3477912908290229418_70118851763960'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:29:42 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-07-23 14:29:46 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ypQvwDs8Md0ExlLsuWUu0HSTExwJSiVEbCa3bRfhkSbpoh2ofA48yFdQRb8hAVegjAC0USpts5J9PNyz/xJbPA=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:29:46 -0400
+Processing by PagesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:29:46 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:29:48 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XSKe+M8/eh518adIzNaaGXN9A7iG6ur2y6JLhkfskal+FKyQiA13CyZnsBtUsuNpi+6k9aXNfCDauCBYrx9bsw==", "user"=>{"email"=>"karen@burgos.us", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "karen@burgos.us"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-07-23 18:29:49.031114"], ["last_sign_in_at", "2018-07-23 18:25:56.187868"], ["sign_in_count", 4], ["updated_at", "2018-07-23 18:29:49.031893"], ["id", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 196ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:29:49 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:31:19 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6002ms (Views: 6000.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/compete" for 127.0.0.1 at 2018-07-23 14:31:32 -0400
+Processing by PagesController#compete as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/compete.html.erb within layouts/application
+  Rendered pages/compete.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-07-23 14:31:33 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mkWy5YlS+y73vYZxMov5NCR7rmlGXlHPC/1xWzqTolih+n4Q6GdinEju4ihbAr+GiGyictRZ8oCGnoiGnSHvkw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:31:34 -0400
+Processing by PagesController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:31:34 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:31:37 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dl3Mt5YqaAm8TKzMoO+dILfLixi9aRQAq6cEYIJDftquVWeooWUl/EC2IwiZ/IzwLw4Xv8fcEUFOJo/0ZQiy3Q==", "user"=>{"email"=>"karen@burgos.us", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "karen@burgos.us"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-07-23 18:31:37.575581"], ["last_sign_in_at", "2018-07-23 18:29:49.031114"], ["sign_in_count", 5], ["updated_at", "2018-07-23 18:31:37.576445"], ["id", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (12.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 200ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:31:37 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-23 14:31:41 -0400
+Processing by TutorialsController#learn as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:4
+  Rendered tutorials/learn.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-07-23 14:31:54 -0400
+Processing by PagesController#sell as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/sell.html.erb within layouts/application
+  Rendered pages/sell.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-07-23 14:34:45 -0400
+Processing by PagesController#sell as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/sell.html.erb within layouts/application
+  Rendered pages/sell.html.erb within layouts/application (1.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: ffee0f93c1e88926e2f6
+Version: webpack 3.12.0
+Time: 5837ms
+                                              Asset       Size  Chunks                    Chunk Names
+                 Everything-e13dac6cb20c6c7038e1.js    1.97 MB       0  [emitted]  [big]  Everything
+    Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css  867 bytes       0  [emitted]         Everything
+             Everything-e13dac6cb20c6c7038e1.js.map    2.16 MB       0  [emitted]         Everything
+Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css.map       1 kB       0  [emitted]         Everything
+                                      manifest.json  302 bytes          [emitted]         
+  [41] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [173] ./app/javascript/bundles/App/App.css 41 bytes {0} [built]
+ [178] ./app/javascript/packs/Everything.js 1.01 kB {0} [built]
+ [232] ./app/javascript/bundles/App/App.js 2.88 kB {0} [built]
+ [262] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+ [457] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB [built]
+    + 455 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/Navigation.js
+Module build failed: SyntaxError: Expected corresponding JSX closing tag for <ul> (26:8)
+
+  24 |           <li><Button color="inherit" onClick={ handleLogout }>Logout</Button>
+  25 |           </li>
+> 26 |         </Navbar>
+     |         ^
+  27 |       </div>
+  28 |     )
+  29 |   }
+
+ @ ./app/javascript/packs/Everything.js 10:0-71
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!app/javascript/bundles/App/App.css:
+       [0] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB {0} [built]
+        + 1 hidden module
+
+Completed 200 OK in 6933ms (Views: 6930.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-07-23 14:35:19 -0400
+Processing by PagesController#sell as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/sell.html.erb within layouts/application
+  Rendered pages/sell.html.erb within layouts/application (1.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 7ea4686ee54bda739d1f
+Version: webpack 3.12.0
+Time: 4978ms
+                                              Asset       Size  Chunks                    Chunk Names
+                 Everything-db12278da36d82acb49e.js    1.97 MB       0  [emitted]  [big]  Everything
+    Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css  867 bytes       0  [emitted]         Everything
+             Everything-db12278da36d82acb49e.js.map    2.16 MB       0  [emitted]         Everything
+Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css.map       1 kB       0  [emitted]         Everything
+                                      manifest.json  302 bytes          [emitted]         
+  [41] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [101] ./app/javascript/bundles/App/App.css 41 bytes {0} [built]
+ [181] ./app/javascript/packs/Everything.js 1.01 kB {0} [built]
+ [235] ./app/javascript/bundles/App/App.js 2.88 kB {0} [built]
+ [264] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+ [457] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB [built]
+    + 455 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/Navigation.js
+Module not found: Error: Can't resolve '../../../../../../node_modules/@material-ui/core/Typography/Button.js' in '/home/karen/Documents/experiments/beatmakinglab/app/javascript/bundles/App/components/elements'
+ @ ./app/javascript/bundles/App/components/elements/Navigation.js 14:0-95
+ @ ./app/javascript/packs/Everything.js
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!app/javascript/bundles/App/App.css:
+       [0] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB {0} [built]
+        + 1 hidden module
+
+Completed 200 OK in 6104ms (Views: 6101.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-07-23 14:35:47 -0400
+Processing by PagesController#sell as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/sell.html.erb within layouts/application
+  Rendered pages/sell.html.erb within layouts/application (1.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6134ms (Views: 6130.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-07-23 14:36:45 -0400
+Processing by PagesController#sell as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/sell.html.erb within layouts/application
+  Rendered pages/sell.html.erb within layouts/application (2.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6599ms (Views: 6596.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-07-23 14:36:55 -0400
+Processing by PagesController#sell as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/sell.html.erb within layouts/application
+  Rendered pages/sell.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 45ms (Views: 41.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:37:21 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6395ms (Views: 6392.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:38:14 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6371ms (Views: 6368.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:38:35 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6883ms (Views: 6879.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:40:41 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: b9c532a515a7dbf0c70a
+Version: webpack 3.12.0
+Time: 4888ms
+                                              Asset       Size  Chunks                    Chunk Names
+                 Everything-1035536f7e099f56cc9a.js    1.97 MB       0  [emitted]  [big]  Everything
+    Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css  867 bytes       0  [emitted]         Everything
+             Everything-1035536f7e099f56cc9a.js.map    2.16 MB       0  [emitted]         Everything
+Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css.map       1 kB       0  [emitted]         Everything
+                                      manifest.json  302 bytes          [emitted]         
+  [41] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [102] ./app/javascript/bundles/App/App.css 41 bytes {0} [built]
+ [181] ./app/javascript/packs/Everything.js 1.08 kB {0} [built]
+ [235] ./app/javascript/bundles/App/App.js 2.7 kB {0} [built]
+ [264] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+ [458] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB [built]
+    + 456 hidden modules
+
+ERROR in ./app/javascript/bundles/App/App.js
+47:28-36 "export 'default' (imported as 'UserInfo') was not found in './components/elements/UserInfo'
+ @ ./app/javascript/bundles/App/App.js
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/packs/Everything.js
+Module not found: Error: Can't resolve './components/elements/UserInfo' in '/home/karen/Documents/experiments/beatmakinglab/app/javascript/packs'
+ @ ./app/javascript/packs/Everything.js 12:0-54
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!app/javascript/bundles/App/App.css:
+       [0] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB {0} [built]
+        + 1 hidden module
+
+Completed 200 OK in 6015ms (Views: 6012.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:41:58 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 0f166ecff425a9d32208
+Version: webpack 3.12.0
+Time: 5063ms
+                                              Asset       Size  Chunks                    Chunk Names
+                 Everything-228540a27ca4f60b9ef4.js    1.97 MB       0  [emitted]  [big]  Everything
+    Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css  867 bytes       0  [emitted]         Everything
+             Everything-228540a27ca4f60b9ef4.js.map    2.16 MB       0  [emitted]         Everything
+Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css.map       1 kB       0  [emitted]         Everything
+                                      manifest.json  302 bytes          [emitted]         
+  [41] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [102] ./app/javascript/bundles/App/App.css 41 bytes {0} [built]
+ [182] ./app/javascript/packs/Everything.js 1.1 kB {0} [built]
+ [236] ./app/javascript/bundles/App/App.js 2.7 kB {0} [built]
+ [265] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+ [458] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB [built]
+    + 456 hidden modules
+
+ERROR in ./app/javascript/packs/Everything.js
+33:12-20 "export 'default' (imported as 'UserInfo') was not found in '../bundles/App/components/elements/UserInfo'
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/App.js
+47:28-36 "export 'default' (imported as 'UserInfo') was not found in './components/elements/UserInfo'
+ @ ./app/javascript/bundles/App/App.js
+ @ ./app/javascript/packs/Everything.js
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!app/javascript/bundles/App/App.css:
+       [0] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB {0} [built]
+        + 1 hidden module
+
+Completed 200 OK in 6319ms (Views: 6316.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:42:42 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6083ms (Views: 6080.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:43:18 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6128ms (Views: 6125.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:45:23 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6284ms (Views: 6280.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:46:29 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6458ms (Views: 6455.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-07-23 14:46:39 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nics8jNbzx9Rh/KsXK3lZann4WEjzlzud6rgMvnZywbk8fAyKrjDyHC64gThn2s/gXRpzezATWQ4VtrFw1kqng=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:46:39 -0400
+Processing by PagesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:46:39 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:46:43 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ybDdTFjAruRwHgHhwJwX75Jc+W00bIgP3tTynwQu1fPIFOcAvj0vTgdzjAQpVnHCxIhLn+bwlTrBXT1NX/pI/A==", "user"=>{"email"=>"karen@burgos.us", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "karen@burgos.us"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-07-23 18:46:43.282704"], ["last_sign_in_at", "2018-07-23 18:31:37.575581"], ["sign_in_count", 6], ["updated_at", "2018-07-23 18:46:43.283643"], ["id", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 194ms (ActiveRecord: 14.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:46:43 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-23 14:46:45 -0400
+Processing by TutorialsController#learn as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:4
+  Rendered tutorials/learn.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 14:46:48 -0400
+Processing by TutorialsController#seeadmin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 60ms (Views: 56.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 14:46:49 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sounds" for 127.0.0.1 at 2018-07-23 14:46:50 -0400
+Processing by PagesController#sounds as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering pages/sounds.html.erb within layouts/application
+  Rendered pages/sounds.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 28.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 14:48:14 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:48:16 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 33ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-07-23 14:48:19 -0400
+Processing by PagesController#sell as HTML
+  Rendering pages/sell.html.erb within layouts/application
+  Rendered pages/sell.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/compete" for 127.0.0.1 at 2018-07-23 14:48:20 -0400
+Processing by PagesController#compete as HTML
+  Rendering pages/compete.html.erb within layouts/application
+  Rendered pages/compete.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-07-23 14:48:26 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:48:26 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:48:45 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-07-23 14:48:48 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ttp3Ucq0boPWd3PNaMihZ71JBh3cr/hEexxb8/WA5uiNWbchUMvFkcXGxw/dk+RKuCsevpBXTqKbJdLEYK9hbA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:48:48 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:48:51 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:49:54 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (2.1ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-23 14:49:57 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kfSj6vbUkZI7Hpd4ZMpa4fdji5ziOedspeIJpetwyXzm9sWuI6b5s0rHg239/m8dKzmMq7nv3Yr4EF+SNF6xPg==", "user"=>{"email"=>"karen@burgos.us", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "karen@burgos.us"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (1.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-07-23 18:49:57.247375"], ["last_sign_in_at", "2018-07-23 18:46:43.282704"], ["sign_in_count", 7], ["updated_at", "2018-07-23 18:49:57.248227"], ["id", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (11.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 191ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 14:49:57 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sounds" for 127.0.0.1 at 2018-07-23 15:00:17 -0400
+Processing by PagesController#sounds as HTML
+  Rendering pages/sounds.html.erb within layouts/application
+  Rendered pages/sounds.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-07-23 15:02:01 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BD5qjiJ/627EHBsmeV9dCOACjsNv7ZuKm4jZDlXyhUEWFU62kfU9YUJYx/uzFTlbE4lw4UL+HUXPYKqA0Hlxew=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 15:02:01 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 15:08:43 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6156ms (Views: 6154.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 15:30:15 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 0f5f6086fb8c9201c7be
+Version: webpack 3.12.0
+Time: 8394ms
+                                              Asset       Size  Chunks                    Chunk Names
+                 Everything-8f0a0330f703e8195b38.js    1.97 MB       0  [emitted]  [big]  Everything
+    Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css  867 bytes       0  [emitted]         Everything
+             Everything-8f0a0330f703e8195b38.js.map    2.16 MB       0  [emitted]         Everything
+Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css.map       1 kB       0  [emitted]         Everything
+                                      manifest.json  302 bytes          [emitted]         
+  [41] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [101] ./app/javascript/bundles/App/App.css 41 bytes {0} [built]
+ [182] ./app/javascript/packs/Everything.js 1.1 kB {0} [built]
+ [236] ./app/javascript/bundles/App/App.js 2.72 kB {0} [built]
+ [265] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+ [458] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB [built]
+    + 456 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/UserInfo.js
+Module build failed: SyntaxError: Unexpected token, expected ; (13:14)
+
+  11 | }
+  12 | 
+> 13 | checkStatus() {
+     |               ^
+  14 |   if (this.props.user == null) {
+  15 |     return `<a href="/users/sign_in">Sign in</a> or <a href="/users/sign_up">sign up</a>.`
+  16 |   }
+
+ @ ./app/javascript/packs/Everything.js 12:0-67
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!app/javascript/bundles/App/App.css:
+       [0] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB {0} [built]
+        + 1 hidden module
+
+Completed 200 OK in 10158ms (Views: 10156.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 15:31:27 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 4aba5bf5cb9b893a18a7
+Version: webpack 3.12.0
+Time: 8615ms
+                                              Asset       Size  Chunks                    Chunk Names
+                 Everything-ee10aa401412b8a96eed.js    1.97 MB       0  [emitted]  [big]  Everything
+    Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css  867 bytes       0  [emitted]         Everything
+             Everything-ee10aa401412b8a96eed.js.map    2.16 MB       0  [emitted]         Everything
+Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css.map       1 kB       0  [emitted]         Everything
+                                      manifest.json  302 bytes          [emitted]         
+  [41] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [101] ./app/javascript/bundles/App/App.css 41 bytes {0} [built]
+ [182] ./app/javascript/packs/Everything.js 1.1 kB {0} [built]
+ [236] ./app/javascript/bundles/App/App.js 2.72 kB {0} [built]
+ [265] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+ [458] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB [built]
+    + 456 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/UserInfo.js
+Module build failed: SyntaxError: Unexpected token, expected ; (17:16)
+
+  15 | const UserInfo = (props) => {
+  16 | 
+> 17 |   checkStatus() {
+     |                 ^
+  18 |     if (this.props.user == null) {
+  19 |       return `<a href="/users/sign_in">Sign in</a> or <a href="/users/sign_up">sign up</a>.`
+  20 |     }
+
+ @ ./app/javascript/packs/Everything.js 12:0-67
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!app/javascript/bundles/App/App.css:
+       [0] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB {0} [built]
+        + 1 hidden module
+
+Completed 200 OK in 10899ms (Views: 10896.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 15:32:06 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 8071876d32fb3fa110cc
+Version: webpack 3.12.0
+Time: 8915ms
+                                              Asset       Size  Chunks                    Chunk Names
+                 Everything-af1eea3d8b7f0c8efa79.js    1.97 MB       0  [emitted]  [big]  Everything
+    Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css  867 bytes       0  [emitted]         Everything
+             Everything-af1eea3d8b7f0c8efa79.js.map    2.16 MB       0  [emitted]         Everything
+Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css.map       1 kB       0  [emitted]         Everything
+                                      manifest.json  302 bytes          [emitted]         
+  [41] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [101] ./app/javascript/bundles/App/App.css 41 bytes {0} [built]
+ [182] ./app/javascript/packs/Everything.js 1.1 kB {0} [built]
+ [236] ./app/javascript/bundles/App/App.js 2.72 kB {0} [built]
+ [265] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+ [458] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB [built]
+    + 456 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/UserInfo.js
+Module build failed: SyntaxError: Unexpected token, expected ; (17:16)
+
+  15 | const UserInfo = (props) => {
+  16 | 
+> 17 |   checkStatus() {
+     |                 ^
+  18 |     if (this.props.user == null) {
+  19 |       return `<a href="/users/sign_in">Sign in</a> or <a href="/users/sign_up">sign up</a>.`;
+  20 |     }
+
+ @ ./app/javascript/packs/Everything.js 12:0-67
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!app/javascript/bundles/App/App.css:
+       [0] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB {0} [built]
+        + 1 hidden module
+
+Completed 200 OK in 11344ms (Views: 11341.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 15:32:55 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 11432ms (Views: 11428.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-23 15:33:16 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.9ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:4
+  Rendered tutorials/learn.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 67ms (Views: 60.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 15:33:19 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 79ms (Views: 74.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 15:33:21 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.8ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 15:33:44 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (3.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 12527ms (Views: 12522.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 15:33:58 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.8ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 15:34:37 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (2.9ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 110ms (Views: 70.8ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-23 15:34:42 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iFTTOIN3fhemfPE0wCWERpApOgUJWpg2dSni3SN/tvVM+s8iDBGPPA73utAdU8IDSTxARJL6y1PGwnLAswRExA==", "user"=>{"email"=>"karen@burgos.us", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "karen@burgos.us"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-07-23 19:34:42.798172"], ["last_sign_in_at", "2018-07-23 18:49:57.247375"], ["sign_in_count", 8], ["updated_at", "2018-07-23 19:34:42.801135"], ["id", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (15.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 361ms (ActiveRecord: 16.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 15:34:42 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 41ms (Views: 37.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/compete" for 127.0.0.1 at 2018-07-23 15:34:47 -0400
+Processing by PagesController#compete as HTML
+  Rendering pages/compete.html.erb within layouts/application
+  Rendered pages/compete.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/compete" for 127.0.0.1 at 2018-07-23 15:35:01 -0400
+Processing by PagesController#compete as HTML
+  Rendering pages/compete.html.erb within layouts/application
+  Rendered pages/compete.html.erb within layouts/application (5.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 15014ms (Views: 15011.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 15:35:32 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 13260ms (Views: 13256.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 15:36:13 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling…
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 15:36:25 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+[Webpacker] Compiling…
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 15:36:26 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 112ms (Views: 108.2ms | ActiveRecord: 0.6ms)
+
+
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 15183ms (Views: 15180.4ms | ActiveRecord: 0.7ms)
+
+
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 15822ms (Views: 15820.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 15:37:10 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 13980ms (Views: 13978.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 15:37:42 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 13387ms (Views: 13383.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 15:38:24 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 956a9586a8068b290b1e
+Version: webpack 3.12.0
+Time: 10098ms
+                                              Asset       Size  Chunks                    Chunk Names
+                 Everything-bfc33af42c8abc7ce6b3.js    1.97 MB       0  [emitted]  [big]  Everything
+    Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css  867 bytes       0  [emitted]         Everything
+             Everything-bfc33af42c8abc7ce6b3.js.map    2.16 MB       0  [emitted]         Everything
+Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css.map       1 kB       0  [emitted]         Everything
+                                      manifest.json  302 bytes          [emitted]         
+  [41] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [101] ./app/javascript/bundles/App/App.css 41 bytes {0} [built]
+ [182] ./app/javascript/packs/Everything.js 1.1 kB {0} [built]
+ [236] ./app/javascript/bundles/App/App.js 2.72 kB {0} [built]
+ [265] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+ [458] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB [built]
+    + 456 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/UserInfo.js
+Module build failed: SyntaxError: Unexpected token, expected ; (14:14)
+
+  12 | 
+  13 | 
+> 14 | checkStatus() {
+     |               ^
+  15 |   if (props.user == null) {
+  16 |     console.log("IT IS NULL");
+  17 |     return `<a href="/users/sign_in">Sign in</a> or <a href="/users/sign_up">sign up</a>.`;
+
+ @ ./app/javascript/packs/Everything.js 12:0-67
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!app/javascript/bundles/App/App.css:
+       [0] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB {0} [built]
+        + 1 hidden module
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 12529ms (Views: 12525.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 15:39:19 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 956a9586a8068b290b1e
+Version: webpack 3.12.0
+Time: 11470ms
+                                              Asset       Size  Chunks                    Chunk Names
+                 Everything-bfc33af42c8abc7ce6b3.js    1.97 MB       0  [emitted]  [big]  Everything
+    Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css  867 bytes       0  [emitted]         Everything
+             Everything-bfc33af42c8abc7ce6b3.js.map    2.16 MB       0  [emitted]         Everything
+Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css.map       1 kB       0  [emitted]         Everything
+                                      manifest.json  302 bytes          [emitted]         
+  [41] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [101] ./app/javascript/bundles/App/App.css 41 bytes {0} [built]
+ [182] ./app/javascript/packs/Everything.js 1.1 kB {0} [built]
+ [236] ./app/javascript/bundles/App/App.js 2.72 kB {0} [built]
+ [265] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+ [458] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB [built]
+    + 456 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/UserInfo.js
+Module build failed: SyntaxError: Unexpected token, expected ; (14:14)
+
+  12 | 
+  13 | 
+> 14 | checkStatus() {
+     |               ^
+  15 |   if (props.user == null) {
+  16 |     console.log("IT IS NULL");
+  17 |     return `<a href="/users/sign_in">Sign in</a> or <a href="/users/sign_up">sign up</a>.`;
+
+ @ ./app/javascript/packs/Everything.js 12:0-67
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!app/javascript/bundles/App/App.css:
+       [0] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB {0} [built]
+        + 1 hidden module
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 14021ms (Views: 14018.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 15:40:16 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 14868ms (Views: 14864.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 15:40:48 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 67ms (Views: 63.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 15:41:02 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 14594ms (Views: 14589.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 15:41:41 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 14ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 15:41:41 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 63ms (Views: 59.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 15:41:53 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 15444ms (Views: 15439.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 15:42:19 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 15616ms (Views: 15612.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-07-23 15:42:51 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Am787C+c3cG57HA4vN9ShlS7cQkBcW7H/D2frswqrlkurkvELPxyAROs0Pt/ZPy3F4nNHw3QQL4kOCuMMuxg9Q=="}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 15:42:51 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 67ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 15:45:12 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 19447ms (Views: 19442.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 15:46:26 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 16903ms (Views: 16899.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 15:47:34 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 15230ms (Views: 15227.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 15:49:01 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 16752ms (Views: 16748.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 16:00:55 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 18218ms (Views: 18214.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 16:01:33 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 18308ms (Views: 18305.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 16:02:58 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 18597ms (Views: 18593.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 16:03:33 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: fb5d982b184a3b668c18
+Version: webpack 3.12.0
+Time: 14872ms
+                                              Asset       Size  Chunks                    Chunk Names
+                 Everything-3b53712afadcea6693b8.js    1.97 MB       0  [emitted]  [big]  Everything
+    Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css  867 bytes       0  [emitted]         Everything
+             Everything-3b53712afadcea6693b8.js.map    2.16 MB       0  [emitted]         Everything
+Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css.map       1 kB       0  [emitted]         Everything
+                                      manifest.json  302 bytes          [emitted]         
+  [41] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [101] ./app/javascript/bundles/App/App.css 41 bytes {0} [built]
+ [182] ./app/javascript/packs/Everything.js 1.1 kB {0} [built]
+ [236] ./app/javascript/bundles/App/App.js 2.72 kB {0} [built]
+ [265] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+ [458] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB [built]
+    + 456 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/UserInfo.js
+Module build failed: SyntaxError: Unexpected token, expected ; (10:48)
+
+   8 |   else if (props.user == null) {
+   9 |     console.log("false");
+> 10 |     return <a href="/users/sign_in">Sign in</a> or <a href="/users/sign_up">Sign up</a>;
+     |                                                 ^
+  11 |   }
+  12 | }
+  13 | 
+
+ @ ./app/javascript/packs/Everything.js 12:0-67
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!app/javascript/bundles/App/App.css:
+       [0] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB {0} [built]
+        + 1 hidden module
+
+Completed 200 OK in 18625ms (Views: 18621.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 16:04:24 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: fb5d982b184a3b668c18
+Version: webpack 3.12.0
+Time: 16855ms
+                                              Asset       Size  Chunks                    Chunk Names
+                 Everything-3b53712afadcea6693b8.js    1.97 MB       0  [emitted]  [big]  Everything
+    Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css  867 bytes       0  [emitted]         Everything
+             Everything-3b53712afadcea6693b8.js.map    2.16 MB       0  [emitted]         Everything
+Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css.map       1 kB       0  [emitted]         Everything
+                                      manifest.json  302 bytes          [emitted]         
+  [41] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [101] ./app/javascript/bundles/App/App.css 41 bytes {0} [built]
+ [182] ./app/javascript/packs/Everything.js 1.1 kB {0} [built]
+ [236] ./app/javascript/bundles/App/App.js 2.72 kB {0} [built]
+ [265] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+ [458] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB [built]
+    + 456 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/UserInfo.js
+Module build failed: SyntaxError: Unexpected token, expected ; (10:48)
+
+   8 |   else if (props.user == null) {
+   9 |     console.log("false");
+> 10 |     return <a href="/users/sign_in">Sign in</a> or <a href="/users/sign_up">Sign up</a>;
+     |                                                 ^
+  11 |   }
+  12 | }
+  13 | 
+
+ @ ./app/javascript/packs/Everything.js 12:0-67
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!app/javascript/bundles/App/App.css:
+       [0] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB {0} [built]
+        + 1 hidden module
+
+Completed 200 OK in 20511ms (Views: 20506.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 16:06:19 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: c949f70813676c34476b
+Version: webpack 3.12.0
+Time: 16126ms
+                                              Asset       Size  Chunks                    Chunk Names
+                 Everything-11cdecb6de6279579b88.js    1.97 MB       0  [emitted]  [big]  Everything
+    Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css  867 bytes       0  [emitted]         Everything
+             Everything-11cdecb6de6279579b88.js.map    2.16 MB       0  [emitted]         Everything
+Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css.map       1 kB       0  [emitted]         Everything
+                                      manifest.json  302 bytes          [emitted]         
+  [41] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [101] ./app/javascript/bundles/App/App.css 41 bytes {0} [built]
+ [182] ./app/javascript/packs/Everything.js 1.1 kB {0} [built]
+ [236] ./app/javascript/bundles/App/App.js 2.72 kB {0} [built]
+ [265] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+ [458] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB [built]
+    + 456 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/UserInfo.js
+Module build failed: SyntaxError: Unexpected token, expected , (13:43)
+
+  11 |     console.log("false");
+  12 |     return(
+> 13 |       <a href="/users/sign_in">Sign in</a> or <a href="/users/sign_up">Sign up</a>
+     |                                            ^
+  14 |     );
+  15 |   }
+  16 | }
+
+ @ ./app/javascript/packs/Everything.js 12:0-67
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!app/javascript/bundles/App/App.css:
+       [0] ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./app/javascript/bundles/App/App.css 2.13 kB {0} [built]
+        + 1 hidden module
+
+Completed 200 OK in 19572ms (Views: 19569.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 16:08:00 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 18349ms (Views: 18346.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 16:08:46 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 18330ms (Views: 18326.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-23 16:09:12 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (3.7ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 84ms (Views: 81.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-23 16:09:14 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LrO5HvJs7AhVKQwtMCpccfqaet01dCU0YSKvznvjYCFQMGx5zDix6U5KbtVKA5Se7dGVQs+5/QBns/lQeq1hbA==", "user"=>{"email"=>"karen@burgos.us", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "karen@burgos.us"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-07-23 20:09:14.815404"], ["last_sign_in_at", "2018-07-23 19:34:42.798172"], ["sign_in_count", 9], ["updated_at", "2018-07-23 20:09:14.818528"], ["id", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 563ms (ActiveRecord: 10.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 16:09:14 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 105ms (Views: 101.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-07-23 16:09:22 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3nwTcUJLGyp6LjDj0uGiMQ1h4JAjwUd7Awpn2sns/8rrbeFp6ypnMENaie6KXamIR3xSDZnqtgwVSW0qWlCZsA=="}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 19ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 16:09:22 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 67ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+

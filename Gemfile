@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+# Devise
+gem 'devise'
 # also react on rails
 gem 'react_on_rails'
 # React on Rails

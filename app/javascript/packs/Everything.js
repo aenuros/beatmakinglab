@@ -9,6 +9,8 @@ import Form from '../bundles/App/components/Form';
 
 import Navigation from '../bundles/App/components/elements/Navigation';
 import Header from '../bundles/App/components/elements/Header';
+import UserInfo from '../bundles/App/components/elements/UserInfo';
+
 
 import Sell from '../bundles/App/components/Sell';
 import Compete from '../bundles/App/components/Compete';
@@ -29,5 +31,6 @@ Compete,
 Seeadmin,
 Social,
 Sounds,
-Header
+Header,
+UserInfo
 });

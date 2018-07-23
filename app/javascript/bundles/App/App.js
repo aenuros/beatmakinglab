@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Tutorials from './components/Tutorials';
 import Form from './components/Form';
+
 import Navigation from './components/elements/Navigation';
 import Header from './components/elements/Header';
+import UserInfo from './components/elements/UserInfo';
+
 import Sell from './components/Sell';
 import Compete from './components/Compete';
 import './App.css'
@@ -18,14 +21,15 @@ const headers = {
   'X-CSRF-TOKEN':     token
 }
 
+
 class App extends Component {
 
   render() {
     return (
       <div className="App">
-
-        {/* <Social/> */}
-
+        <Header/>
+        <Navigation/>
+        <UserInfo user={this.props.user}/>
       </div>
     );
   }

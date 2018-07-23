@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 resources :tutorials
@@ -19,5 +20,6 @@ get '/sell' => 'pages#sell'
 get '/social' => 'pages#social'
 
 get '/sounds' => 'pages#sounds'
+
 
 end

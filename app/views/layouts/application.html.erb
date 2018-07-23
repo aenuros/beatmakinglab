@@ -22,9 +22,8 @@
 
 
   <body>
-<%= react_component "Header" %>
-<%= react_component "Navigation" %>
 
+<%= react_component 'App', props: { user: current_user } %>
     <%= yield %>
   </body>
 </html>
