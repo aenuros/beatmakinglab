@@ -2,11 +2,16 @@
   "name": "experiment",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^1.4.0",
     "@rails/webpacker": "3.5",
+    "axios": "^0.18.0",
     "babel-preset-react": "^6.24.1",
+    "moment": "^2.22.2",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "react-materialize": "^2.3.3",
+    "react-on-rails": "11.0.9"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"

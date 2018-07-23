@@ -14,23 +14,39 @@
  *= require_self
  */
 
-body {
-  background-color:gray;
-}
+ .App {
+   text-align: center;
+ }
 
-.tut {
-  /*border: #000 1px solid;*/
-  margin: 5px;
-  padding: 5px;
-  height: 200px;
-  background-color:#bbb;
-}
+ .App-logo {
+   animation: App-logo-spin infinite 20s linear;
+   height: 80px;
+ }
 
-.tut p {
-  float:left;
-}
+ .App-header {
+   background-color: #222;
+   height: 150px;
+   padding: 20px;
+   color: white;
+ }
 
-.youtube {
-  text-align:right;
+ .App-title {
+   font-size: 1.5em;
+ }
 
-}
+ .App-intro {
+   font-size: large;
+ }
+
+ @keyframes App-logo-spin {
+   from { transform: rotate(0deg); }
+   to { transform: rotate(360deg); }
+ }
+
+ .navigation {
+   display:inline;
+ }
+
+ ull li {
+   display:inline-block;
+ }

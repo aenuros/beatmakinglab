@@ -4452,3 +4452,2774 @@ Processing by TutorialsController#index as HTML
 Completed 200 OK in 41ms (Views: 31.7ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-20 14:29:13 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1129ms (Views: 1121.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials" for 127.0.0.1 at 2018-07-20 14:29:18 -0400
+Processing by TutorialsController#index as HTML
+  Rendering tutorials/index.html.erb within layouts/application
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/index.html.erb:16
+  Rendered tutorials/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 42ms (Views: 31.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/hello_world" for 127.0.0.1 at 2018-07-20 14:29:28 -0400
+Processing by HelloWorldController#index as HTML
+  Rendering hello_world/index.html.erb within layouts/hello_world
+  Rendered hello_world/index.html.erb within layouts/hello_world (176.8ms)
+Completed 200 OK in 180ms (Views: 179.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello_world" for 127.0.0.1 at 2018-07-20 14:35:01 -0400
+Started GET "/react" for 127.0.0.1 at 2018-07-20 14:35:11 -0400
+Processing by HelloWorldController#index as HTML
+  Rendering hello_world/index.html.erb within layouts/hello_world
+  Rendered hello_world/index.html.erb within layouts/hello_world (1.0ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 14:35:37 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 14:36:19 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find App.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-3b37a88c3314a025bd6f.js",
+  "application.js.map": "/packs/application-3b37a88c3314a025bd6f.js.map",
+  "hello-world-bundle.js": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js",
+  "hello-world-bundle.js.map": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js.map",
+  "hello_react.js": "/packs/hello_react-89bd323f6c6f1f97efac.js",
+  "hello_react.js.map": "/packs/hello_react-89bd323f6c6f1f97efac.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'App' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4095219037563301076_69997720446380'
+Started GET "/react" for 127.0.0.1 at 2018-07-20 14:37:55 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find App.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-3b37a88c3314a025bd6f.js",
+  "application.js.map": "/packs/application-3b37a88c3314a025bd6f.js.map",
+  "hello-world-bundle.js": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js",
+  "hello-world-bundle.js.map": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js.map",
+  "hello_react.js": "/packs/hello_react-89bd323f6c6f1f97efac.js",
+  "hello_react.js.map": "/packs/hello_react-89bd323f6c6f1f97efac.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'App' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4095219037563301076_69997725653240'
+Started GET "/react" for 127.0.0.1 at 2018-07-20 14:39:00 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find App.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-3b37a88c3314a025bd6f.js",
+  "application.js.map": "/packs/application-3b37a88c3314a025bd6f.js.map",
+  "hello-world-bundle.js": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js",
+  "hello-world-bundle.js.map": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js.map",
+  "hello_react.js": "/packs/hello_react-89bd323f6c6f1f97efac.js",
+  "hello_react.js.map": "/packs/hello_react-89bd323f6c6f1f97efac.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'App' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4095219037563301076_69997722222940'
+Started GET "/" for 127.0.0.1 at 2018-07-20 14:39:19 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find App.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-3b37a88c3314a025bd6f.js",
+  "application.js.map": "/packs/application-3b37a88c3314a025bd6f.js.map",
+  "hello-world-bundle.js": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js",
+  "hello-world-bundle.js.map": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js.map",
+  "hello_react.js": "/packs/hello_react-89bd323f6c6f1f97efac.js",
+  "hello_react.js.map": "/packs/hello_react-89bd323f6c6f1f97efac.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'App' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4095219037563301076_69997714076020'
+Started GET "/tutorials" for 127.0.0.1 at 2018-07-20 14:44:48 -0400
+Processing by TutorialsController#index as HTML
+  Rendering tutorials/index.html.erb within layouts/application
+  [1m[36mTutorial Load (0.8ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/index.html.erb:16
+  Rendered tutorials/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find App.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-3b37a88c3314a025bd6f.js",
+  "application.js.map": "/packs/application-3b37a88c3314a025bd6f.js.map",
+  "hello-world-bundle.js": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js",
+  "hello-world-bundle.js.map": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js.map",
+  "hello_react.js": "/packs/hello_react-89bd323f6c6f1f97efac.js",
+  "hello_react.js.map": "/packs/hello_react-89bd323f6c6f1f97efac.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'App' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4095219037563301076_69997723106680'
+Started GET "/tutorials" for 127.0.0.1 at 2018-07-20 14:45:18 -0400
+Processing by TutorialsController#index as HTML
+  Rendering tutorials/index.html.erb within layouts/application
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/index.html.erb:16
+  Rendered tutorials/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find App.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-3b37a88c3314a025bd6f.js",
+  "application.js.map": "/packs/application-3b37a88c3314a025bd6f.js.map",
+  "hello-world-bundle.js": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js",
+  "hello-world-bundle.js.map": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js.map",
+  "hello_react.js": "/packs/hello_react-89bd323f6c6f1f97efac.js",
+  "hello_react.js.map": "/packs/hello_react-89bd323f6c6f1f97efac.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'App' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4095219037563301076_69997716910560'
+Started GET "/" for 127.0.0.1 at 2018-07-20 14:46:01 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find App.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-3b37a88c3314a025bd6f.js",
+  "application.js.map": "/packs/application-3b37a88c3314a025bd6f.js.map",
+  "hello-world-bundle.js": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js",
+  "hello-world-bundle.js.map": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js.map",
+  "hello_react.js": "/packs/hello_react-89bd323f6c6f1f97efac.js",
+  "hello_react.js.map": "/packs/hello_react-89bd323f6c6f1f97efac.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'App' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4095219037563301076_69997724481880'
+Started GET "/" for 127.0.0.1 at 2018-07-20 14:46:45 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find App.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-3b37a88c3314a025bd6f.js",
+  "application.js.map": "/packs/application-3b37a88c3314a025bd6f.js.map",
+  "hello-world-bundle.js": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js",
+  "hello-world-bundle.js.map": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js.map",
+  "hello_react.js": "/packs/hello_react-89bd323f6c6f1f97efac.js",
+  "hello_react.js.map": "/packs/hello_react-89bd323f6c6f1f97efac.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'App' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4095219037563301076_69997720870660'
+Started GET "/" for 127.0.0.1 at 2018-07-20 14:46:49 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find App.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-3b37a88c3314a025bd6f.js",
+  "application.js.map": "/packs/application-3b37a88c3314a025bd6f.js.map",
+  "hello-world-bundle.js": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js",
+  "hello-world-bundle.js.map": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js.map",
+  "hello_react.js": "/packs/hello_react-89bd323f6c6f1f97efac.js",
+  "hello_react.js.map": "/packs/hello_react-89bd323f6c6f1f97efac.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'App' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4095219037563301076_69997726698540'
+Started GET "/" for 127.0.0.1 at 2018-07-20 14:46:58 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find App.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-3b37a88c3314a025bd6f.js",
+  "application.js.map": "/packs/application-3b37a88c3314a025bd6f.js.map",
+  "hello-world-bundle.js": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js",
+  "hello-world-bundle.js.map": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js.map",
+  "hello_react.js": "/packs/hello_react-89bd323f6c6f1f97efac.js",
+  "hello_react.js.map": "/packs/hello_react-89bd323f6c6f1f97efac.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'App' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4095219037563301076_69997722247880'
+Started GET "/" for 127.0.0.1 at 2018-07-20 14:47:01 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find App.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-3b37a88c3314a025bd6f.js",
+  "application.js.map": "/packs/application-3b37a88c3314a025bd6f.js.map",
+  "hello-world-bundle.js": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js",
+  "hello-world-bundle.js.map": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js.map",
+  "hello_react.js": "/packs/hello_react-89bd323f6c6f1f97efac.js",
+  "hello_react.js.map": "/packs/hello_react-89bd323f6c6f1f97efac.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'App' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4095219037563301076_69997715393940'
+Started GET "/" for 127.0.0.1 at 2018-07-20 14:47:39 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find App.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-3b37a88c3314a025bd6f.js",
+  "application.js.map": "/packs/application-3b37a88c3314a025bd6f.js.map",
+  "hello-world-bundle.js": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js",
+  "hello-world-bundle.js.map": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js.map",
+  "hello_react.js": "/packs/hello_react-89bd323f6c6f1f97efac.js",
+  "hello_react.js.map": "/packs/hello_react-89bd323f6c6f1f97efac.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'App' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4095219037563301076_69997723498380'
+Started GET "/" for 127.0.0.1 at 2018-07-20 14:47:54 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find App.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-3b37a88c3314a025bd6f.js",
+  "application.js.map": "/packs/application-3b37a88c3314a025bd6f.js.map",
+  "hello-world-bundle.js": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js",
+  "hello-world-bundle.js.map": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js.map",
+  "hello_react.js": "/packs/hello_react-89bd323f6c6f1f97efac.js",
+  "hello_react.js.map": "/packs/hello_react-89bd323f6c6f1f97efac.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'App' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4095219037563301076_69997717290880'
+Started GET "/" for 127.0.0.1 at 2018-07-20 14:52:29 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find App.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-3b37a88c3314a025bd6f.js",
+  "application.js.map": "/packs/application-3b37a88c3314a025bd6f.js.map",
+  "hello-world-bundle.js": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js",
+  "hello-world-bundle.js.map": "/packs/hello-world-bundle-c19fe429a74212cf2b47.js.map",
+  "hello_react.js": "/packs/hello_react-89bd323f6c6f1f97efac.js",
+  "hello_react.js.map": "/packs/hello_react-89bd323f6c6f1f97efac.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'App' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4095219037563301076_69997724482540'
+Started GET "/" for 127.0.0.1 at 2018-07-20 14:52:42 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-20 14:53:05 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 14:53:12 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 14:53:21 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 14:54:27 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 14:54:41 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 14:57:13 -0400
+  
+SyntaxError (/home/karen/Documents/experiments/scaff_ror/app/controllers/tutorials_controller.rb:89: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/tutorials_controller.rb:89: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/react" for 127.0.0.1 at 2018-07-20 14:58:08 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 15:00:15 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 15:00:16 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-20 15:00:16 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:16
+Completed 200 OK in 51ms (Views: 21.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/tutorials.json" for 127.0.0.1 at 2018-07-20 15:00:30 -0400
+Processing by TutorialsController#create as JSON
+  Parameters: {"tutorial"=>{"name"=>"karen", "description"=>"karen", "link"=>"karen"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:43
+  [1m[36mTutorial Create (1.0ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "karen"], ["description", "karen"], ["link", "karen"], ["created_at", "2018-07-20 19:00:30.546495"], ["updated_at", "2018-07-20 19:00:30.546495"]]
+  ↳ app/controllers/tutorials_controller.rb:43
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:43
+Completed 200 OK in 17ms (Views: 0.9ms | ActiveRecord: 9.4ms)
+
+
+Started DELETE "/tutorials/122.json" for 127.0.0.1 at 2018-07-20 15:00:33 -0400
+Processing by TutorialsController#destroy as JSON
+  Parameters: {"id"=>"122"}
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT ?[0m  [["id", 122], ["LIMIT", 1]]
+  ↳ app/controllers/tutorials_controller.rb:81
+  [1m[36mCACHE Tutorial Load (0.0ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT ?[0m  [["id", 122], ["LIMIT", 1]]
+  ↳ app/controllers/tutorials_controller.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:68
+  [1m[36mTutorial Destroy (0.5ms)[0m  [1m[31mDELETE FROM "tutorials" WHERE "tutorials"."id" = ?[0m  [["id", 122]]
+  ↳ app/controllers/tutorials_controller.rb:68
+  [1m[35m (15.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:68
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 15:03:08 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-20 15:03:09 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:16
+Completed 200 OK in 26ms (Views: 20.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 15:04:09 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-20 15:04:10 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.6ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:16
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 15:04:22 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 42ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-20 15:04:24 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.5ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:16
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 15:04:29 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-20 15:04:29 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.7ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:16
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 15:04:40 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 52ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-20 15:04:41 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:16
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 15:06:43 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 52ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-20 15:06:47 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:16
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 15:07:12 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (224.0ms)
+Completed 200 OK in 2398ms (Views: 2376.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-20 15:07:15 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:16
+Completed 200 OK in 27ms (Views: 23.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-20 15:07:26 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-20 15:07:26 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:16
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tutorials.json" for 127.0.0.1 at 2018-07-20 15:07:47 -0400
+Processing by TutorialsController#create as JSON
+  Parameters: {"tutorial"=>{"name"=>"kkkk", "description"=>"eeee", "link"=>"www.aol.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:43
+  [1m[36mTutorial Create (0.9ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "kkkk"], ["description", "eeee"], ["link", "www.aol.com"], ["created_at", "2018-07-20 19:07:47.756665"], ["updated_at", "2018-07-20 19:07:47.756665"]]
+  ↳ app/controllers/tutorials_controller.rb:43
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:43
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 9.3ms)
+
+
+Started DELETE "/tutorials/123.json" for 127.0.0.1 at 2018-07-20 15:07:51 -0400
+Processing by TutorialsController#destroy as JSON
+  Parameters: {"id"=>"123"}
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT ?[0m  [["id", 123], ["LIMIT", 1]]
+  ↳ app/controllers/tutorials_controller.rb:81
+  [1m[36mCACHE Tutorial Load (0.0ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT ?[0m  [["id", 123], ["LIMIT", 1]]
+  ↳ app/controllers/tutorials_controller.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:68
+  [1m[36mTutorial Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tutorials" WHERE "tutorials"."id" = ?[0m  [["id", 123]]
+  ↳ app/controllers/tutorials_controller.rb:68
+  [1m[35m (9.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:68
+Completed 200 OK in 38ms (Views: 0.7ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 09:21:07 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (959.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/scaff_ror/public/packs
+Completed 200 OK in 15687ms (Views: 15660.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:21:23 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (12.9ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:16
+Completed 200 OK in 65ms (Views: 27.7ms | ActiveRecord: 13.8ms)
+
+
+Started POST "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:21:38 -0400
+Processing by TutorialsController#create as JSON
+  Parameters: {"tutorial"=>{"name"=>"Hello", "description"=>"Welcome", "link"=>"www.youtube.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:43
+  [1m[36mTutorial Create (7.7ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hello"], ["description", "Welcome"], ["link", "www.youtube.com"], ["created_at", "2018-07-23 13:21:38.958970"], ["updated_at", "2018-07-23 13:21:38.958970"]]
+  ↳ app/controllers/tutorials_controller.rb:43
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:43
+Completed 200 OK in 30ms (Views: 0.4ms | ActiveRecord: 23.8ms)
+
+
+Started DELETE "/tutorials/124.json" for 127.0.0.1 at 2018-07-23 09:21:42 -0400
+Processing by TutorialsController#destroy as JSON
+  Parameters: {"id"=>"124"}
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT ?[0m  [["id", 124], ["LIMIT", 1]]
+  ↳ app/controllers/tutorials_controller.rb:81
+  [1m[36mCACHE Tutorial Load (0.0ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT ?[0m  [["id", 124], ["LIMIT", 1]]
+  ↳ app/controllers/tutorials_controller.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:68
+  [1m[36mTutorial Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tutorials" WHERE "tutorials"."id" = ?[0m  [["id", 124]]
+  ↳ app/controllers/tutorials_controller.rb:68
+  [1m[35m (16.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:68
+Completed 200 OK in 67ms (Views: 0.5ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 09:23:53 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:23:53 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:16
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 09:24:01 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  Rendered tutorials/see.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <a href="/admin">Admin</a>
+    2: 
+    3: <% @tutorials.each do |tutorial| %>
+    4: 
+    5: <div class="tut">
+    6: 
+  
+app/views/tutorials/see.html.erb:3:in `_app_views_tutorials_see_html_erb__906114090669721378_70041841446240'
+Started GET "/see" for 127.0.0.1 at 2018-07-23 09:24:43 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2018-07-23 09:24:52 -0400
+Processing by TutorialsController#admin as HTML
+  Rendering tutorials/admin.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/admin.html.erb:15
+  Rendered tutorials/admin.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 09:25:05 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:25:05 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:19
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tutorials/new" for 127.0.0.1 at 2018-07-23 09:25:15 -0400
+Processing by TutorialsController#new as HTML
+  Rendering tutorials/new.html.erb within layouts/application
+  Rendered tutorials/new.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial tutorials/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/karen/Documents/experiments/scaff_ror/app/views"
+):
+    1: <h1>New Tutorial</h1>
+    2: 
+    3: <%= render 'form', tutorial: @tutorial %>
+    4: <% @tutorials.each do |tutorial| %>
+    5: 
+    6: <tr>
+  
+app/views/tutorials/new.html.erb:3:in `_app_views_tutorials_new_html_erb___4073887561046771107_70041844494300'
+Started GET "/admin" for 127.0.0.1 at 2018-07-23 09:25:16 -0400
+Processing by TutorialsController#admin as HTML
+  Rendering tutorials/admin.html.erb within layouts/application
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/admin.html.erb:15
+  Rendered tutorials/admin.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tutorials/121/edit" for 127.0.0.1 at 2018-07-23 09:25:18 -0400
+Processing by TutorialsController#edit as HTML
+  Parameters: {"id"=>"121"}
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT ?[0m  [["id", 121], ["LIMIT", 1]]
+  ↳ app/controllers/tutorials_controller.rb:84
+  Rendering tutorials/edit.html.erb within layouts/application
+  Rendered tutorials/edit.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial tutorials/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/karen/Documents/experiments/scaff_ror/app/views"
+):
+    1: <h1>Editing Tutorial</h1>
+    2: 
+    3: <%= render 'form', tutorial: @tutorial %>
+    4: 
+    5: <%= link_to 'Show', @tutorial %> |
+    6: <%= link_to 'Back', tutorials_path %>
+  
+app/views/tutorials/edit.html.erb:3:in `_app_views_tutorials_edit_html_erb___1275005241731421155_70041847009480'
+Started GET "/admin" for 127.0.0.1 at 2018-07-23 09:25:24 -0400
+Processing by TutorialsController#admin as HTML
+  Rendering tutorials/admin.html.erb within layouts/application
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/admin.html.erb:15
+  Rendered tutorials/admin.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 09:25:46 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:25:46 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:19
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 09:26:16 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:26:16 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:19
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 09:26:18 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 09:26:19 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:26:19 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:19
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:26:19 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:19
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 09:26:20 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 09:39:33 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/scaff_ror/public/packs
+Completed 200 OK in 5380ms (Views: 5360.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 09:39:50 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 27ms (Views: 22.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 09:39:51 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (65.6ms)
+Completed 200 OK in 89ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:39:52 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:19
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 09:40:03 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 09:40:06 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:40:06 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:19
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:40:06 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:19
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 09:47:08 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/scaff_ror/public/packs
+Completed 200 OK in 4152ms (Views: 4151.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:47:12 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:23
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 09:47:13 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trythis" for 127.0.0.1 at 2018-07-23 09:47:16 -0400
+Processing by TutorialsController#trythis as HTML
+  Rendering tutorials/trythis.html.erb within layouts/application
+  Rendered tutorials/trythis.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trythis" for 127.0.0.1 at 2018-07-23 09:47:37 -0400
+Processing by TutorialsController#trythis as HTML
+  Rendering tutorials/trythis.html.erb within layouts/application
+  Rendered tutorials/trythis.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trythis" for 127.0.0.1 at 2018-07-23 09:47:53 -0400
+Processing by TutorialsController#trythis as HTML
+  Rendering tutorials/trythis.html.erb within layouts/application
+  Rendered tutorials/trythis.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/scaff_ror/public/packs
+Completed 200 OK in 4183ms (Views: 4182.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trythis" for 127.0.0.1 at 2018-07-23 09:48:53 -0400
+Processing by TutorialsController#trythis as HTML
+  Rendering tutorials/trythis.html.erb within layouts/application
+  Rendered tutorials/trythis.html.erb within layouts/application (1.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/scaff_ror/public/packs
+Completed 200 OK in 4346ms (Views: 4345.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 09:49:19 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:49:20 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:23
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:50:11 -0400
+Processing by TutorialsController#create as JSON
+  Parameters: {"tutorial"=>{"name"=>"hello", "description"=>"hi", "link"=>"www.aol.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:50
+  [1m[36mTutorial Create (0.4ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "hello"], ["description", "hi"], ["link", "www.aol.com"], ["created_at", "2018-07-23 13:50:11.481135"], ["updated_at", "2018-07-23 13:50:11.481135"]]
+  ↳ app/controllers/tutorials_controller.rb:50
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:50
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 9.2ms)
+
+
+Started DELETE "/tutorials/125.json" for 127.0.0.1 at 2018-07-23 09:50:14 -0400
+Processing by TutorialsController#destroy as JSON
+  Parameters: {"id"=>"125"}
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT ?[0m  [["id", 125], ["LIMIT", 1]]
+  ↳ app/controllers/tutorials_controller.rb:88
+  [1m[36mCACHE Tutorial Load (0.0ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT ?[0m  [["id", 125], ["LIMIT", 1]]
+  ↳ app/controllers/tutorials_controller.rb:74
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:75
+  [1m[36mTutorial Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tutorials" WHERE "tutorials"."id" = ?[0m  [["id", 125]]
+  ↳ app/controllers/tutorials_controller.rb:75
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:75
+Completed 200 OK in 35ms (Views: 0.5ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/trythis" for 127.0.0.1 at 2018-07-23 09:50:29 -0400
+Processing by TutorialsController#trythis as HTML
+  Rendering tutorials/trythis.html.erb within layouts/application
+  Rendered tutorials/trythis.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trythis" for 127.0.0.1 at 2018-07-23 09:51:14 -0400
+Processing by TutorialsController#trythis as HTML
+  Rendering tutorials/trythis.html.erb within layouts/application
+  Rendered tutorials/trythis.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trythis" for 127.0.0.1 at 2018-07-23 09:52:56 -0400
+Processing by TutorialsController#trythis as HTML
+  Rendering tutorials/trythis.html.erb within layouts/application
+  Rendered tutorials/trythis.html.erb within layouts/application (1.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 6ee3e86bc4384541fb8a
+Version: webpack 3.12.0
+Time: 3775ms
+                                Asset       Size  Chunks                    Chunk Names
+    Eveything-4cbe2497088232d35750.js    1.63 MB       0  [emitted]  [big]  Eveything
+Eveything-4cbe2497088232d35750.js.map    1.82 MB       0  [emitted]         Eveything
+                        manifest.json  134 bytes          [emitted]         
+  [31] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [153] ./app/javascript/packs/Eveything.js 258 bytes {0} [built]
+ [209] ./app/javascript/bundles/App/App.js 4.34 kB {0} [built]
+ [241] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+    + 370 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/Trythis.js
+Module not found: Error: Can't resolve './components/Form' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Trythis.js 12:0-37
+ @ ./app/javascript/packs/Eveything.js
+
+ERROR in ./app/javascript/bundles/App/components/Trythis.js
+Module not found: Error: Can't resolve './components/Tutorials' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Trythis.js 11:0-47
+ @ ./app/javascript/packs/Eveything.js
+
+Completed 500 Internal Server Error in 4823ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find Everything.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "Eveything.js": "/packs/Eveything-4cbe2497088232d35750.js",
+  "Eveything.js.map": "/packs/Eveything-4cbe2497088232d35750.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'Everything' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___754912311200430874_69817804506020'
+Started GET "/trythis" for 127.0.0.1 at 2018-07-23 09:53:13 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by TutorialsController#trythis as HTML
+  Rendering tutorials/trythis.html.erb within layouts/application
+  Rendered tutorials/trythis.html.erb within layouts/application (53.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 6ee3e86bc4384541fb8a
+Version: webpack 3.12.0
+Time: 3183ms
+                                Asset       Size  Chunks                    Chunk Names
+    Eveything-4cbe2497088232d35750.js    1.63 MB       0  [emitted]  [big]  Eveything
+Eveything-4cbe2497088232d35750.js.map    1.82 MB       0  [emitted]         Eveything
+                        manifest.json  134 bytes          [emitted]         
+  [31] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [153] ./app/javascript/packs/Eveything.js 258 bytes {0} [built]
+ [209] ./app/javascript/bundles/App/App.js 4.34 kB {0} [built]
+ [241] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+    + 370 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/Trythis.js
+Module not found: Error: Can't resolve './components/Form' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Trythis.js 12:0-37
+ @ ./app/javascript/packs/Eveything.js
+
+ERROR in ./app/javascript/bundles/App/components/Trythis.js
+Module not found: Error: Can't resolve './components/Tutorials' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Trythis.js 11:0-47
+ @ ./app/javascript/packs/Eveything.js
+
+Completed 500 Internal Server Error in 4282ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find Everything.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "Eveything.js": "/packs/Eveything-4cbe2497088232d35750.js",
+  "Eveything.js.map": "/packs/Eveything-4cbe2497088232d35750.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'Everything' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3734912525569450713_70205540818140'
+Started GET "/trythis" for 127.0.0.1 at 2018-07-23 09:56:55 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by TutorialsController#trythis as HTML
+  Rendering tutorials/trythis.html.erb within layouts/application
+  Rendered tutorials/trythis.html.erb within layouts/application (49.8ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find Everything.js in /home/karen/Documents/experiments/scaff_ror/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "Eveything.js": "/packs/Eveything-474bd3670a50cd3a05a1.js",
+  "Eveything.js.map": "/packs/Eveything-474bd3670a50cd3a05a1.js.map"
+}
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_pack_tag 'Everything' %>
+     9: 
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___133816656148762196_70269898218700'
+Started GET "/trythis" for 127.0.0.1 at 2018-07-23 09:57:41 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by TutorialsController#trythis as HTML
+  Rendering tutorials/trythis.html.erb within layouts/application
+  Rendered tutorials/trythis.html.erb within layouts/application (47.1ms)
+Completed 200 OK in 1173ms (Views: 1162.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:57:42 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:23
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 09:58:36 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:58:36 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:23
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 09:58:37 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.6ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 09:58:39 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:58:39 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:23
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:58:39 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:23
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 09:58:39 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 09:58:41 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:58:41 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.5ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:23
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 09:58:42 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:23
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:11:22 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:11:23 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:23
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/trythis" for 127.0.0.1 at 2018-07-23 10:11:27 -0400
+Processing by TutorialsController#trythis as HTML
+  Rendering tutorials/trythis.html.erb within layouts/application
+  Rendered tutorials/trythis.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:11:27 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:23
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:11:36 -0400
+Processing by TutorialsController#create as JSON
+  Parameters: {"tutorial"=>{"name"=>"Hello", "description"=>"welcome", "link"=>"aol.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:50
+  [1m[36mTutorial Create (0.3ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hello"], ["description", "welcome"], ["link", "aol.com"], ["created_at", "2018-07-23 14:11:36.838060"], ["updated_at", "2018-07-23 14:11:36.838060"]]
+  ↳ app/controllers/tutorials_controller.rb:50
+  [1m[35m (14.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:50
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 15.3ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:14:57 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (3.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: a5988743f8b57b5ef4db
+Version: webpack 3.12.0
+Time: 3620ms
+                                 Asset       Size  Chunks                    Chunk Names
+    Everything-028e10b0cd35767d75de.js    1.86 MB       0  [emitted]  [big]  Everything
+Everything-028e10b0cd35767d75de.js.map    2.06 MB       0  [emitted]         Everything
+                         manifest.json  138 bytes          [emitted]         
+  [34] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [164] ./app/javascript/packs/Everything.js 258 bytes {0} [built]
+ [220] ./app/javascript/bundles/App/App.js 4.49 kB {0} [built]
+ [251] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+    + 421 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/NavBar.js
+Module not found: Error: Can't resolve '../../App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components/elements'
+ @ ./app/javascript/bundles/App/components/elements/NavBar.js 10:0-23
+ @ ./app/javascript/bundles/App/App.js
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/App.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App'
+ @ ./app/javascript/bundles/App/App.js 17:0-19
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-instagram-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 12:0-51
+ @ ./app/javascript/bundles/App/App.js
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-twitter-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 11:0-239
+ @ ./app/javascript/bundles/App/App.js
+ @ ./app/javascript/packs/Everything.js
+
+Completed 200 OK in 4706ms (Views: 4705.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 10:24:14 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (1.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: a5988743f8b57b5ef4db
+Version: webpack 3.12.0
+Time: 3762ms
+                                 Asset       Size  Chunks                    Chunk Names
+    Everything-028e10b0cd35767d75de.js    1.86 MB       0  [emitted]  [big]  Everything
+Everything-028e10b0cd35767d75de.js.map    2.06 MB       0  [emitted]         Everything
+                         manifest.json  138 bytes          [emitted]         
+  [34] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [164] ./app/javascript/packs/Everything.js 258 bytes {0} [built]
+ [220] ./app/javascript/bundles/App/App.js 4.49 kB {0} [built]
+ [251] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+    + 421 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/NavBar.js
+Module not found: Error: Can't resolve '../../App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components/elements'
+ @ ./app/javascript/bundles/App/components/elements/NavBar.js 10:0-23
+ @ ./app/javascript/bundles/App/App.js
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/App.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App'
+ @ ./app/javascript/bundles/App/App.js 17:0-19
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-instagram-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 12:0-51
+ @ ./app/javascript/bundles/App/App.js
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-twitter-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 11:0-239
+ @ ./app/javascript/bundles/App/App.js
+ @ ./app/javascript/packs/Everything.js
+
+Completed 200 OK in 4755ms (Views: 4753.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:24:26 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.1ms)
+[Webpacker] Compiling…
+Started GET "/see" for 127.0.0.1 at 2018-07-23 10:24:30 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.3ms)
+
+
+[Webpacker] Compilation failed:
+
+Hash: a5988743f8b57b5ef4db
+Version: webpack 3.12.0
+Time: 4218ms
+                                 Asset       Size  Chunks                    Chunk Names
+    Everything-028e10b0cd35767d75de.js    1.86 MB       0  [emitted]  [big]  Everything
+Everything-028e10b0cd35767d75de.js.map    2.06 MB       0  [emitted]         Everything
+                         manifest.json  138 bytes          [emitted]         
+  [34] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [164] ./app/javascript/packs/Everything.js 258 bytes {0} [built]
+ [220] ./app/javascript/bundles/App/App.js 4.49 kB {0} [built]
+ [251] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+    + 421 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/NavBar.js
+Module not found: Error: Can't resolve '../../App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components/elements'
+ @ ./app/javascript/bundles/App/components/elements/NavBar.js 10:0-23
+ @ ./app/javascript/bundles/App/App.js
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/App.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App'
+ @ ./app/javascript/bundles/App/App.js 17:0-19
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-instagram-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 12:0-51
+ @ ./app/javascript/bundles/App/App.js
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-twitter-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 11:0-239
+ @ ./app/javascript/bundles/App/App.js
+ @ ./app/javascript/packs/Everything.js
+
+Completed 200 OK in 5497ms (Views: 5495.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 10:26:08 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (3.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 76a1b49ce3adaacf5861
+Version: webpack 3.12.0
+Time: 3775ms
+                                 Asset       Size  Chunks                    Chunk Names
+    Everything-2b9fff58e4326996faf2.js    1.87 MB       0  [emitted]  [big]  Everything
+Everything-2b9fff58e4326996faf2.js.map    2.06 MB       0  [emitted]         Everything
+                         manifest.json  138 bytes          [emitted]         
+  [34] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [168] ./app/javascript/packs/Everything.js 740 bytes {0} [built]
+ [224] ./app/javascript/bundles/App/App.js 4.49 kB {0} [built]
+ [255] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+    + 421 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/NavBar.js
+Module not found: Error: Can't resolve '../../App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components/elements'
+ @ ./app/javascript/bundles/App/components/elements/NavBar.js 10:0-23
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/App.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App'
+ @ ./app/javascript/bundles/App/App.js 17:0-19
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/packs/Everything.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/packs'
+ @ ./app/javascript/packs/Everything.js 13:0-19
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-instagram-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 12:0-51
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-twitter-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 11:0-239
+ @ ./app/javascript/packs/Everything.js
+
+Completed 200 OK in 4892ms (Views: 4890.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:26:21 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (2.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 76a1b49ce3adaacf5861
+Version: webpack 3.12.0
+Time: 3993ms
+                                 Asset       Size  Chunks                    Chunk Names
+    Everything-2b9fff58e4326996faf2.js    1.87 MB       0  [emitted]  [big]  Everything
+Everything-2b9fff58e4326996faf2.js.map    2.06 MB       0  [emitted]         Everything
+                         manifest.json  138 bytes          [emitted]         
+  [34] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [168] ./app/javascript/packs/Everything.js 740 bytes {0} [built]
+ [224] ./app/javascript/bundles/App/App.js 4.49 kB {0} [built]
+ [255] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+    + 421 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/NavBar.js
+Module not found: Error: Can't resolve '../../App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components/elements'
+ @ ./app/javascript/bundles/App/components/elements/NavBar.js 10:0-23
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/App.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App'
+ @ ./app/javascript/bundles/App/App.js 17:0-19
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/packs/Everything.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/packs'
+ @ ./app/javascript/packs/Everything.js 13:0-19
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-instagram-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 12:0-51
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-twitter-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 11:0-239
+ @ ./app/javascript/packs/Everything.js
+
+Completed 200 OK in 5183ms (Views: 5181.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trythis" for 127.0.0.1 at 2018-07-23 10:27:16 -0400
+Processing by TutorialsController#trythis as HTML
+  Rendering tutorials/trythis.html.erb within layouts/application
+  Rendered tutorials/trythis.html.erb within layouts/application (1.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 76a1b49ce3adaacf5861
+Version: webpack 3.12.0
+Time: 3613ms
+                                 Asset       Size  Chunks                    Chunk Names
+    Everything-2b9fff58e4326996faf2.js    1.87 MB       0  [emitted]  [big]  Everything
+Everything-2b9fff58e4326996faf2.js.map    2.06 MB       0  [emitted]         Everything
+                         manifest.json  138 bytes          [emitted]         
+  [34] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [168] ./app/javascript/packs/Everything.js 740 bytes {0} [built]
+ [224] ./app/javascript/bundles/App/App.js 4.49 kB {0} [built]
+ [255] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+    + 421 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/NavBar.js
+Module not found: Error: Can't resolve '../../App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components/elements'
+ @ ./app/javascript/bundles/App/components/elements/NavBar.js 10:0-23
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/App.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App'
+ @ ./app/javascript/bundles/App/App.js 17:0-19
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/packs/Everything.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/packs'
+ @ ./app/javascript/packs/Everything.js 13:0-19
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-instagram-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 12:0-51
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-twitter-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 11:0-239
+ @ ./app/javascript/packs/Everything.js
+
+Completed 200 OK in 4746ms (Views: 4744.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trythis" for 127.0.0.1 at 2018-07-23 10:29:06 -0400
+Processing by TutorialsController#trythis as HTML
+  Rendering tutorials/trythis.html.erb within layouts/application
+  Rendered tutorials/trythis.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 4b8c8970a936cfcdc270
+Version: webpack 3.12.0
+Time: 4570ms
+                                 Asset       Size  Chunks                    Chunk Names
+    Everything-0acc55749f2783e8dee4.js    1.87 MB       0  [emitted]  [big]  Everything
+Everything-0acc55749f2783e8dee4.js.map    2.06 MB       0  [emitted]         Everything
+                         manifest.json  138 bytes          [emitted]         
+  [34] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [168] ./app/javascript/packs/Everything.js 836 bytes {0} [built]
+ [224] ./app/javascript/bundles/App/App.js 4.49 kB {0} [built]
+ [255] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+    + 421 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/NavBar.js
+Module not found: Error: Can't resolve '../../App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components/elements'
+ @ ./app/javascript/bundles/App/components/elements/NavBar.js 10:0-23
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/App.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App'
+ @ ./app/javascript/bundles/App/App.js 17:0-19
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/packs/Everything.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/packs'
+ @ ./app/javascript/packs/Everything.js 13:0-19
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-instagram-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 12:0-51
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-twitter-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 11:0-239
+ @ ./app/javascript/packs/Everything.js
+
+Completed 200 OK in 5640ms (Views: 5638.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-23 10:29:50 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 4b8c8970a936cfcdc270
+Version: webpack 3.12.0
+Time: 3646ms
+                                 Asset       Size  Chunks                    Chunk Names
+    Everything-0acc55749f2783e8dee4.js    1.87 MB       0  [emitted]  [big]  Everything
+Everything-0acc55749f2783e8dee4.js.map    2.06 MB       0  [emitted]         Everything
+                         manifest.json  138 bytes          [emitted]         
+  [34] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [168] ./app/javascript/packs/Everything.js 836 bytes {0} [built]
+ [224] ./app/javascript/bundles/App/App.js 4.49 kB {0} [built]
+ [255] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+    + 421 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/NavBar.js
+Module not found: Error: Can't resolve '../../App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components/elements'
+ @ ./app/javascript/bundles/App/components/elements/NavBar.js 10:0-23
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/App.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App'
+ @ ./app/javascript/bundles/App/App.js 17:0-19
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/packs/Everything.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/packs'
+ @ ./app/javascript/packs/Everything.js 13:0-19
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-instagram-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 12:0-51
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-twitter-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 11:0-239
+ @ ./app/javascript/packs/Everything.js
+
+Completed 200 OK in 4759ms (Views: 4758.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2018-07-23 10:30:02 -0400
+Processing by TutorialsController#admin as HTML
+  Rendering tutorials/admin.html.erb within layouts/application
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/admin.html.erb:15
+  Rendered tutorials/admin.html.erb within layouts/application (4.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 4b8c8970a936cfcdc270
+Version: webpack 3.12.0
+Time: 3539ms
+                                 Asset       Size  Chunks                    Chunk Names
+    Everything-0acc55749f2783e8dee4.js    1.87 MB       0  [emitted]  [big]  Everything
+Everything-0acc55749f2783e8dee4.js.map    2.06 MB       0  [emitted]         Everything
+                         manifest.json  138 bytes          [emitted]         
+  [34] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [168] ./app/javascript/packs/Everything.js 836 bytes {0} [built]
+ [224] ./app/javascript/bundles/App/App.js 4.49 kB {0} [built]
+ [255] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+    + 421 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/NavBar.js
+Module not found: Error: Can't resolve '../../App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components/elements'
+ @ ./app/javascript/bundles/App/components/elements/NavBar.js 10:0-23
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/App.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App'
+ @ ./app/javascript/bundles/App/App.js 17:0-19
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/packs/Everything.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/packs'
+ @ ./app/javascript/packs/Everything.js 13:0-19
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-instagram-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 12:0-51
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-twitter-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 11:0-239
+ @ ./app/javascript/packs/Everything.js
+
+Completed 200 OK in 4605ms (Views: 4603.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 10:30:10 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.8ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (2.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 4b8c8970a936cfcdc270
+Version: webpack 3.12.0
+Time: 4272ms
+                                 Asset       Size  Chunks                    Chunk Names
+    Everything-0acc55749f2783e8dee4.js    1.87 MB       0  [emitted]  [big]  Everything
+Everything-0acc55749f2783e8dee4.js.map    2.06 MB       0  [emitted]         Everything
+                         manifest.json  138 bytes          [emitted]         
+  [34] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [168] ./app/javascript/packs/Everything.js 836 bytes {0} [built]
+ [224] ./app/javascript/bundles/App/App.js 4.49 kB {0} [built]
+ [255] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+    + 421 hidden modules
+
+ERROR in ./app/javascript/bundles/App/components/elements/NavBar.js
+Module not found: Error: Can't resolve '../../App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components/elements'
+ @ ./app/javascript/bundles/App/components/elements/NavBar.js 10:0-23
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/App.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App'
+ @ ./app/javascript/bundles/App/App.js 17:0-19
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/packs/Everything.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/packs'
+ @ ./app/javascript/packs/Everything.js 13:0-19
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-instagram-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 12:0-51
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-twitter-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 11:0-239
+ @ ./app/javascript/packs/Everything.js
+
+Completed 200 OK in 5648ms (Views: 5646.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:32:07 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 8f6d3d2e3f4dd0c2bbc2
+Version: webpack 3.12.0
+Time: 3728ms
+                                 Asset       Size  Chunks                    Chunk Names
+    Everything-10320396ae0b701a4bab.js    1.86 MB       0  [emitted]  [big]  Everything
+Everything-10320396ae0b701a4bab.js.map    2.06 MB       0  [emitted]         Everything
+                         manifest.json  138 bytes          [emitted]         
+  [34] (webpack)/buildin/global.js 509 bytes {0} [built]
+ [164] ./app/javascript/packs/Everything.js 836 bytes {0} [built]
+ [220] ./app/javascript/bundles/App/App.js 239 bytes {0} [built] [failed] [1 error]
+ [252] (webpack)/buildin/harmony-module.js 596 bytes {0} [built]
+    + 421 hidden modules
+
+ERROR in ./app/javascript/bundles/App/App.js
+Module build failed: SyntaxError: Unexpected token, expected ; (27:11)
+
+  25 | }
+  26 | 
+> 27 |   render() {
+     |            ^
+  28 |     return (
+  29 |       <div className="App">
+  30 |         <header>
+
+ @ ./app/javascript/packs/Everything.js 2:0-37
+
+ERROR in ./app/javascript/bundles/App/components/elements/NavBar.js
+Module not found: Error: Can't resolve '../../App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components/elements'
+ @ ./app/javascript/bundles/App/components/elements/NavBar.js 10:0-23
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/packs/Everything.js
+Module not found: Error: Can't resolve './App.css' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/packs'
+ @ ./app/javascript/packs/Everything.js 13:0-19
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-instagram-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 12:0-51
+ @ ./app/javascript/packs/Everything.js
+
+ERROR in ./app/javascript/bundles/App/components/Social.js
+Module not found: Error: Can't resolve 'react-twitter-embed' in '/home/karen/Documents/experiments/scaff_ror/app/javascript/bundles/App/components'
+ @ ./app/javascript/bundles/App/components/Social.js 11:0-239
+ @ ./app/javascript/packs/Everything.js
+
+Completed 200 OK in 4825ms (Views: 4823.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:37:56 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (95.5ms)
+Completed 200 OK in 1242ms (Views: 1233.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:38:21 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:39:07 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:39:31 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:39:50 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:39:51 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:39:52 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:40:28 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:40:39 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 10:40:56 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 37ms (Views: 21.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:40:58 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 10:41:24 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:41:31 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 10:41:34 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:41:40 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:42:51 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:42:54 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:48:34 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 33ms (Views: 24.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:48:47 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:50:21 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:50:44 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:50:45 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.5ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:51:07 -0400
+Processing by TutorialsController#create as JSON
+  Parameters: {"tutorial"=>{"name"=>"I love america", "description"=>"baby", "link"=>"www.america.gov"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:56
+  [1m[36mTutorial Create (5.6ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "I love america"], ["description", "baby"], ["link", "www.america.gov"], ["created_at", "2018-07-23 14:51:07.941516"], ["updated_at", "2018-07-23 14:51:07.941516"]]
+  ↳ app/controllers/tutorials_controller.rb:56
+  [1m[35m (23.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tutorials_controller.rb:56
+Completed 200 OK in 35ms (Views: 0.6ms | ActiveRecord: 29.0ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:53:40 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:53:41 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:53:46 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 10:54:27 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:54:37 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:54:37 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 10:54:40 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:3
+  Rendered tutorials/see.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:55:37 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 10:55:45 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:4
+  Rendered tutorials/see.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 10:55:53 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:4
+  Rendered tutorials/see.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:55:56 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:56:04 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:56:05 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:56:23 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:56:24 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:56:50 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:56:51 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:56:56 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:56:56 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:57:00 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:57:01 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.5ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:57:07 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:57:08 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:57:08 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:57:08 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:57:08 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:57:18 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:57:20 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:57:32 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:57:32 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 10:57:34 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:4
+  Rendered tutorials/see.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:57:36 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:57:36 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:57:36 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:57:37 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/see" for 127.0.0.1 at 2018-07-23 10:57:39 -0400
+Processing by TutorialsController#see as HTML
+  Rendering tutorials/see.html.erb within layouts/application
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/see.html.erb:4
+  Rendered tutorials/see.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:57:41 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 10:57:43 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:57:44 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 10:57:44 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 10:59:13 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 11:01:02 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 11:01:17 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-23 11:01:20 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:4
+  Rendered tutorials/learn.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 11:01:24 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 11:01:24 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 11:05:52 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 11:05:53 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 11:06:17 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 11:06:18 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-23 11:06:22 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:3
+  Rendered tutorials/learn.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-23 11:06:42 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:3
+  Rendered tutorials/learn.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 11:06:45 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (9.1ms)
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 11:06:45 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.4ms)
+
+
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 11:06:45 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 11:06:48 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 11:07:12 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/react" for 127.0.0.1 at 2018-07-23 11:07:34 -0400
+Processing by TutorialsController#react as HTML
+  Rendering tutorials/react.html.erb within layouts/application
+  Rendered tutorials/react.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:08:13 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:08:24 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 11:08:26 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 11:08:27 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-23 11:08:29 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:3
+  Rendered tutorials/learn.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 11:08:30 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 11:08:31 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 11:08:31 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 11:08:59 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 11:08:59 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:09:00 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-23 11:09:02 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:3
+  Rendered tutorials/learn.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 11:09:04 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 11:09:04 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.5ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 11:09:04 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-23 11:09:04 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:3
+  Rendered tutorials/learn.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:09:05 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-23 11:10:08 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:3
+  Rendered tutorials/learn.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 11:10:11 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-23 11:10:11 -0400
+Processing by TutorialsController#seeadmin as HTML
+  Rendering tutorials/seeadmin.html.erb within layouts/application
+  Rendered tutorials/seeadmin.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-23 11:10:11 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:29
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:10:14 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-23 11:10:17 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:3
+  Rendered tutorials/learn.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:10:20 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:11:17 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (129.8ms)
+Completed 200 OK in 1510ms (Views: 1502.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:11:38 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+

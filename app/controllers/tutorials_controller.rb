@@ -1,16 +1,35 @@
 class TutorialsController < ApplicationController
   before_action :set_tutorial, only: [:show, :edit, :update, :destroy]
 
+def react
+  @tutorials = Tutorial.all
+end
+
+def seeadmin
+  @tutorials = Tutorial.all
+  @tutorial = Tutorial.new
+end
+
+def trythis
+  @tutorials = Tutorial.all
+end
+
+def learn
+  @tutorials = Tutorial.all
+end
+
 # GET /tutorials
 # GET /tutorials.json
   def index
     @tutorials = Tutorial.all
-    @tutorial = Tutorial.new
+
     respond_to do |format|
       format.html
-      format.json{ render json: @tutorials}
+      format.json do
+        render json: @tutorials
     end
   end
+end
 
 # GET /tutorials/1
 # GET /tutorials/1.json
@@ -34,26 +53,11 @@ class TutorialsController < ApplicationController
     @tutorials = Tutorial.all
     @tutorial = Tutorial.new(tutorial_params)
 
-
       if @tutorial.save
-        respond_to do |format|
-          format.html do
-            redirect_to tutorials_path, notice: 'Tutorial was successfully created.'
-          end
-          format.json do
-            render json: @tutorial
-          end
-        end
+        render json: @tutorial
       else
-      respond_to do |format|
-        format.html do
-          redirect_to tutorials_path, alert: @tutorial.errors.full_messages.join(', ')
-        end
-        format.json do
-          render json: @tutorial.errors.full_messages, status: 400
-        end
+        render json: @tutorial.errors.full_messages, status:400
       end
-    end
   end
 
 # PATCH/PUT /tutorials/1
@@ -73,12 +77,10 @@ class TutorialsController < ApplicationController
 # DELETE /tutorials/1
 # DELETE  /tutorials/1.json
   def destroy
+    @tutorial = Tutorial.find(params[:id])
     @tutorial.destroy
-      respond_to do |format|
-        format.html { redirect_to tutorials_url, notice: 'Tutorial was successfully destroyed.' }
-        format.json { head :no_content }
-      end
-    end
+    render json: @tutorial
+  end
 
 # admin view
   def admin
