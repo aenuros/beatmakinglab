@@ -12794,3 +12794,84 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 153ms (Views: 146.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/welcome" for 127.0.0.1 at 2018-07-24 13:07:15 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 130ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-24 13:07:16 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 116ms (Views: 110.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-24 13:07:17 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:4
+  Rendered tutorials/learn.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 295ms (Views: 288.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-24 13:07:18 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 126ms (Views: 121.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sounds" for 127.0.0.1 at 2018-07-24 13:07:19 -0400
+Processing by PagesController#sounds as HTML
+  Rendering pages/sounds.html.erb within layouts/application
+  Rendered pages/sounds.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 157ms (Views: 150.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compete" for 127.0.0.1 at 2018-07-24 13:07:20 -0400
+Processing by PagesController#compete as HTML
+  Rendering pages/compete.html.erb within layouts/application
+  Rendered pages/compete.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 176ms (Views: 172.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-24 13:07:21 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 149ms (Views: 143.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-07-24 13:07:21 -0400
+Processing by PagesController#sell as HTML
+  Rendering pages/sell.html.erb within layouts/application
+  Rendered pages/sell.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 140ms (Views: 136.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-07-24 13:07:22 -0400
+Processing by PagesController#sell as HTML
+  Rendering pages/sell.html.erb within layouts/application
+  Rendered pages/sell.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 55ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-24 13:07:47 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/lib/ruby/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/lib/ruby/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (1426.7ms)
+Completed 200 OK in 1638ms (Views: 1552.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-07-24 13:07:51 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /usr/local/lib/ruby/gems/2.5.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /usr/local/lib/ruby/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 118ms (Views: 112.2ms | ActiveRecord: 0.0ms)
+
+
