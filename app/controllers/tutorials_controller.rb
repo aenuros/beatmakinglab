@@ -5,10 +5,6 @@ def react
   @tutorials = Tutorial.all
 end
 
-def seeadmin
-  @tutorials = Tutorial.all
-  @tutorial = Tutorial.new
-end
 
 def trythis
   @tutorials = Tutorial.all
