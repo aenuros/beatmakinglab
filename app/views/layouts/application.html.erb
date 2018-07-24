@@ -22,8 +22,8 @@
 
 
   <body>
-
-<%= react_component 'App', props: { user: current_user } %>
+<%= current_user.try(:admin?) %>
+<%= react_component 'App', props: { user: current_user, adminvalue: current_user.try(:admin?) } %>
     <%= yield %>
   </body>
 </html>

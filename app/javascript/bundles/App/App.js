@@ -22,14 +22,16 @@ const headers = {
 }
 
 
+
 class App extends Component {
 
   render() {
     return (
       <div className="App">
         <Header/>
-        <Navigation/>
+        <Navigation adminvalue={this.props.adminvalue}/>
         <UserInfo user={this.props.user}/>
+        <p></p>
       </div>
     );
   }
