@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+# amazon s3
+gem "aws-sdk-s3", require: false
 # Devise
 gem 'devise'
 # also react on rails

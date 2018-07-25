@@ -21,5 +21,6 @@ get '/social' => 'pages#social'
 
 get '/sounds' => 'pages#sounds'
 
+get '/test' => 'pages#test'
 
 end

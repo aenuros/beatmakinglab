@@ -14,4 +14,8 @@ class PagesController < ApplicationController
 
   def sounds
   end
+
+  def test
+  end
+
 end
