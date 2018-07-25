@@ -1,6 +1,6 @@
 Rails.application.configure do
 
-config.active_storage.service = :amazon
+# config.active_storage.service = :amazon
 
 config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
