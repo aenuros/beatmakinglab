@@ -19559,3 +19559,208 @@ Processing by PostsController#postlist as HTML
 Completed 200 OK in 55ms (Views: 51.6ms | ActiveRecord: 2.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-25 15:54:46 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 1164ms (Views: 1152.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/" for 127.0.0.1 at 2018-07-25 15:54:53 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (9.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 41ms (Views: 36.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-07-25 15:54:56 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_form.html.erb:27
+  Rendered posts/_form.html.erb (13.7ms)
+  Rendered posts/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2018-07-25 15:55:04 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FNEGSCup+XHT4Cj+8J4doQJGLPU12MfUUi9sFgpEsbaum49YCF5b9Ku5q+2T+RB5rVolyS2j7SnFKdQPa3J2Lw==", "post"=>{"title"=>"hi", "content"=>"", "audio"=>#<ActionDispatch::Http::UploadedFile:0x00007f160839dcb0 @tempfile=#<Tempfile:/tmp/RackMultipart20180725-6487-ohgnkm.mp3>, @original_filename="another one.mp3", @content_type="audio/mpeg", @headers="Content-Disposition: form-data; name=\"post[audio]\"; filename=\"another one.mp3\"\r\nContent-Type: audio/mpeg\r\n">}, "commit"=>"Create Post"}
+[36m  Disk Storage (2.9ms) [0m[32mUploaded file to key: rZCfGPehBUmMERznDJzHLCMT (checksum: ys/IFqCALF64hDKTviLIzw==)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:27
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "rZCfGPehBUmMERznDJzHLCMT"], ["filename", "another one.mp3"], ["content_type", "audio/mpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 58646], ["checksum", "ys/IFqCALF64hDKTviLIzw=="], ["created_at", "2018-07-25 19:55:04.071863"]]
+  ↳ app/controllers/posts_controller.rb:27
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:27
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:27
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:31
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "hi"], ["content", ""], ["created_at", "2018-07-25 19:55:04.104894"], ["updated_at", "2018-07-25 19:55:04.104894"], ["user_id", 2]]
+  ↳ app/controllers/posts_controller.rb:31
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "audio"], ["record_type", "Post"], ["record_id", 18], ["blob_id", 12], ["created_at", "2018-07-25 19:55:04.107591"]]
+  ↳ app/controllers/posts_controller.rb:31
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2018-07-25 19:55:04.108932"], ["id", 18]]
+  ↳ app/controllers/posts_controller.rb:31
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: bf5a0937-a5bc-4038-bffd-cc0980b01b95) to Async(default) with arguments: #<GlobalID:0x00007f160a329fc0 @uri=#<URI::GID gid://experiment/ActiveStorage::Blob/12>>
+Redirected to http://localhost:3000/posts/18
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [bf5a0937-a5bc-4038-bffd-cc0980b01b95] Performing ActiveStorage::AnalyzeJob (Job ID: bf5a0937-a5bc-4038-bffd-cc0980b01b95) from Async(default) with arguments: #<GlobalID:0x00007f160a310930 @uri=#<URI::GID gid://experiment/ActiveStorage::Blob/12>>
+Completed 302 Found in 109ms (ActiveRecord: 25.2ms)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [bf5a0937-a5bc-4038-bffd-cc0980b01b95]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [bf5a0937-a5bc-4038-bffd-cc0980b01b95]   ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [bf5a0937-a5bc-4038-bffd-cc0980b01b95]   [1m[36mActiveStorage::Blob Update (0.7ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 12]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [bf5a0937-a5bc-4038-bffd-cc0980b01b95]   ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Started GET "/posts/18" for 127.0.0.1 at 2018-07-25 15:55:04 -0400
+Processing by PostsController#show as HTML
+[ActiveJob] [ActiveStorage::AnalyzeJob] [bf5a0937-a5bc-4038-bffd-cc0980b01b95]   [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  Parameters: {"id"=>"18"}
+[ActiveJob] [ActiveStorage::AnalyzeJob] [bf5a0937-a5bc-4038-bffd-cc0980b01b95]   ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [bf5a0937-a5bc-4038-bffd-cc0980b01b95] Performed ActiveStorage::AnalyzeJob (Job ID: bf5a0937-a5bc-4038-bffd-cc0980b01b95) from Async(default) in 27.78ms
+  ↳ app/controllers/posts_controller.rb:75
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 18], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/show.html.erb:18
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/posts/show.html.erb:18
+  Rendered posts/show.html.erb within layouts/application (5.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1e2fd679964ad21c9ddb35c1cc21467516e2be37/another%20one.mp3" for 127.0.0.1 at 2018-07-25 15:55:04 -0400
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1e2fd679964ad21c9ddb35c1cc21467516e2be37", "filename"=>"another one"}
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1e2fd679964ad21c9ddb35c1cc21467516e2be37/another%20one.mp3" for 127.0.0.1 at 2018-07-25 15:55:04 -0400
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1e2fd679964ad21c9ddb35c1cc21467516e2be37", "filename"=>"another one"}
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: rZCfGPehBUmMERznDJzHLCMT (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDF5V2tObVIxQmxhRUpWYlUxRlVucHVSRXA2U0V4RFRWUUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDctMjVUMjA6MDA6MDQuNTU4WiIsInB1ciI6ImJsb2Jfa2V5In19--b026e6e625e093a7234ff50a557f5d363cc41242/another%20one.mp3?content_type=audio%2Fmpeg&disposition=inline%3B+filename%3D%22another+one.mp3%22%3B+filename%2A%3DUTF-8%27%27another%2520one.mp3)[0m
+[36m  Disk Storage (0.6ms) [0m[34mGenerated URL for file at key: rZCfGPehBUmMERznDJzHLCMT (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDF5V2tObVIxQmxhRUpWYlUxRlVucHVSRXA2U0V4RFRWUUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDctMjVUMjA6MDA6MDQuNTYwWiIsInB1ciI6ImJsb2Jfa2V5In19--669e7b331453ff4ffee33b7321363b7765335b9f/another%20one.mp3?content_type=audio%2Fmpeg&disposition=inline%3B+filename%3D%22another+one.mp3%22%3B+filename%2A%3DUTF-8%27%27another%2520one.mp3)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDF5V2tObVIxQmxhRUpWYlUxRlVucHVSRXA2U0V4RFRWUUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDctMjVUMjA6MDA6MDQuNTU4WiIsInB1ciI6ImJsb2Jfa2V5In19--b026e6e625e093a7234ff50a557f5d363cc41242/another%20one.mp3?content_type=audio%2Fmpeg&disposition=inline%3B+filename%3D%22another+one.mp3%22%3B+filename%2A%3DUTF-8%27%27another%2520one.mp3
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDF5V2tObVIxQmxhRUpWYlUxRlVucHVSRXA2U0V4RFRWUUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDctMjVUMjA6MDA6MDQuNTYwWiIsInB1ciI6ImJsb2Jfa2V5In19--669e7b331453ff4ffee33b7321363b7765335b9f/another%20one.mp3?content_type=audio%2Fmpeg&disposition=inline%3B+filename%3D%22another+one.mp3%22%3B+filename%2A%3DUTF-8%27%27another%2520one.mp3
+Completed 302 Found in 10ms (ActiveRecord: 0.1ms)
+
+
+Completed 302 Found in 8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDF5V2tObVIxQmxhRUpWYlUxRlVucHVSRXA2U0V4RFRWUUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDctMjVUMjA6MDA6MDQuNTU4WiIsInB1ciI6ImJsb2Jfa2V5In19--b026e6e625e093a7234ff50a557f5d363cc41242/another%20one.mp3?content_type=audio%2Fmpeg&disposition=inline%3B+filename%3D%22another+one.mp3%22%3B+filename%2A%3DUTF-8%27%27another%2520one.mp3" for 127.0.0.1 at 2018-07-25 15:55:04 -0400
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDF5V2tObVIxQmxhRUpWYlUxRlVucHVSRXA2U0V4RFRWUUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDctMjVUMjA6MDA6MDQuNTYwWiIsInB1ciI6ImJsb2Jfa2V5In19--669e7b331453ff4ffee33b7321363b7765335b9f/another%20one.mp3?content_type=audio%2Fmpeg&disposition=inline%3B+filename%3D%22another+one.mp3%22%3B+filename%2A%3DUTF-8%27%27another%2520one.mp3" for 127.0.0.1 at 2018-07-25 15:55:04 -0400
+Processing by ActiveStorage::DiskController#show as MP3
+Processing by ActiveStorage::DiskController#show as MP3
+  Parameters: {"content_type"=>"audio/mpeg", "disposition"=>"inline; filename=\"another one.mp3\"; filename*=UTF-8''another%20one.mp3", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDF5V2tObVIxQmxhRUpWYlUxRlVucHVSRXA2U0V4RFRWUUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDctMjVUMjA6MDA6MDQuNTYwWiIsInB1ciI6ImJsb2Jfa2V5In19--669e7b331453ff4ffee33b7321363b7765335b9f", "filename"=>"another one"}
+  Parameters: {"content_type"=>"audio/mpeg", "disposition"=>"inline; filename=\"another one.mp3\"; filename*=UTF-8''another%20one.mp3", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDF5V2tObVIxQmxhRUpWYlUxRlVucHVSRXA2U0V4RFRWUUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDctMjVUMjA6MDA6MDQuNTU4WiIsInB1ciI6ImJsb2Jfa2V5In19--b026e6e625e093a7234ff50a557f5d363cc41242", "filename"=>"another one"}
+[36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: rZCfGPehBUmMERznDJzHLCMT[0m
+  Rendering text template
+[36m  Disk Storage (1.1ms) [0m[34mDownloaded file from key: rZCfGPehBUmMERznDJzHLCMT[0m
+  Rendered text template (0.0ms)
+  Rendering text template
+Sent data  (1.8ms)
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Sent data  (1.0ms)
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-07-25 15:55:06 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (5.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 47ms (Views: 44.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/18" for 127.0.0.1 at 2018-07-25 15:55:09 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 18], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/show.html.erb:18
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/posts/show.html.erb:18
+  Rendered posts/show.html.erb within layouts/application (9.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 49ms (Views: 43.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/postlist" for 127.0.0.1 at 2018-07-25 15:55:14 -0400
+Processing by PostsController#postlist as HTML
+  Rendering posts/postlist.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/postlist.html.erb:1
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:5
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 11], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:5
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 12], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:5
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 13], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:18
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:5
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 14], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:5
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 15], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:5
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 16], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:18
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:5
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 17], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:5
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 18], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:18
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:18
+  Rendered posts/postlist.html.erb within layouts/application (20.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 60ms (Views: 56.7ms | ActiveRecord: 2.7ms)
+
+
