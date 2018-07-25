@@ -16635,6 +16635,7 @@ Sent data  (0.8ms)
 Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
 
 
+<<<<<<< HEAD
 Started GET "/postlist" for 127.0.0.1 at 2018-07-25 13:25:19 -0400
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
@@ -19762,5 +19763,37 @@ Processing by PostsController#postlist as HTML
   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
   ↳ app/views/layouts/application.html.erb:25
 Completed 200 OK in 60ms (Views: 56.7ms | ActiveRecord: 2.7ms)
+=======
+Started GET "/" for 127.0.0.1 at 2018-07-25 13:29:25 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/applejuicekid/Desktop/wyncode/beatmakinglab/public/packs
+Completed 200 OK in 6256ms (Views: 6245.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-25 13:29:48 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-25 13:29:52 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-25 13:29:56 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+>>>>>>> refs/remotes/origin/master
 
 

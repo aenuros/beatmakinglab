@@ -13,7 +13,7 @@ screenName="beatmakinglab"
 options={{height: 500, width: 400}}
 />
 
-<InstagramEmbed
+{/* <InstagramEmbed
   url='https://www.instagram.com/p/BfRCkATFq4n/?hl=en'
   maxWidth={500}
   hideCaption={false}
@@ -24,7 +24,7 @@ options={{height: 500, width: 400}}
   onSuccess={() => {}}
   onAfterRender={() => {}}
   onFailure={() => {}}
-/>
+/> */}
         </div>
       );
     }
