@@ -4,10 +4,26 @@ import Navbar from '../../../../../../node_modules/react-materialize/lib/Navbar.
 import NavItem from '../../../../../../node_modules/react-materialize/lib/NavItem.js';
 import Button from '../../../../../../node_modules/@material-ui/core/Button/Button.js';
 
-const checkAdmin = (props) => {
+const checkAdmin1 = (props) => {
   if (props.adminvalue === true) {
     return(
       <NavItem href='/seeadmin'>Learn Admin</NavItem>
+    )
+  }
+}
+
+const checkAdmin2 = (props) => {
+  if (props.adminvalue === true) {
+    return(
+      <NavItem href='/posts'>Waves Admin</NavItem>
+    )
+  }
+}
+
+const checkLogin = (props) => {
+  if (props.userlogin === true) {
+    return(
+      <NavItem href='/myposts'>My Posts</NavItem>
     )
   }
 }
@@ -18,12 +34,15 @@ const Navigation = (props) => {
         <Navbar left>
           <NavItem href='/welcome'>Home</NavItem>
           <NavItem href='/learn'>Learn</NavItem>
-          {checkAdmin(props)}
+          {checkAdmin1(props)}
           <NavItem href='/sounds'>Sounds</NavItem>
           <NavItem href='/compete'>Compete</NavItem>
           <NavItem href='/social'>Social</NavItem>
           <NavItem href='/sell'>Sell</NavItem>
           <NavItem href='#'>About</NavItem>
+          <NavItem href='/postlist'>All Posts</NavItem>
+          {checkLogin(props)}
+          {checkAdmin2(props)}
         </Navbar>
       </div>
     )

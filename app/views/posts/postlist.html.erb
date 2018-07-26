@@ -1,14 +1,12 @@
+<h1>Waves - All Posts</h1>
+
+<%= link_to 'New Post', new_post_path %>
+
 <% @posts.each do |post| %>
 
 <div class="micropost">
 
 <p>Uploaded by: <%= User.find(post.user_id).email %></p>
-
-
-
-
-
-
 
 <p>Title: <%= post.title %> </p>
 
@@ -25,6 +23,12 @@
 <p><a href="<%= url_for(post.audio) %>">DOWNLOAD</a></p>
 
 <%end%>
+
+<% if post.user_id === current_user.id %>
+
+<%= link_to 'Edit', edit_post_path(post) %>
+<% end %>
+
 </div>
 
 <% end %>

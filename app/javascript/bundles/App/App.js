@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-        <Navigation adminvalue={this.props.adminvalue}/>
+        <Navigation adminvalue={this.props.adminvalue} userlogin={this.props.userlogin}/>
         <UserInfo user={this.props.user}/>
         <p></p>
       </div>
