@@ -10,7 +10,7 @@ const checkUser = (props) => {
   else if (props.user === null) {
     return(
       <div>
-      <a href="/users/sign_in">Sign in</a> or <a href="/users/sign_up">Sign up</a>
+      <a href="/users/sign_in"><Button>Sign in</Button></a> or <a href="/users/sign_up"><Button>Sign up</Button></a>
       </div>
     );
   }

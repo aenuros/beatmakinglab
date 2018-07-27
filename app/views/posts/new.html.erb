@@ -4,4 +4,8 @@
 
 <%= render 'form', post: @post %>
 
-<%= link_to 'Back', posts_path %>
+<a href="/myposts">Back to my posts</a>
+
+<% if current_user.try(:admin?) %>
+| <%= link_to 'Back to All Posts', posts_path %>
+<% end %>
