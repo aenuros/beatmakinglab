@@ -6,7 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-t2 = Tutorial.find_or_create_by([
+
+[
 {name: 'Ableton', description: 'software', link: 'https://www.youtube.com/watch?v=D9tjzSctp_Q&list=PLoh4MB-kbBmJGLjNwRNr5qAtDr1V3zcNr'},
 
 {name: 'Reason', description: 'software', link: 'https://www.youtube.com/watch?v=ftI-MHBhDV8&list=PL29263D87CD4601CD'},
@@ -35,4 +36,6 @@ t2 = Tutorial.find_or_create_by([
 
 {name:'Ardour', description: 'll', link:'https://www.youtube.com/watch?v=43ES7p4ejX0&list=PLA1275563EB9775E1'}
 
-  ])
+].each do |attributes|
+  Tutorial.find_or_create_by(attributes)
+end
