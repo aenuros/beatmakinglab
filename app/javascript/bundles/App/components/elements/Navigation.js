@@ -31,15 +31,16 @@ const checkLogin = (props) => {
 const Navigation = (props) => {
     return (
       <div className="navigation">
-        <Navbar left>
+        <Navbar left style={{backgroundColor: 'rgb(32,141,178)', fontFamily: 'Verdana', fontSize: '2em'}}>
           <NavItem href='/welcome'>Home</NavItem>
           <NavItem href='/learn'>Learn</NavItem>
           {checkAdmin1(props)}
-          <NavItem href='/sounds'>Sounds</NavItem>
-          <NavItem href='/compete'>Compete</NavItem>
           <NavItem href='/social'>Social</NavItem>
+          <NavItem href='#'>The Lab</NavItem>
+          <NavItem href='/sounds'>Sound Packs</NavItem>
+          <NavItem href='/compete'>Compete</NavItem>
           <NavItem href='/sell'>Sell</NavItem>
-          <NavItem href='#'>About</NavItem>
+          <NavItem href='#'>The BML Story</NavItem>
           <NavItem href='/postlist'>All Posts</NavItem>
           {checkLogin(props)}
           {checkAdmin2(props)}
