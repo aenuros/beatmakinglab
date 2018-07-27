@@ -9,8 +9,9 @@
 
   <div class="micropost">
 
-  <p>Uploaded by: <%= User.find(post.user_id).email %></p>
-
+  <p><strong><%= User.find(post.user_id).email %></strong></p>
+  <p><%= post.created_at.strftime("%b %d, %Y") %></p>
+  
   <p>Title: <%= post.title %> </p>
 
   <p>Description: <%= post.content %>s</p>

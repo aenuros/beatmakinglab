@@ -9,4 +9,9 @@ class AdminpagesController < ApplicationController
     @tutorials = Tutorial.all
     @tutorial = Tutorial.new
   end
+
+  def posts_admin
+    @posts = Post.all
+    @post = Post.new
+  end
 end
