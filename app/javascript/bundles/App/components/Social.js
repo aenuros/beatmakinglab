@@ -7,6 +7,7 @@ class Social extends Component {
     render() {
       return (
         <div>
+        <h1>Social Media</h1>
             <TwitterTimelineEmbed
 sourceType="profile"
 screenName="beatmakinglab"

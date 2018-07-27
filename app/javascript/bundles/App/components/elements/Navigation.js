@@ -44,7 +44,7 @@ const Navigation = (props) => {
      <NavItem href='/sounds'>Sound Packs</NavItem>
      <NavItem href='/compete'>Compete</NavItem>
      <NavItem href='/sell'>Sell</NavItem>
-     <NavItem href='#'>The BML Story</NavItem>
+     <NavItem href='http://www.beatmakinglab.com/'>The BML Story</NavItem>
      <NavItem href='/social'>Social</NavItem>
 
 
