@@ -4,10 +4,26 @@ import { Navbar, NavItem } from 'react-materialize';
 import Button from '../../../../../../node_modules/@material-ui/core/Button/Button.js';
 import { runInDebugContext } from 'vm';
 
-const checkAdmin = (props) => {
+const checkAdmin1 = (props) => {
   if (props.adminvalue === true) {
     return(
       <NavItem href='/seeadmin'>Learn Admin</NavItem>
+    )
+  }
+}
+
+const checkAdmin2 = (props) => {
+  if (props.adminvalue === true) {
+    return(
+      <NavItem href='/posts'>Waves Admin</NavItem>
+    )
+  }
+}
+
+const checkLogin = (props) => {
+  if (props.userlogin === true) {
+    return(
+      <NavItem href='/myposts'>My Posts</NavItem>
     )
   }
 }

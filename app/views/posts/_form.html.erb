@@ -24,7 +24,8 @@
 
   <div class="field">
   <%= form.label :user %>
-  <%= @post.user %>
+  <%= current_user.email %>
+  <%= current_user.id %>
   </div>
 
   <div class="field">

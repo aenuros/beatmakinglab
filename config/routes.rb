@@ -26,4 +26,6 @@ get '/test' => 'pages#test'
 
 get '/postlist' => 'posts#postlist'
 
+get '/myposts' => 'posts#myposts'
+
 end

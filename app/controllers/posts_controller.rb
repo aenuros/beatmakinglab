@@ -25,7 +25,7 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(post_params)
-    @post.user = current_user
+    @post.user_id = current_user.id
 
     respond_to do |format|
       if @post.save
@@ -57,13 +57,18 @@ class PostsController < ApplicationController
   def destroy
     @post.destroy
     respond_to do |format|
-      format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
+      format.html { redirect_back fallback_location: posts_path, notice: 'Post was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
 
   def postlist
+    @posts = Post.all
+    @users= User.all
+  end
+
+  def myposts
     @posts = Post.all
   end
 
