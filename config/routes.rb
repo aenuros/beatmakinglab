@@ -12,6 +12,7 @@ get '/welcome' => 'pages#index'
 # Learn and tutorials
 get '/learn' => 'tutorials#learn'
 get '/seeadmin' => 'adminpages#seeadmin'
+get '/posts_admin' => 'adminpages#posts_admin'
 
 # Compete
 get '/compete' => 'pages#compete'
