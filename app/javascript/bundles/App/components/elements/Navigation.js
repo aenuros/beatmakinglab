@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../../App.css'
-import Navbar from '../../../../../../node_modules/react-materialize/lib/Navbar.js';
-import NavItem from '../../../../../../node_modules/react-materialize/lib/NavItem.js';
+import { Navbar, NavItem } from 'react-materialize';
 import Button from '../../../../../../node_modules/@material-ui/core/Button/Button.js';
+import { runInDebugContext } from 'vm';
 
 const checkAdmin = (props) => {
   if (props.adminvalue === true) {
@@ -15,15 +15,16 @@ const checkAdmin = (props) => {
 const Navigation = (props) => {
     return (
       <div className="navigation">
-        <Navbar left>
+        <Navbar style={{backgroundColor: 'rgb(32,141,178)', fontFamily: 'Verdana', fontSize: '2em'}}>
           <NavItem href='/welcome'>Home</NavItem>
           <NavItem href='/learn'>Learn</NavItem>
           {checkAdmin(props)}
-          <NavItem href='/sounds'>Sounds</NavItem>
-          <NavItem href='/compete'>Compete</NavItem>
           <NavItem href='/social'>Social</NavItem>
+          <NavItem href='#'>The Lab</NavItem>
+          <NavItem href='/sounds'>Sound Packs</NavItem>
+          <NavItem href='/compete'>Compete</NavItem>
           <NavItem href='/sell'>Sell</NavItem>
-          <NavItem href='#'>About</NavItem>
+          <NavItem href='#'>The BML Story</NavItem>
         </Navbar>
       </div>
     )
