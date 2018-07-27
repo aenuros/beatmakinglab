@@ -220,3 +220,452 @@ FOREIGN KEY ("user_id")
   ↳ db/seeds.rb:40
   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:40
+Started GET "/" for 127.0.0.1 at 2018-07-27 16:12:49 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 7885ms (Views: 7871.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-27 16:12:59 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-27 16:13:00 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.7ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:4
+  Rendered tutorials/learn.html.erb within layouts/application (12.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 39ms (Views: 33.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-27 16:13:02 -0400
+Processing by AdminpagesController#seeadmin as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering adminpages/seeadmin.html.erb within layouts/application
+  Rendered adminpages/seeadmin.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 41ms (Views: 28.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-27 16:13:03 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:25
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-27 16:13:04 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-27 16:13:06 -0400
+Processing by AdminpagesController#seeadmin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering adminpages/seeadmin.html.erb within layouts/application
+  Rendered adminpages/seeadmin.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 53ms (Views: 48.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-27 16:13:07 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:25
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-27 16:13:07 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:25
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-27 16:15:06 -0400
+Processing by AdminpagesController#seeadmin as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering adminpages/seeadmin.html.erb within layouts/application
+  Rendered adminpages/seeadmin.html.erb within layouts/application (1.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6162ms (Views: 6158.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-27 16:15:12 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.5ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:25
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-27 16:15:14 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:4
+  Rendered tutorials/learn.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 56ms (Views: 52.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-27 16:15:18 -0400
+Processing by AdminpagesController#seeadmin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering adminpages/seeadmin.html.erb within layouts/application
+  Rendered adminpages/seeadmin.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 71ms (Views: 66.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-27 16:15:18 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:25
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-27 16:15:19 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:25
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-27 16:16:37 -0400
+Processing by AdminpagesController#seeadmin as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering adminpages/seeadmin.html.erb within layouts/application
+  Rendered adminpages/seeadmin.html.erb within layouts/application (2.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6093ms (Views: 6089.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-27 16:16:44 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.6ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:25
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-27 16:18:33 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by AdminpagesController#seeadmin as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering adminpages/seeadmin.html.erb within layouts/application
+  Rendered adminpages/seeadmin.html.erb within layouts/application (63.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 8235ms (Views: 8196.1ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-27 16:18:42 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.5ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:25
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-27 16:18:54 -0400
+Processing by AdminpagesController#seeadmin as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering adminpages/seeadmin.html.erb within layouts/application
+  Rendered adminpages/seeadmin.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 39ms (Views: 31.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-27 16:18:54 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.7ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:25
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-27 16:21:19 -0400
+Processing by AdminpagesController#seeadmin as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering adminpages/seeadmin.html.erb within layouts/application
+  Rendered adminpages/seeadmin.html.erb within layouts/application (1.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 6238ms (Views: 6234.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-27 16:21:26 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.6ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:25
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/postlist" for 127.0.0.1 at 2018-07-27 16:21:28 -0400
+Processing by PostsController#postlist as HTML
+  Rendering posts/postlist.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/postlist.html.erb:5
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:16
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:16
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:16
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:16
+  Rendered posts/postlist.html.erb within layouts/application (216.1ms)
+Completed 200 OK in 250ms (Views: 229.9ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d9f50a592b315fa5362d6a7bc132fd0321997e54/bless%20up.mp3" for 127.0.0.1 at 2018-07-27 16:21:29 -0400
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d9f50a592b315fa5362d6a7bc132fd0321997e54", "filename"=>"bless up"}
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d4daf8f4b7397909ff69d2498e8fdc9cb9ac4153/DJ%20Khaled%20audio.mp3" for 127.0.0.1 at 2018-07-27 16:21:29 -0400
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d4daf8f4b7397909ff69d2498e8fdc9cb9ac4153", "filename"=>"DJ Khaled audio"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (15.1ms) [0m[34mGenerated URL for file at key: dVrv9efTGZqyjGCjTqg5QpC1 (https://beat-making-lab.s3.amazonaws.com/dVrv9efTGZqyjGCjTqg5QpC1?response-content-disposition=inline%3B%20filename%3D%22bless%20up.mp3%22%3B%20filename%2A%3DUTF-8%27%27bless%2520up.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180727%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180727T202129Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=572e2aefb3246fe4bdc05f00680ee69db8565495f8150f685e493aa150fd9f6d)[0m
+  [1m[36mActiveStorage::Blob Load (18.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to https://beat-making-lab.s3.amazonaws.com/dVrv9efTGZqyjGCjTqg5QpC1?response-content-disposition=inline%3B%20filename%3D%22bless%20up.mp3%22%3B%20filename%2A%3DUTF-8%27%27bless%2520up.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180727%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180727T202129Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=572e2aefb3246fe4bdc05f00680ee69db8565495f8150f685e493aa150fd9f6d
+Completed 302 Found in 26ms (ActiveRecord: 0.6ms)
+
+
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.6ms) [0m[34mGenerated URL for file at key: oFrQ3WGP4jSjXDfy2DSwKnB9 (https://beat-making-lab.s3.amazonaws.com/oFrQ3WGP4jSjXDfy2DSwKnB9?response-content-disposition=inline%3B%20filename%3D%22DJ%20Khaled%20audio.mp3%22%3B%20filename%2A%3DUTF-8%27%27DJ%2520Khaled%2520audio.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180727%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180727T202129Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=18878052c42aa2c9718d26dd18f217acbe010d3779ed15cfa262d6cc0277d4d4)[0m
+Redirected to https://beat-making-lab.s3.amazonaws.com/oFrQ3WGP4jSjXDfy2DSwKnB9?response-content-disposition=inline%3B%20filename%3D%22DJ%20Khaled%20audio.mp3%22%3B%20filename%2A%3DUTF-8%27%27DJ%2520Khaled%2520audio.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180727%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180727T202129Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=18878052c42aa2c9718d26dd18f217acbe010d3779ed15cfa262d6cc0277d4d4
+Completed 302 Found in 27ms (ActiveRecord: 18.4ms)
+
+
+Started GET "/myposts" for 127.0.0.1 at 2018-07-27 16:21:30 -0400
+Processing by PostsController#myposts as HTML
+  Rendering posts/myposts.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/myposts.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/myposts.html.erb:8
+  Rendered posts/myposts.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 40ms (Views: 36.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/postlist" for 127.0.0.1 at 2018-07-27 16:21:32 -0400
+Processing by PostsController#postlist as HTML
+  Rendering posts/postlist.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/postlist.html.erb:5
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (1.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:16
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:16
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:16
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:16
+  Rendered posts/postlist.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 78ms (Views: 72.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/myposts" for 127.0.0.1 at 2018-07-27 16:21:33 -0400
+Processing by PostsController#myposts as HTML
+  Rendering posts/myposts.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/myposts.html.erb:5
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/myposts.html.erb:8
+  Rendered posts/myposts.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 64ms (Views: 59.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts_admin" for 127.0.0.1 at 2018-07-27 16:21:34 -0400
+Processing by AdminpagesController#posts_admin as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering adminpages/posts_admin.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/adminpages/posts_admin.html.erb:16
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/adminpages/posts_admin.html.erb:20
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/adminpages/posts_admin.html.erb:20
+  Rendered adminpages/posts_admin.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 52ms (Views: 46.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-27 16:21:36 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.8ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:4
+  Rendered tutorials/learn.html.erb within layouts/application (5.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-27 16:21:37 -0400
+Processing by AdminpagesController#seeadmin as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering adminpages/seeadmin.html.erb within layouts/application
+  Rendered adminpages/seeadmin.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 50ms (Views: 45.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-27 16:21:37 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:25
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tutorials.json" for 127.0.0.1 at 2018-07-27 16:21:37 -0400
+Processing by TutorialsController#index as JSON
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/controllers/tutorials_controller.rb:25
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sounds" for 127.0.0.1 at 2018-07-27 16:21:38 -0400
+Processing by PagesController#sounds as HTML
+  Rendering pages/sounds.html.erb within layouts/application
+  Rendered pages/sounds.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sounds" for 127.0.0.1 at 2018-07-27 16:24:35 -0400
+Processing by PagesController#sounds as HTML
+  Rendering pages/sounds.html.erb within layouts/application
+  Rendered pages/sounds.html.erb within layouts/application (1.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 6204ms (Views: 6203.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/myposts" for 127.0.0.1 at 2018-07-27 16:24:47 -0400
+Processing by PostsController#myposts as HTML
+  Rendering posts/myposts.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/myposts.html.erb:5
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/myposts.html.erb:8
+  Rendered posts/myposts.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 42ms (Views: 37.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/postlist" for 127.0.0.1 at 2018-07-27 16:24:48 -0400
+Processing by PostsController#postlist as HTML
+  Rendering posts/postlist.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/postlist.html.erb:5
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:16
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:16
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:16
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:16
+  Rendered posts/postlist.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 53ms (Views: 48.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/posts_admin" for 127.0.0.1 at 2018-07-27 16:24:49 -0400
+Processing by AdminpagesController#posts_admin as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering adminpages/posts_admin.html.erb within layouts/application
+  [1m[36mPost Load (2.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/adminpages/posts_admin.html.erb:16
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/adminpages/posts_admin.html.erb:20
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/adminpages/posts_admin.html.erb:20
+  Rendered adminpages/posts_admin.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 50ms (Views: 37.9ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-27 16:24:50 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.6ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:4
+  Rendered tutorials/learn.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 42ms (Views: 37.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/seeadmin" for 127.0.0.1 at 2018-07-27 16:24:52 -0400
+Processing by AdminpagesController#seeadmin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering adminpages/seeadmin.html.erb within layouts/application
+  Rendered adminpages/seeadmin.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 41ms (Views: 37.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sounds" for 127.0.0.1 at 2018-07-27 16:24:53 -0400
+Processing by PagesController#sounds as HTML
+  Rendering pages/sounds.html.erb within layouts/application
+  Rendered pages/sounds.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 54ms (Views: 51.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/compete" for 127.0.0.1 at 2018-07-27 16:24:55 -0400
+Processing by PagesController#compete as HTML
+  Rendering pages/compete.html.erb within layouts/application
+  Rendered pages/compete.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 1.0ms)
+
+

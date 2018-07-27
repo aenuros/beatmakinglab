@@ -61,7 +61,7 @@ deleteTutorial = (tutorial) => {
   render() {
     return (
       <div>
-      <p><a href="/react">Home</a> <a href="/see">Tutorials</a></p>
+      
 
         <Form createTutorial={this.createTutorial} />
         <Tutorials tutorials={this.state.tutorials}

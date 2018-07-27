@@ -7,7 +7,7 @@ import Button from '../../../../../../node_modules/@material-ui/core/Button/Butt
 const checkAdmin1 = (props) => {
   if (props.adminvalue === true) {
     return(
-      <NavItem href='/seeadmin'>Learn Admin</NavItem>
+      <NavItem href='/seeadmin'>Tutorials Admin</NavItem>
     )
   }
 }
@@ -15,7 +15,7 @@ const checkAdmin1 = (props) => {
 const checkAdmin2 = (props) => {
   if (props.adminvalue === true) {
     return(
-      <NavItem href='/posts_admin'>Waves Admin</NavItem>
+      <NavItem href='/posts_admin'>Lab Admin</NavItem>
     )
   }
 }
@@ -23,7 +23,7 @@ const checkAdmin2 = (props) => {
 const checkLogin = (props) => {
   if (props.userlogin === true) {
     return(
-      <NavItem href='/myposts'>My Posts</NavItem>
+      <NavItem href='/myposts'>My Lab</NavItem>
     )
   }
 }
@@ -31,21 +31,26 @@ const checkLogin = (props) => {
 const Navigation = (props) => {
     return (
       <div className="navigation">
-        <Navbar left style={{backgroundColor: 'rgb(32,141,178)', fontFamily: 'Verdana', fontSize: '2em'}}>
-          <NavItem href='/welcome'>Home</NavItem>
-          <NavItem href='/learn'>Learn</NavItem>
-          {checkAdmin1(props)}
-          <NavItem href='/social'>Social</NavItem>
-          <NavItem href='#'>The Lab</NavItem>
-          <NavItem href='/sounds'>Sound Packs</NavItem>
-          <NavItem href='/compete'>Compete</NavItem>
-          <NavItem href='/sell'>Sell</NavItem>
-          <NavItem href='#'>The BML Story</NavItem>
-          <NavItem href='/postlist'>All Posts</NavItem>
-          {checkLogin(props)}
-          {checkAdmin2(props)}
-        </Navbar>
-      </div>
+   <Navbar left style={{backgroundColor: 'rgb(32,141,178)', fontFamily: 'Verdana', fontSize: '2em'}}>
+     <NavItem href='/welcome'>Home</NavItem>
+
+
+
+     <NavItem href='/postlist'>The Lab</NavItem>
+     {checkLogin(props)}
+     {checkAdmin2(props)}
+     <NavItem href='/learn'>Tutorials</NavItem>
+     {checkAdmin1(props)}
+     <NavItem href='/sounds'>Sound Packs</NavItem>
+     <NavItem href='/compete'>Compete</NavItem>
+     <NavItem href='/sell'>Sell</NavItem>
+     <NavItem href='#'>The BML Story</NavItem>
+     <NavItem href='/social'>Social</NavItem>
+
+
+
+   </Navbar>
+</div>
     )
   }
 
