@@ -15,7 +15,7 @@ const checkAdmin1 = (props) => {
 const checkAdmin2 = (props) => {
   if (props.adminvalue === true) {
     return(
-      <NavItem href='/posts'>Waves Admin</NavItem>
+      <NavItem href='/posts_admin'>Waves Admin</NavItem>
     )
   }
 }

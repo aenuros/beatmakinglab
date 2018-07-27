@@ -9,4 +9,15 @@ class AdminpagesController < ApplicationController
     @tutorials = Tutorial.all
     @tutorial = Tutorial.new
   end
+
+  def posts_admin
+    @posts = Post.all
+    @post = Post.new
+  end
+
+  private
+
+  def auth_admin!
+    redirect_to new_user_session_path unless current_user && current_user.admin?
+  end
 end
