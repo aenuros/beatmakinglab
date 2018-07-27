@@ -26812,3 +26812,438 @@ Processing by PostsController#myposts as HTML
 Completed 200 OK in 56ms (Views: 53.2ms | ActiveRecord: 1.3ms)
 
 
+  [1m[35m (392.1ms)[0m  [1m[35mCREATE DATABASE "bml_dev" ENCODING = 'utf8'[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE DATABASE "bml_test" ENCODING = 'utf8'[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (28.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (10.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(712874824320265845)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to CreateTutorials (20180719173150)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (16.2ms)[0m  [1m[35mCREATE TABLE "tutorials" ("id" bigserial primary key, "name" text, "description" text, "link" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180719173150_create_tutorials.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180719173150"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to DeviseCreateUsers (20180723181329)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (16.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180723181329_devise_create_users.rb:5
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20180723181329_devise_create_users.rb:39
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20180723181329_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180723181329"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to AddAdminToUsers (20180724134955)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (16.1ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20180724134955_add_admin_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180724134955"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to CreateActiveStorageTables (20180725010547)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180725010547_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/migrate/20180725010547_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180725010547_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/migrate/20180725010547_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/migrate/20180725010547_create_active_storage_tables.active_storage.rb:16
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180725010547"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to CreatePosts (20180725015002)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180725015002_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180725015002"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to AddUsernameToUsers (20180725150349)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "username" character varying[0m
+  ↳ db/migrate/20180725150349_add_username_to_users.rb:3
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  ↳ db/migrate/20180725150349_add_username_to_users.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180725150349"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to AddUserToPosts (20180725183045)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "posts" ADD "user_id" bigint[0m
+  ↳ db/migrate/20180725183045_add_user_to_posts.rb:3
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE  INDEX  "index_posts_on_user_id" ON "posts"  ("user_id")[0m
+  ↳ db/migrate/20180725183045_add_user_to_posts.rb:3
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "posts" ADD CONSTRAINT "fk_rails_5b5ddfd518"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/migrate/20180725183045_add_user_to_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180725183045"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-07-27 18:35:51.827296"], ["updated_at", "2018-07-27 18:35:51.827296"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(712874824320265845)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Ableton"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=D9tjzSctp_Q&list=PLoh4MB-kbBmJGLjNwRNr5qAtDr1V3zcNr"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.4ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ableton"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=D9tjzSctp_Q&list=PLoh4MB-kbBmJGLjNwRNr5qAtDr1V3zcNr"], ["created_at", "2018-07-27 18:37:50.179897"], ["updated_at", "2018-07-27 18:37:50.179897"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Reason"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=ftI-MHBhDV8&list=PL29263D87CD4601CD"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.2ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Reason"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=ftI-MHBhDV8&list=PL29263D87CD4601CD"], ["created_at", "2018-07-27 18:37:50.190553"], ["updated_at", "2018-07-27 18:37:50.190553"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "FLstudio"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=zgyDMLF_MXk&list=PLA988BD357AA510D1"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.2ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "FLstudio"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=zgyDMLF_MXk&list=PLA988BD357AA510D1"], ["created_at", "2018-07-27 18:37:50.194857"], ["updated_at", "2018-07-27 18:37:50.194857"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "GarageBand"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=CT5RNHEX43M&list=PLa_TA4RKaD9O2dxT4Ejz6hOpMebrAZGB8"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.2ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "GarageBand"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=CT5RNHEX43M&list=PLa_TA4RKaD9O2dxT4Ejz6hOpMebrAZGB8"], ["created_at", "2018-07-27 18:37:50.199148"], ["updated_at", "2018-07-27 18:37:50.199148"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Reaper"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=y9i0HfMreF0&list=PL8hp7Ohapfw130B9JfVTI_aj35OjMcd4i"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.2ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Reaper"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=y9i0HfMreF0&list=PL8hp7Ohapfw130B9JfVTI_aj35OjMcd4i"], ["created_at", "2018-07-27 18:37:50.203386"], ["updated_at", "2018-07-27 18:37:50.203386"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Audacity"], ["description", "yo"], ["link", "https://www.youtube.com/watch?v=eT88PreScG8&list=PL8765IzZomZ6NguIrpor-6l_lLTirrny_"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.3ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Audacity"], ["description", "yo"], ["link", "https://www.youtube.com/watch?v=eT88PreScG8&list=PL8765IzZomZ6NguIrpor-6l_lLTirrny_"], ["created_at", "2018-07-27 18:37:50.207907"], ["updated_at", "2018-07-27 18:37:50.207907"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Openlabs"], ["description", "j"], ["link", "https://www.youtube.com/watch?v=l6Xv3ALGw24&list=PLXCfp4cDaWxWATP88fqRbg9El2Zk1h3wt"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.2ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Openlabs"], ["description", "j"], ["link", "https://www.youtube.com/watch?v=l6Xv3ALGw24&list=PLXCfp4cDaWxWATP88fqRbg9El2Zk1h3wt"], ["created_at", "2018-07-27 18:37:50.212329"], ["updated_at", "2018-07-27 18:37:50.212329"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "iMaschine"], ["description", "j"], ["link", "https://www.youtube.com/watch?v=0LXVptAtBm8&list=PLKgBk2ChdEqyEeteDuK2p28OLr46KnWCr"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.2ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "iMaschine"], ["description", "j"], ["link", "https://www.youtube.com/watch?v=0LXVptAtBm8&list=PLKgBk2ChdEqyEeteDuK2p28OLr46KnWCr"], ["created_at", "2018-07-27 18:37:50.216540"], ["updated_at", "2018-07-27 18:37:50.216540"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "MPC"], ["description", "ffr"], ["link", "https://www.youtube.com/watch?v=QVDYHrf4XaU&list=PLyawkFIWnO1MKzz7x_SO2FagrMiyza4Pc"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.2ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "MPC"], ["description", "ffr"], ["link", "https://www.youtube.com/watch?v=QVDYHrf4XaU&list=PLyawkFIWnO1MKzz7x_SO2FagrMiyza4Pc"], ["created_at", "2018-07-27 18:37:50.220894"], ["updated_at", "2018-07-27 18:37:50.220894"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Logic"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=hU5XhG5Ywbk&list=PLXmi76euGSyzX8KMPAHJPyOSZy5w4CsV9"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.2ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Logic"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=hU5XhG5Ywbk&list=PLXmi76euGSyzX8KMPAHJPyOSZy5w4CsV9"], ["created_at", "2018-07-27 18:37:50.225249"], ["updated_at", "2018-07-27 18:37:50.225249"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Studio One"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=7nWp4DvWn_c&list=PLvw8caaTyXjN8WWBKxU-fv90OilpezxDv"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.2ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Studio One"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=7nWp4DvWn_c&list=PLvw8caaTyXjN8WWBKxU-fv90OilpezxDv"], ["created_at", "2018-07-27 18:37:50.229403"], ["updated_at", "2018-07-27 18:37:50.229403"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Bitwig"], ["description", "ll"], ["link", "https://www.youtube.com/watch?list=PLfXKHnSL0KtQuiYHRr05qsaf31IZ2O6NE&v=3tvDJTUoHkc"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.2ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bitwig"], ["description", "ll"], ["link", "https://www.youtube.com/watch?list=PLfXKHnSL0KtQuiYHRr05qsaf31IZ2O6NE&v=3tvDJTUoHkc"], ["created_at", "2018-07-27 18:37:50.233490"], ["updated_at", "2018-07-27 18:37:50.233490"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Cubase"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=8nnJ9xwdcYA&list=PLeAGmrQnjblb3AOICgXbbwr3b0x2J32FG"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.2ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Cubase"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=8nnJ9xwdcYA&list=PLeAGmrQnjblb3AOICgXbbwr3b0x2J32FG"], ["created_at", "2018-07-27 18:37:50.237713"], ["updated_at", "2018-07-27 18:37:50.237713"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Ardour"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=43ES7p4ejX0&list=PLA1275563EB9775E1"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.2ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ardour"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=43ES7p4ejX0&list=PLA1275563EB9775E1"], ["created_at", "2018-07-27 18:37:50.241765"], ["updated_at", "2018-07-27 18:37:50.241765"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mTutorial Load (0.7ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" ORDER BY "tutorials"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2018-07-27 14:39:13 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 1176ms (Views: 1162.9ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-27 14:39:17 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 67ms (Views: 31.6ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-27 14:39:19 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F44uSfMOgi8oledn1K3qxc3CWS1A+dDuAiFzvocgd/0Um3pW+NhGntcPjKe/kZipP1oEgalCAZfoBKpH5bpvbg==", "user"=>{"email"=>"karen@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "karen@email.com"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 5ms (ActiveRecord: 1.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F44uSfMOgi8oledn1K3qxc3CWS1A+dDuAiFzvocgd/0Um3pW+NhGntcPjKe/kZipP1oEgalCAZfoBKpH5bpvbg==", "user"=>{"email"=>"karen@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 204ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-27 14:39:22 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vetdUxHVVO5kjgyTjDTdgooT223L3QS9qGquSiB6JHXUSJKysaKUJmWgZB0hUKZr7M9zsd2VNW7ERMou20Ih9Q==", "user"=>{"email"=>"karen@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "karen@email.com"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vetdUxHVVO5kjgyTjDTdgooT223L3QS9qGquSiB6JHXUSJKysaKUJmWgZB0hUKZr7M9zsd2VNW7ERMou20Ih9Q==", "user"=>{"email"=>"karen@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 197ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-07-27 14:39:25 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-07-27 14:39:29 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r8p3dtfR89Dfbit2Xi3Krho/qSpG4gySKKa8+hb6dwij8PjBs/He21nM5TbfBpzMQ7p3Yh3ixAaOCesqzA8Mwg==", "user"=>{"email"=>"a@aol.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a@aol.com"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "a@aol.com"], ["encrypted_password", "$2a$11$UY1Lhhn7d8Ba1kuWI/4PGu2KFb7ykCbsnzwzPoNs7IHURdLHlWRLC"], ["created_at", "2018-07-27 18:39:30.052917"], ["updated_at", "2018-07-27 18:39:30.052917"]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (10.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2018-07-27 18:39:30.066298"], ["last_sign_in_at", "2018-07-27 18:39:30.066298"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2018-07-27 18:39:30.067202"], ["id", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 190ms (ActiveRecord: 14.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-27 14:39:30 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-27 14:39:31 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/postlist" for 127.0.0.1 at 2018-07-27 14:39:32 -0400
+Processing by PostsController#postlist as HTML
+  Rendering posts/postlist.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/postlist.html.erb:5
+  Rendered posts/postlist.html.erb within layouts/application (7.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 45ms (Views: 37.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/myposts" for 127.0.0.1 at 2018-07-27 14:39:33 -0400
+Processing by PostsController#myposts as HTML
+  Rendering posts/myposts.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/myposts.html.erb:5
+  Rendered posts/myposts.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-07-27 14:39:34 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_form.html.erb:27
+  Rendered posts/_form.html.erb (5.5ms)
+  Rendered posts/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 45ms (Views: 34.7ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2018-07-27 14:39:37 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vq5OWmMfF/5HI0tBefbUWOFA4qWKLiadGZsAlWiIejTnm7WJtvmt4bE5rMMQqCHxBWivOWg8Y0NvZx0JHwQgsw==", "post"=>{"title"=>"", "content"=>"", "audio"=>#<ActionDispatch::Http::UploadedFile:0x00007fc311a7f7c0 @tempfile=#<Tempfile:/tmp/RackMultipart20180727-7428-3crc6w.mp3>, @original_filename="bless up.mp3", @content_type="audio/mpeg", @headers="Content-Disposition: form-data; name=\"post[audio]\"; filename=\"bless up.mp3\"\r\nContent-Type: audio/mpeg\r\n">}, "commit"=>"Create Post"}
+[36m  S3 Storage (473.4ms) [0m[32mUploaded file to key: dVrv9efTGZqyjGCjTqg5QpC1 (checksum: 7uF1b1GPcrUK5Vz+XG7E8Q==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:28
+  [1m[36mActiveStorage::Blob Create (1.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "dVrv9efTGZqyjGCjTqg5QpC1"], ["filename", "bless up.mp3"], ["content_type", "audio/mpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 49242], ["checksum", "7uF1b1GPcrUK5Vz+XG7E8Q=="], ["created_at", "2018-07-27 18:39:38.645639"]]
+  ↳ app/controllers/posts_controller.rb:28
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:28
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:32
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:32
+  [1m[36mPost Create (1.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", ""], ["content", ""], ["created_at", "2018-07-27 18:39:38.673539"], ["updated_at", "2018-07-27 18:39:38.673539"], ["user_id", 1]]
+  ↳ app/controllers/posts_controller.rb:32
+  [1m[36mActiveStorage::Attachment Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "audio"], ["record_type", "Post"], ["record_id", 1], ["blob_id", 1], ["created_at", "2018-07-27 18:39:38.677311"]]
+  ↳ app/controllers/posts_controller.rb:32
+  [1m[36mPost Update (0.5ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = $1 WHERE "posts"."id" = $2[0m  [["updated_at", "2018-07-27 18:39:38.679372"], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:32
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:32
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: c8ead9bc-b9c5-496c-82ab-1d0f9fe786f2) to Async(default) with arguments: #<GlobalID:0x00007fc311f232e0 @uri=#<URI::GID gid://experiment/ActiveStorage::Blob/1>>
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 743ms (ActiveRecord: 16.5ms)
+
+
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c8ead9bc-b9c5-496c-82ab-1d0f9fe786f2] Performing ActiveStorage::AnalyzeJob (Job ID: c8ead9bc-b9c5-496c-82ab-1d0f9fe786f2) from Async(default) with arguments: #<GlobalID:0x00007fc311f72c28 @uri=#<URI::GID gid://experiment/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c8ead9bc-b9c5-496c-82ab-1d0f9fe786f2]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c8ead9bc-b9c5-496c-82ab-1d0f9fe786f2]   ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c8ead9bc-b9c5-496c-82ab-1d0f9fe786f2]   [1m[36mActiveStorage::Blob Update (0.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c8ead9bc-b9c5-496c-82ab-1d0f9fe786f2]   ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Started GET "/posts/1" for 127.0.0.1 at 2018-07-27 14:39:38 -0400
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c8ead9bc-b9c5-496c-82ab-1d0f9fe786f2]   [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Processing by PostsController#show as HTML
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c8ead9bc-b9c5-496c-82ab-1d0f9fe786f2]   ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Parameters: {"id"=>"1"}
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c8ead9bc-b9c5-496c-82ab-1d0f9fe786f2] Performed ActiveStorage::AnalyzeJob (Job ID: c8ead9bc-b9c5-496c-82ab-1d0f9fe786f2) from Async(default) in 7.67ms
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:81
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/show.html.erb:18
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/show.html.erb:18
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/show.html.erb:37
+  Rendered posts/show.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 59ms (Views: 54.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d9f50a592b315fa5362d6a7bc132fd0321997e54/bless%20up.mp3" for 127.0.0.1 at 2018-07-27 14:39:39 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d9f50a592b315fa5362d6a7bc132fd0321997e54/bless%20up.mp3" for 127.0.0.1 at 2018-07-27 14:39:39 -0400
+Processing by ActiveStorage::BlobsController#show as MP3
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d9f50a592b315fa5362d6a7bc132fd0321997e54", "filename"=>"bless up"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d9f50a592b315fa5362d6a7bc132fd0321997e54", "filename"=>"bless up"}
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.8ms) [0m[34mGenerated URL for file at key: dVrv9efTGZqyjGCjTqg5QpC1 (https://beat-making-lab.s3.amazonaws.com/dVrv9efTGZqyjGCjTqg5QpC1?response-content-disposition=inline%3B%20filename%3D%22bless%20up.mp3%22%3B%20filename%2A%3DUTF-8%27%27bless%2520up.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180727%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180727T183939Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=19166162cd2f3fbd00756b98d922efaf8b3ca72c35e901eb92581703d48851d9)[0m
+Redirected to https://beat-making-lab.s3.amazonaws.com/dVrv9efTGZqyjGCjTqg5QpC1?response-content-disposition=inline%3B%20filename%3D%22bless%20up.mp3%22%3B%20filename%2A%3DUTF-8%27%27bless%2520up.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180727%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180727T183939Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=19166162cd2f3fbd00756b98d922efaf8b3ca72c35e901eb92581703d48851d9
+Completed 302 Found in 11ms (ActiveRecord: 0.7ms)
+
+
+  [1m[36mActiveStorage::Blob Load (2.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.6ms) [0m[34mGenerated URL for file at key: dVrv9efTGZqyjGCjTqg5QpC1 (https://beat-making-lab.s3.amazonaws.com/dVrv9efTGZqyjGCjTqg5QpC1?response-content-disposition=inline%3B%20filename%3D%22bless%20up.mp3%22%3B%20filename%2A%3DUTF-8%27%27bless%2520up.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180727%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180727T183939Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=19166162cd2f3fbd00756b98d922efaf8b3ca72c35e901eb92581703d48851d9)[0m
+Redirected to https://beat-making-lab.s3.amazonaws.com/dVrv9efTGZqyjGCjTqg5QpC1?response-content-disposition=inline%3B%20filename%3D%22bless%20up.mp3%22%3B%20filename%2A%3DUTF-8%27%27bless%2520up.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180727%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180727T183939Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=19166162cd2f3fbd00756b98d922efaf8b3ca72c35e901eb92581703d48851d9
+Completed 302 Found in 15ms (ActiveRecord: 5.9ms)
+
+
