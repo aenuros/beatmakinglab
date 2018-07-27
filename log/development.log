@@ -1,0 +1,222 @@
+  [1m[35m (7949.6ms)[0m  [1m[35mCREATE DATABASE "bml_dev" ENCODING = 'utf8'[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (693.3ms)[0m  [1m[35mCREATE DATABASE "bml_test" ENCODING = 'utf8'[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (9.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (47.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(712874824320265845)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to CreateTutorials (20180719173150)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (47.8ms)[0m  [1m[35mCREATE TABLE "tutorials" ("id" bigserial primary key, "name" text, "description" text, "link" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180719173150_create_tutorials.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180719173150"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to DeviseCreateUsers (20180723181329)
+  [1m[35m (40.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (57.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180723181329_devise_create_users.rb:5
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20180723181329_devise_create_users.rb:39
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20180723181329_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180723181329"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to AddAdminToUsers (20180724134955)
+  [1m[35m (39.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (9.7ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20180724134955_add_admin_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180724134955"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to CreateActiveStorageTables (20180725010547)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (46.8ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180725010547_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/migrate/20180725010547_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (11.2ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180725010547_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/migrate/20180725010547_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/migrate/20180725010547_create_active_storage_tables.active_storage.rb:16
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180725010547"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to CreatePosts (20180725015002)
+  [1m[35m (41.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180725015002_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180725015002"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to AddUsernameToUsers (20180725150349)
+  [1m[35m (39.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "username" character varying[0m
+  ↳ db/migrate/20180725150349_add_username_to_users.rb:3
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  ↳ db/migrate/20180725150349_add_username_to_users.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180725150349"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to AddUserToPosts (20180725183045)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "posts" ADD "user_id" bigint[0m
+  ↳ db/migrate/20180725183045_add_user_to_posts.rb:3
+  [1m[35m (58.7ms)[0m  [1m[35mCREATE  INDEX  "index_posts_on_user_id" ON "posts"  ("user_id")[0m
+  ↳ db/migrate/20180725183045_add_user_to_posts.rb:3
+  [1m[35m (45.7ms)[0m  [1m[35mALTER TABLE "posts" ADD CONSTRAINT "fk_rails_5b5ddfd518"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/migrate/20180725183045_add_user_to_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180725183045"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-07-27 19:15:10.208154"], ["updated_at", "2018-07-27 19:15:10.208154"]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(712874824320265845)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (38.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[36mTutorial Load (11.4ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Ableton"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=D9tjzSctp_Q&list=PLoh4MB-kbBmJGLjNwRNr5qAtDr1V3zcNr"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.9ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ableton"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=D9tjzSctp_Q&list=PLoh4MB-kbBmJGLjNwRNr5qAtDr1V3zcNr"], ["created_at", "2018-07-27 19:15:18.364419"], ["updated_at", "2018-07-27 19:15:18.364419"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Reason"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=ftI-MHBhDV8&list=PL29263D87CD4601CD"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.4ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Reason"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=ftI-MHBhDV8&list=PL29263D87CD4601CD"], ["created_at", "2018-07-27 19:15:18.370445"], ["updated_at", "2018-07-27 19:15:18.370445"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "FLstudio"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=zgyDMLF_MXk&list=PLA988BD357AA510D1"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.4ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "FLstudio"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=zgyDMLF_MXk&list=PLA988BD357AA510D1"], ["created_at", "2018-07-27 19:15:18.374700"], ["updated_at", "2018-07-27 19:15:18.374700"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "GarageBand"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=CT5RNHEX43M&list=PLa_TA4RKaD9O2dxT4Ejz6hOpMebrAZGB8"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.4ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "GarageBand"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=CT5RNHEX43M&list=PLa_TA4RKaD9O2dxT4Ejz6hOpMebrAZGB8"], ["created_at", "2018-07-27 19:15:18.378761"], ["updated_at", "2018-07-27 19:15:18.378761"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Reaper"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=y9i0HfMreF0&list=PL8hp7Ohapfw130B9JfVTI_aj35OjMcd4i"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.4ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Reaper"], ["description", "software"], ["link", "https://www.youtube.com/watch?v=y9i0HfMreF0&list=PL8hp7Ohapfw130B9JfVTI_aj35OjMcd4i"], ["created_at", "2018-07-27 19:15:18.383004"], ["updated_at", "2018-07-27 19:15:18.383004"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Audacity"], ["description", "yo"], ["link", "https://www.youtube.com/watch?v=eT88PreScG8&list=PL8765IzZomZ6NguIrpor-6l_lLTirrny_"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.4ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Audacity"], ["description", "yo"], ["link", "https://www.youtube.com/watch?v=eT88PreScG8&list=PL8765IzZomZ6NguIrpor-6l_lLTirrny_"], ["created_at", "2018-07-27 19:15:18.387080"], ["updated_at", "2018-07-27 19:15:18.387080"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Openlabs"], ["description", "j"], ["link", "https://www.youtube.com/watch?v=l6Xv3ALGw24&list=PLXCfp4cDaWxWATP88fqRbg9El2Zk1h3wt"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.5ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Openlabs"], ["description", "j"], ["link", "https://www.youtube.com/watch?v=l6Xv3ALGw24&list=PLXCfp4cDaWxWATP88fqRbg9El2Zk1h3wt"], ["created_at", "2018-07-27 19:15:18.390496"], ["updated_at", "2018-07-27 19:15:18.390496"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "iMaschine"], ["description", "j"], ["link", "https://www.youtube.com/watch?v=0LXVptAtBm8&list=PLKgBk2ChdEqyEeteDuK2p28OLr46KnWCr"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.4ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "iMaschine"], ["description", "j"], ["link", "https://www.youtube.com/watch?v=0LXVptAtBm8&list=PLKgBk2ChdEqyEeteDuK2p28OLr46KnWCr"], ["created_at", "2018-07-27 19:15:18.394522"], ["updated_at", "2018-07-27 19:15:18.394522"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "MPC"], ["description", "ffr"], ["link", "https://www.youtube.com/watch?v=QVDYHrf4XaU&list=PLyawkFIWnO1MKzz7x_SO2FagrMiyza4Pc"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.5ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "MPC"], ["description", "ffr"], ["link", "https://www.youtube.com/watch?v=QVDYHrf4XaU&list=PLyawkFIWnO1MKzz7x_SO2FagrMiyza4Pc"], ["created_at", "2018-07-27 19:15:18.398615"], ["updated_at", "2018-07-27 19:15:18.398615"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Logic"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=hU5XhG5Ywbk&list=PLXmi76euGSyzX8KMPAHJPyOSZy5w4CsV9"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.4ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Logic"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=hU5XhG5Ywbk&list=PLXmi76euGSyzX8KMPAHJPyOSZy5w4CsV9"], ["created_at", "2018-07-27 19:15:18.402310"], ["updated_at", "2018-07-27 19:15:18.402310"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Studio One"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=7nWp4DvWn_c&list=PLvw8caaTyXjN8WWBKxU-fv90OilpezxDv"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.4ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Studio One"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=7nWp4DvWn_c&list=PLvw8caaTyXjN8WWBKxU-fv90OilpezxDv"], ["created_at", "2018-07-27 19:15:18.406209"], ["updated_at", "2018-07-27 19:15:18.406209"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Bitwig"], ["description", "ll"], ["link", "https://www.youtube.com/watch?list=PLfXKHnSL0KtQuiYHRr05qsaf31IZ2O6NE&v=3tvDJTUoHkc"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.4ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bitwig"], ["description", "ll"], ["link", "https://www.youtube.com/watch?list=PLfXKHnSL0KtQuiYHRr05qsaf31IZ2O6NE&v=3tvDJTUoHkc"], ["created_at", "2018-07-27 19:15:18.410578"], ["updated_at", "2018-07-27 19:15:18.410578"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Cubase"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=8nnJ9xwdcYA&list=PLeAGmrQnjblb3AOICgXbbwr3b0x2J32FG"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.6ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Cubase"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=8nnJ9xwdcYA&list=PLeAGmrQnjblb3AOICgXbbwr3b0x2J32FG"], ["created_at", "2018-07-27 19:15:18.414804"], ["updated_at", "2018-07-27 19:15:18.414804"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Load (0.2ms)[0m  [1m[34mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."name" = $1 AND "tutorials"."description" = $2 AND "tutorials"."link" = $3 LIMIT $4[0m  [["name", "Ardour"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=43ES7p4ejX0&list=PLA1275563EB9775E1"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mTutorial Create (0.4ms)[0m  [1m[32mINSERT INTO "tutorials" ("name", "description", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ardour"], ["description", "ll"], ["link", "https://www.youtube.com/watch?v=43ES7p4ejX0&list=PLA1275563EB9775E1"], ["created_at", "2018-07-27 19:15:18.418735"], ["updated_at", "2018-07-27 19:15:18.418735"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
