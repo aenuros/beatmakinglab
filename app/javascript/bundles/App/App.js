@@ -28,9 +28,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header/>
-        <Navigation adminvalue={this.props.adminvalue} userlogin={this.props.userlogin}/>
+        <Navigation adminvalue={this.props.adminvalue} style={{position: 'fixed', top: '0px', width: '100%'}}/>
         <UserInfo user={this.props.user}/>
+        <Header/>
         <p></p>
       </div>
     );

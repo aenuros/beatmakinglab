@@ -1,6 +1,11 @@
 {
   "Everything.css": "/packs/Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css",
   "Everything.css.map": "/packs/Everything-4c2e8d4ad2fce283f4efaa2f5be11b0d.css.map",
+<<<<<<< HEAD
+  "Everything.js": "/packs/Everything-013d1912f0478e2f4b5a.js",
+  "Everything.js.map": "/packs/Everything-013d1912f0478e2f4b5a.js.map"
+=======
   "Everything.js": "/packs/Everything-7fae09fbaba4811c1d94.js",
   "Everything.js.map": "/packs/Everything-7fae09fbaba4811c1d94.js.map"
+>>>>>>> master
 }
