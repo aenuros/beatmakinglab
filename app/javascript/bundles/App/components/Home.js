@@ -1,2 +1,16 @@
 import React, { Component } from 'react';
-import { } from 'react-materialize';
+import BackgroundImage from '../../../../assets/images/backgroundhome.jpg';
+
+class Home extends Component {
+  render() {
+    return(
+        <div>
+          <p>
+            The Homepage renders, but images are HARD!!  
+          </p>
+        </div>
+    );
+  }
+}
+
+export default Home;
