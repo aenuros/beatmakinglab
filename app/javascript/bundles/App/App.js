@@ -27,12 +27,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Header/>
+      <span className="App">
         <Navigation adminvalue={this.props.adminvalue} userlogin={this.props.userlogin}/>
         <UserInfo user={this.props.user}/>
-        <p></p>
-      </div>
+      </span>
     );
   }
 }

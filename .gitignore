@@ -4,6 +4,9 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
+/tmp/cache/bootsnap-load-path-cache
+
+
 .env
 
 /log/development.log
@@ -42,3 +45,5 @@ dump.rdb
 /node_modules
 yarn-debug.log*
 .yarn-integrity
+
+.DS_store
