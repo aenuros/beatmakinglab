@@ -27,10 +27,12 @@ class App extends Component {
 
   render() {
     return (
+      <div class="sign">
       <span className="App">
         <Navigation adminvalue={this.props.adminvalue} userlogin={this.props.userlogin}/>
         <UserInfo user={this.props.user}/>
       </span>
+      </div>
     );
   }
 }

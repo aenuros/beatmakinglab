@@ -76,6 +76,9 @@ color: white}
   padding: 50px
 }
 .com {color: white}
+.post { background-image: url(https://i.imgur.com/dkWfiIf.jpg);
+min-height:200vh;
+color: white}
 
 .twitter {
   float: left;
@@ -86,4 +89,9 @@ color: white}
 .instagram {
   float: right;
   padding: 100px
+}
+
+.sign {
+  background-color: rgb(32,141,178);
+  color: white;
 }
