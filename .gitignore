@@ -4,14 +4,14 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
-/tmp/cache/bootsnap-load-path-cache
+tmp/cache/bootsnap-load-path-cache
 
 
 .env
 
-/log/development.log
+log/development.log
 
-/tmp/cache/
+tmp/cache
 
 # Ignore bundler config.
 /.bundle
@@ -46,6 +46,7 @@ dump.rdb
 yarn-debug.log*
 .yarn-integrity
 
+<<<<<<< HEAD
 
 *.rbc
 capybara-*.html
@@ -95,3 +96,6 @@ bower.json
 
 # Ignore node_modules
 node_modules/
+=======
+.DS_store
+>>>>>>> 7c27e2ab8239b5e73ebe2b1d885f234c039dd369
