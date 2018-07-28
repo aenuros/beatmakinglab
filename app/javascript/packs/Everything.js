@@ -12,6 +12,7 @@ import Header from '../bundles/App/components/elements/Header';
 import UserInfo from '../bundles/App/components/elements/UserInfo';
 
 
+import Home from '../bundles/App/components/Home';
 import Sell from '../bundles/App/components/Sell';
 import Compete from '../bundles/App/components/Compete';
 import Social from '../bundles/App/components/Social';
@@ -32,5 +33,6 @@ Seeadmin,
 Social,
 Sounds,
 Header,
-UserInfo
+UserInfo,
+Home
 });
