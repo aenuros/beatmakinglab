@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+gem 'acts_as_votable'
 gem 'dotenv-rails', groups: [:development, :test]
 # amazon s3
 gem "aws-sdk-s3", require: false
