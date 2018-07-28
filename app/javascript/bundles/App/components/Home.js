@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Background from '../../../../assets/images/BMLbackground.jpg';
+import BackgroundImage from '../../../../assets/images/bmlbackground.jpg';
 
 class Home extends Component {
   render() {
     return(
-      <div>
-        This is a homepage, yo!
-      </div>
+        <div background="https://i.imgur.com/gMk2lYC.jpg">
+        <p></p>
+        </div>
     );
   }
 }
