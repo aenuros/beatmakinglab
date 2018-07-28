@@ -7,13 +7,14 @@ class Social extends Component {
     render() {
       return (
         <div>
+        <h1>Social Media</h1>
             <TwitterTimelineEmbed
 sourceType="profile"
 screenName="beatmakinglab"
 options={{height: 500, width: 400}}
 />
 
-{/* <InstagramEmbed
+  {/* <InstagramEmbed
   url='https://www.instagram.com/p/BfRCkATFq4n/?hl=en'
   maxWidth={500}
   hideCaption={false}
@@ -31,3 +32,5 @@ options={{height: 500, width: 400}}
   }
 
   export default Social;
+
+
