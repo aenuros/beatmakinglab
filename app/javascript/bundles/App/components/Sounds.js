@@ -5,12 +5,14 @@ export default class Sounds extends Component {
     render() {
       return (
         <div id="sounds">
-          <div>
-            <h1>Sound Packs</h1>
-              <p>Explore these sites to find the best drum kits, loops, samples and more!</p>
+          <div class="sounds-page">
+            <h1 class="com">Sound Packs</h1>
+              <p class="com">Explore these sites to find the best drum kits, loops, samples and more!</p>
 
 
-<div><h5>Free Sounds:</h5></div>
+
+
+<div><h5 class="com">Free Sounds:</h5></div>
 
          <Row>
            <Col s={12} m={2}>

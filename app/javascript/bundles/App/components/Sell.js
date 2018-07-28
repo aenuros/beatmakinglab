@@ -4,9 +4,9 @@ class Sell extends Component {
     render() {
       return (
 
-       <div>
-       <h1>Sell</h1>
-           <p>
+       <div class="sell">
+       <h1 class="com">Sell</h1>
+           <p class="com">
         Sell your beats on the online market.
         </p>
         <Row>

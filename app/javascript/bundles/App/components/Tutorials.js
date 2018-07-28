@@ -13,6 +13,7 @@ export default class Tutorials extends Component {
   render() {
     const { tutorials } = this.props;
     return(
+      
       <table>
       <tr>
         <th>Name</th>
@@ -32,6 +33,7 @@ export default class Tutorials extends Component {
         )
       })}
       </table>
+    
     )
   }
 }
