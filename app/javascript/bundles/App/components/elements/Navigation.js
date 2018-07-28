@@ -36,12 +36,11 @@ const Navigation = (props) => {
           <NavItem href='/learn'>Learn</NavItem>
           {checkAdmin1(props)}
           <NavItem href='/social'>Social</NavItem>
-          <NavItem href='#'>The Lab</NavItem>
           <NavItem href='/sounds'>Sound Packs</NavItem>
           <NavItem href='/compete'>Compete</NavItem>
           <NavItem href='/sell'>Sell</NavItem>
           <NavItem href='#'>The BML Story</NavItem>
-          <NavItem href='/postlist'>All Posts</NavItem>
+          <NavItem href='/postlist'>The Lab</NavItem>
           {checkLogin(props)}
           {checkAdmin2(props)}
         </Navbar>

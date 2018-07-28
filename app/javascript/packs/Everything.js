@@ -12,11 +12,11 @@ import Header from '../bundles/App/components/elements/Header';
 import UserInfo from '../bundles/App/components/elements/UserInfo';
 
 
+import Home from '../bundles/App/components/Home';
 import Sell from '../bundles/App/components/Sell';
 import Compete from '../bundles/App/components/Compete';
 import Social from '../bundles/App/components/Social';
 import Sounds from '../bundles/App/components/Sounds';
-import Home from '../bundles/App/components/Home';
 import {Card, CardTitle} from 'react-materialize';
 
 
