@@ -5,7 +5,7 @@ class Compete extends Component {
       return (
 
        <div>
-        <h1>Compete</h1>
+        <h3>Compete</h3>
            <p>
         Think your beats are up to the test? Compete with your beats online and in person!
         </p>

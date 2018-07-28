@@ -5,7 +5,7 @@ class Sell extends Component {
       return (
 
        <div>
-       <h1>Sell</h1>
+       <h3>Sell</h3>
            <p>
         Sell your beats on the online market.
         </p>
