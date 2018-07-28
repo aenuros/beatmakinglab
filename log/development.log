@@ -3734,3 +3734,33 @@ Processing by TutorialsController#learn as HTML
 Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/welcome" for 127.0.0.1 at 2018-07-28 19:22:12 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-28 19:22:18 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:9
+  Rendered tutorials/learn.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-28 19:22:19 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-28 19:22:49 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
