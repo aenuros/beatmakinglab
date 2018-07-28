@@ -17,7 +17,6 @@ import Sell from '../bundles/App/components/Sell';
 import Compete from '../bundles/App/components/Compete';
 import Social from '../bundles/App/components/Social';
 import Sounds from '../bundles/App/components/Sounds';
-import Home from '../bundles/App/components/Home';
 import {Card, CardTitle} from 'react-materialize';
 
 
@@ -35,6 +34,5 @@ Seeadmin,
 Social,
 Sounds,
 Header,
-UserInfo,
-Home
+UserInfo
 });

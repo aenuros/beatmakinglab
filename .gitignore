@@ -46,7 +46,7 @@ dump.rdb
 yarn-debug.log*
 .yarn-integrity
 
-<<<<<<< HEAD
+
 
 *.rbc
 capybara-*.html
@@ -98,4 +98,3 @@ bower.json
 node_modules/
 =======
 .DS_store
->>>>>>> 7c27e2ab8239b5e73ebe2b1d885f234c039dd369

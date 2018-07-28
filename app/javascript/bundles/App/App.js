@@ -27,11 +27,7 @@ class App extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
-      <div className="App">
-=======
       <span className="App">
->>>>>>> 7c27e2ab8239b5e73ebe2b1d885f234c039dd369
         <Navigation adminvalue={this.props.adminvalue} userlogin={this.props.userlogin}/>
         <UserInfo user={this.props.user}/>
       </span>
