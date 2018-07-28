@@ -1,5 +1,7 @@
 
+<div class="learn">
 <h3>Tutorials</h3>
+
 
 <p>Check out these tutorials selected for you by AppleJuiceKid! No matter what type of music
 software you're looking for or your budget, we've got you covered.</p>
@@ -11,7 +13,7 @@ software you're looking for or your budget, we've got you covered.</p>
   <h2><a href="<%=tutorial.link%>"><%=tutorial.name%></a></h2>
   <p><%=tutorial.description%></p>
   <div class="youtube">
-    <iframe width="300" height="215"
+    <iframe width="600" height="500"
   src="https://www.youtube.com/embed/<%=tutorial.link.partition("=").last.partition("&").first%>"
   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
   </iframe>
@@ -19,3 +21,4 @@ software you're looking for or your budget, we've got you covered.</p>
   </div>
 </div>
 <%end%>
+</div>

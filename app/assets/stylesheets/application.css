@@ -53,3 +53,37 @@
  ul li {
    display:inline-block;
  }
+
+.compete-page { background-image: url(https://i.imgur.com/gbgjm65.jpg);
+  min-height:200vh;
+}
+.sell { background-image: url(https://i.imgur.com/gbgjm65.jpg);
+  min-height:200vh;
+}
+.social { background-image: url(https://i.imgur.com/jHHbYxo.jpg);
+  min-height:200vh;
+  color: white
+}
+.home { background-image: url(https://i.imgur.com/wsBA66V.jpg);
+  min-height:200vh;
+}
+#sounds { background-image: url(https://i.imgur.com/zzy0vEJ.jpg);
+  min-height:200vh;}
+.learn { background-image: url(https://i.imgur.com/zzy0vEJ.jpg);
+min-height:200vh;
+color: white}
+.tut {
+  padding: 50px
+}
+.com {color: white}
+
+.twitter {
+  float: left;
+  padding: 100px
+  
+}
+
+.instagram {
+  float: right;
+  padding: 100px
+}

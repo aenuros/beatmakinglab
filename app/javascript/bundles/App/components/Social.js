@@ -6,15 +6,19 @@ import InstagramEmbed from 'react-instagram-embed';
 class Social extends Component {
     render() {
       return (
-        <div>
-        <h3>Social Media</h3>
+        <div class="social">
+        <h2>Social Media</h2>
+
+        <div class="twitter">
             <TwitterTimelineEmbed
 sourceType="profile"
 screenName="beatmakinglab"
 options={{height: 500, width: 400}}
 />
+</div>
 
-  {/* <InstagramEmbed
+<div class="instagram">
+  <InstagramEmbed
   url='https://www.instagram.com/p/BfRCkATFq4n/?hl=en'
   maxWidth={500}
   hideCaption={false}
@@ -25,7 +29,8 @@ options={{height: 500, width: 400}}
   onSuccess={() => {}}
   onAfterRender={() => {}}
   onFailure={() => {}}
-/> */}
+/>
+</div>
         </div>
       );
     }
