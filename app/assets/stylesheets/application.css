@@ -117,7 +117,8 @@ min-height:200vh;
 }
 
 .headerText {
-  margin:0;
+  padding: 2em;
+  text-align: center;
 }
 
 #sidenav-overlay {
