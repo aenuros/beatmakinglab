@@ -13,11 +13,18 @@
 
     Uploaded by: <%= User.find(post.user_id).email %><br/>
     <%= post.created_at.strftime("%B %e, %Y (%m:%M %p )") %><br/>
+
+    <!-- remove title if there isn't any -->
+    <% if post.title != "" %>
     Title: <%= post.title %><br/>
-    Description: <%= post.content %><br/>
+    <%end%>
+
+    <!-- remove description if there isn't any -->
+    <% if post.content != "" %>
+    <blockquote><%= post.content %></blockquote>
+    <%end%>
 
     <!-- If something is attached, let you download it -->
-
     <% if post.audio.attached? %>
     <audio controls>
         <source src="<%= url_for(post.audio) %>" type="audio/mp3">
@@ -25,13 +32,13 @@
     <p><a href="<%= url_for(post.audio) %>">DOWNLOAD</a></p>
     <%end%>
 
+<!-- Show the controls for your own post -->
   <%= link_to 'Show', post %>
   <%= link_to 'Edit', edit_post_path(post) %>
   <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
 
 
 <!-- Conditional for upvote -->
-
   <div class="voting"><%= post.score %>
   <% if post.score > -1 %>
   💖

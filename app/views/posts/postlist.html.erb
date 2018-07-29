@@ -12,9 +12,13 @@
 
   Uploaded by: <%= User.find(post.user_id).email %><br/>
   <%= post.created_at.strftime("%B %e, %Y (%m:%M %p )") %><br/>
+  <% if post.title != "" %>
   Title: <%= post.title %><br/>
-  Description: <%= post.content %><br/>
-
+  <%end%>
+  <!-- remove description if it there isn't any -->
+  <% if post.content != "" %>
+  <blockquote><%= post.content %></blockquote>
+  <%end%>
   <!-- If something is attached, let you download it -->
 
   <% if post.audio.attached? %>
