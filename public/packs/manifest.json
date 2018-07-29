@@ -1,11 +1,6 @@
 {
   "Everything.css": "/packs/Everything-31f9213206b319953e1c165b826942eb.css",
   "Everything.css.map": "/packs/Everything-31f9213206b319953e1c165b826942eb.css.map",
-<<<<<<< HEAD
-  "Everything.js": "/packs/Everything-5081b4fb623d0739362a.js",
-  "Everything.js.map": "/packs/Everything-5081b4fb623d0739362a.js.map"
-=======
-  "Everything.js": "/packs/Everything-68794bda13ef91e136e8.js",
-  "Everything.js.map": "/packs/Everything-68794bda13ef91e136e8.js.map"
->>>>>>> 96f00dc8428dcb135b998864d16c13dc2e3ae92e
+  "Everything.js": "/packs/Everything-169e9527c0192b48580d.js",
+  "Everything.js.map": "/packs/Everything-169e9527c0192b48580d.js.map"
 }
