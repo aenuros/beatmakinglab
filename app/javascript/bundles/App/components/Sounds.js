@@ -4,17 +4,16 @@ import { Card, CardTitle, Row, Col } from 'react-materialize';
 export default class Sounds extends Component {
     render() {
       return (
-        <div id="sounds-page">
-
-          <div class="header">
-            <h3 class="title" >Sound Packs</h3>
-              <p class="des" >Explore these sites to find the best drum kits, loops, samples and more!</p>
+        <div id="sounds">
+          <div class="sounds-page">
+            <h3 class="com headerText">Sound Packs</h3>
+              <p class="com headerText">Explore these sites to find the best drum kits, loops, samples and more!</p>
             </div>
 
 
 
   <div>
-  <h5 class="free">Free Sounds:</h5>
+  <h5 class="com">Free Sounds:</h5>
   
 
          <Row>
@@ -66,7 +65,7 @@ export default class Sounds extends Component {
 
        <div>
          
-         <h5 class="paid">Paid Sounds:</h5>
+         <h5 class="com">Paid Sounds:</h5>
 
        <Row>
          <Col s={12} m={2}>
