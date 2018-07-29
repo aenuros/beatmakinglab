@@ -73,6 +73,8 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+
+
   def upvote
     @post = Post.find(params[:id])
     @post.upvote_by current_user
