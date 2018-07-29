@@ -6808,3 +6808,135 @@ Processing by PagesController#social as HTML
 Completed 200 OK in 108ms (Views: 104.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-29 16:00:32 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (78.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/karen/Documents/experiments/beatmakinglab/public/packs
+Completed 200 OK in 7571ms (Views: 7560.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-29 16:00:48 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (0.4ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:9
+  Rendered tutorials/learn.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 53ms (Views: 45.4ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-29 16:00:59 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/postlist" for 127.0.0.1 at 2018-07-29 16:01:03 -0400
+Processing by PostsController#postlist as HTML
+  Rendering posts/postlist.html.erb within layouts/application
+  [1m[36mPost Load (85.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/postlist.html.erb:6
+  [1m[36mUser Load (21.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:10
+  [1m[36mActiveStorage::Attachment Load (5.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:17
+  [1m[36mActiveStorage::Blob Load (2.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:17
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:10
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:10
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:17
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:10
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:17
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:10
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:17
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:10
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:17
+  Rendered posts/postlist.html.erb within layouts/application (651.6ms)
+Completed 200 OK in 720ms (Views: 547.6ms | ActiveRecord: 140.9ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d9f50a592b315fa5362d6a7bc132fd0321997e54/bless%20up.mp3" for 127.0.0.1 at 2018-07-29 16:01:04 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d4daf8f4b7397909ff69d2498e8fdc9cb9ac4153/DJ%20Khaled%20audio.mp3" for 127.0.0.1 at 2018-07-29 16:01:04 -0400
+Processing by ActiveStorage::BlobsController#show as MP3
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8c5f6be93c3f55e004a59a58f4855cf449f959fb/another%20one.mp3" for 127.0.0.1 at 2018-07-29 16:01:04 -0400
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d9f50a592b315fa5362d6a7bc132fd0321997e54", "filename"=>"bless up"}
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5cfd4406d9e565f3e2313e4687187b39557beec9/bless%20up.mp3" for 127.0.0.1 at 2018-07-29 16:01:04 -0400
+  [1m[36mActiveStorage::Blob Load (1.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (4.2ms) [0m[34mGenerated URL for file at key: dVrv9efTGZqyjGCjTqg5QpC1 (https://beat-making-lab.s3.amazonaws.com/dVrv9efTGZqyjGCjTqg5QpC1?response-content-disposition=inline%3B%20filename%3D%22bless%20up.mp3%22%3B%20filename%2A%3DUTF-8%27%27bless%2520up.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180729T200104Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=12af9bab4b09c84e4e1da4a483e0d5f756e21d4d0188582145c4fdf5b001eb15)[0m
+Redirected to https://beat-making-lab.s3.amazonaws.com/dVrv9efTGZqyjGCjTqg5QpC1?response-content-disposition=inline%3B%20filename%3D%22bless%20up.mp3%22%3B%20filename%2A%3DUTF-8%27%27bless%2520up.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180729T200104Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=12af9bab4b09c84e4e1da4a483e0d5f756e21d4d0188582145c4fdf5b001eb15
+Completed 302 Found in 26ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--da665f4334b118a9d45ccfdb6b4bdf23f05f9978/we%20the%20best.mp3" for 127.0.0.1 at 2018-07-29 16:01:04 -0400
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8c5f6be93c3f55e004a59a58f4855cf449f959fb", "filename"=>"another one"}
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--da665f4334b118a9d45ccfdb6b4bdf23f05f9978", "filename"=>"we the best"}
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5cfd4406d9e565f3e2313e4687187b39557beec9", "filename"=>"bless up"}
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d4daf8f4b7397909ff69d2498e8fdc9cb9ac4153", "filename"=>"DJ Khaled audio"}
+[36m  S3 Storage (2.2ms) [0m[34mGenerated URL for file at key: Qi7Ph2LKhJrQxVHcWSRhGVzi (https://beat-making-lab.s3.amazonaws.com/Qi7Ph2LKhJrQxVHcWSRhGVzi?response-content-disposition=inline%3B%20filename%3D%22we%20the%20best.mp3%22%3B%20filename%2A%3DUTF-8%27%27we%2520the%2520best.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180729T200104Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=5b380cc6276af3957006fc0391a2bd590922fbfc65d25104d132fae77d0a1af8)[0m
+Redirected to https://beat-making-lab.s3.amazonaws.com/Qi7Ph2LKhJrQxVHcWSRhGVzi?response-content-disposition=inline%3B%20filename%3D%22we%20the%20best.mp3%22%3B%20filename%2A%3DUTF-8%27%27we%2520the%2520best.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180729T200104Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=5b380cc6276af3957006fc0391a2bd590922fbfc65d25104d132fae77d0a1af8
+Completed 302 Found in 10ms (ActiveRecord: 1.2ms)
+
+
+  [1m[36mActiveStorage::Blob Load (3.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (3.0ms) [0m[34mGenerated URL for file at key: oFrQ3WGP4jSjXDfy2DSwKnB9 (https://beat-making-lab.s3.amazonaws.com/oFrQ3WGP4jSjXDfy2DSwKnB9?response-content-disposition=inline%3B%20filename%3D%22DJ%20Khaled%20audio.mp3%22%3B%20filename%2A%3DUTF-8%27%27DJ%2520Khaled%2520audio.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180729T200104Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2164412a025b431c9b81a556c3da84addae8d656ec36cfdb6b524af9498d9e69)[0m
+  [1m[36mActiveStorage::Blob Load (5.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.9ms) [0m[34mGenerated URL for file at key: kNXLqYrBzSxmiA3agKXuEze3 (https://beat-making-lab.s3.amazonaws.com/kNXLqYrBzSxmiA3agKXuEze3?response-content-disposition=inline%3B%20filename%3D%22bless%20up.mp3%22%3B%20filename%2A%3DUTF-8%27%27bless%2520up.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180729T200104Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=9c8d343b507f2724b47e36a1290d8e4535f209df552f0c2ac98e849687214c55)[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to https://beat-making-lab.s3.amazonaws.com/oFrQ3WGP4jSjXDfy2DSwKnB9?response-content-disposition=inline%3B%20filename%3D%22DJ%20Khaled%20audio.mp3%22%3B%20filename%2A%3DUTF-8%27%27DJ%2520Khaled%2520audio.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180729T200104Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2164412a025b431c9b81a556c3da84addae8d656ec36cfdb6b524af9498d9e69
+Redirected to https://beat-making-lab.s3.amazonaws.com/kNXLqYrBzSxmiA3agKXuEze3?response-content-disposition=inline%3B%20filename%3D%22bless%20up.mp3%22%3B%20filename%2A%3DUTF-8%27%27bless%2520up.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180729T200104Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=9c8d343b507f2724b47e36a1290d8e4535f209df552f0c2ac98e849687214c55
+Completed 302 Found in 26ms (ActiveRecord: 3.8ms)
+
+
+Completed 302 Found in 17ms (ActiveRecord: 1.0ms)
+
+
+[36m  S3 Storage (2.0ms) [0m[34mGenerated URL for file at key: P5NLYT7EKvZeKvJcrUGeCFXP (https://beat-making-lab.s3.amazonaws.com/P5NLYT7EKvZeKvJcrUGeCFXP?response-content-disposition=inline%3B%20filename%3D%22another%20one.mp3%22%3B%20filename%2A%3DUTF-8%27%27another%2520one.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180729T200104Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=1f37404bc1c8695696ef1f45cd6b77e0c0ced935dad5be293eeacb2e641d6240)[0m
+Redirected to https://beat-making-lab.s3.amazonaws.com/P5NLYT7EKvZeKvJcrUGeCFXP?response-content-disposition=inline%3B%20filename%3D%22another%20one.mp3%22%3B%20filename%2A%3DUTF-8%27%27another%2520one.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180729T200104Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=1f37404bc1c8695696ef1f45cd6b77e0c0ced935dad5be293eeacb2e641d6240
+Completed 302 Found in 32ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9aa1c774347082bb133e3b3437027e50b098d9e3/DJ%20Khaled%20audio.mp3" for 127.0.0.1 at 2018-07-29 16:01:04 -0400
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9aa1c774347082bb133e3b3437027e50b098d9e3", "filename"=>"DJ Khaled audio"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.3ms) [0m[34mGenerated URL for file at key: hzDxjRvkXyYaH85v17Q4Zvqt (https://beat-making-lab.s3.amazonaws.com/hzDxjRvkXyYaH85v17Q4Zvqt?response-content-disposition=inline%3B%20filename%3D%22DJ%20Khaled%20audio.mp3%22%3B%20filename%2A%3DUTF-8%27%27DJ%2520Khaled%2520audio.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180729T200104Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=77f54d48e599e4858b8b88ec4a133df111651b6afe66ea1fc59e1d979aeb512c)[0m
+Redirected to https://beat-making-lab.s3.amazonaws.com/hzDxjRvkXyYaH85v17Q4Zvqt?response-content-disposition=inline%3B%20filename%3D%22DJ%20Khaled%20audio.mp3%22%3B%20filename%2A%3DUTF-8%27%27DJ%2520Khaled%2520audio.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180729T200104Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=77f54d48e599e4858b8b88ec4a133df111651b6afe66ea1fc59e1d979aeb512c
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
