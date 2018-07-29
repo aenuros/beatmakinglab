@@ -119,3 +119,7 @@ min-height:200vh;
 .headerText {
   margin:0;
 }
+
+#sidenav-overlay {
+  position: relative !important;
+}
