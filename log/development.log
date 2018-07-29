@@ -6940,6 +6940,7 @@ Redirected to https://beat-making-lab.s3.amazonaws.com/hzDxjRvkXyYaH85v17Q4Zvqt?
 Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
 
 
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-07-29 16:13:04 -0400
   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
@@ -14906,5 +14907,465 @@ Processing by PostsController#postlist as HTML
   ↳ app/models/post.rb:10
   Rendered posts/postlist.html.erb within layouts/application (85.5ms)
 Completed 200 OK in 115ms (Views: 97.7ms | ActiveRecord: 15.8ms)
+=======
+Started GET "/" for 127.0.0.1 at 2018-07-29 16:55:15 -0400
+  [1m[35m (29.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (4690.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/oscar/Desktop/BML/beatmakinglab/public/packs
+Completed 200 OK in 29055ms (Views: 28998.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sounds" for 127.0.0.1 at 2018-07-29 16:56:00 -0400
+Processing by PagesController#sounds as HTML
+  Rendering pages/sounds.html.erb within layouts/application
+  Rendered pages/sounds.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 108ms (Views: 81.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 16:56:04 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 160ms (Views: 152.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-29 16:56:32 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (23.6ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:9
+  Rendered tutorials/learn.html.erb within layouts/application (87.3ms)
+Completed 200 OK in 242ms (Views: 89.6ms | ActiveRecord: 63.2ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 17:40:37 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 115ms (Views: 109.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 17:41:17 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/oscar/Desktop/BML/beatmakinglab/public/packs
+Completed 200 OK in 8334ms (Views: 8328.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-29 17:52:42 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 86ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-29 17:52:43 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (27.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:9
+  Rendered tutorials/learn.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 120ms (Views: 88.5ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 17:52:51 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 140ms (Views: 134.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-29 17:52:52 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (9.7ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:9
+  Rendered tutorials/learn.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 303ms (Views: 287.5ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-29 17:52:53 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 144ms (Views: 138.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sounds" for 127.0.0.1 at 2018-07-29 17:52:56 -0400
+Processing by PagesController#sounds as HTML
+  Rendering pages/sounds.html.erb within layouts/application
+  Rendered pages/sounds.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 88ms (Views: 83.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compete" for 127.0.0.1 at 2018-07-29 17:53:00 -0400
+Processing by PagesController#compete as HTML
+  Rendering pages/compete.html.erb within layouts/application
+  Rendered pages/compete.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 116ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-07-29 17:53:03 -0400
+Processing by PagesController#sell as HTML
+  Rendering pages/sell.html.erb within layouts/application
+  Rendered pages/sell.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 114ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/postlist" for 127.0.0.1 at 2018-07-29 17:53:07 -0400
+Processing by PostsController#postlist as HTML
+  Rendering posts/postlist.html.erb within layouts/application
+  [1m[36mPost Load (70.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/postlist.html.erb:9
+  Rendered posts/postlist.html.erb within layouts/application (138.2ms)
+Completed 200 OK in 394ms (Views: 71.9ms | ActiveRecord: 134.8ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 17:53:13 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 120ms (Views: 111.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-29 17:53:17 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (6.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:9
+  Rendered tutorials/learn.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 296ms (Views: 285.0ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-29 17:53:20 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 285ms (Views: 280.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-29 17:53:43 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 82ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-29 17:54:27 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 82ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-29 17:54:33 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 103ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-29 17:54:36 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 93ms (Views: 89.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-29 17:54:53 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 70ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 18:00:11 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 87ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 18:00:11 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 90ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 18:06:35 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+>>>>>>> refs/remotes/origin/master
+
+
+Started GET "/myposts" for 127.0.0.1 at 2018-07-29 18:20:05 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#myposts as HTML
+  Rendering posts/myposts.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/myposts.html.erb:7
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/myposts.html.erb:10
+  Rendered posts/myposts.html.erb within layouts/application (60.4ms)
+Completed 200 OK in 1350ms (Views: 1324.4ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/postlist" for 127.0.0.1 at 2018-07-29 18:20:51 -0400
+Processing by PostsController#postlist as HTML
+  Rendering posts/postlist.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/postlist.html.erb:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:28
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 4], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 4], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 4], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 4], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 3], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 3], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 3], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 3], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 2], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 2], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 2], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 2], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 1], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 1], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 1], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 1], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  Rendered posts/postlist.html.erb within layouts/application (268.4ms)
+Completed 200 OK in 294ms (Views: 272.4ms | ActiveRecord: 20.8ms)
+
+
+Started PUT "/posts/2/dislike" for 127.0.0.1 at 2018-07-29 18:20:55 -0400
+Processing by PostsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"aYKxR+f3/1VgmyaPjO6dzvcfXBWtzKXLA7wUaqX0illq5ML05fbrYkDH6FIQhLT2wnjdo/ZNZ2W7N4pjNrPanA==", "id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:83
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:84
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."voter_id" = $3 AND "votes"."vote_scope" IS NULL AND "votes"."voter_type" = $4[0m  [["votable_id", 2], ["votable_type", "Post"], ["voter_id", 4], ["voter_type", "User"]]
+  ↳ app/controllers/posts_controller.rb:84
+  [1m[36mActsAsVotable::Vote Load (0.6ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."voter_id" = $3 AND "votes"."vote_scope" IS NULL AND "votes"."voter_type" = $4 ORDER BY "votes"."id" DESC LIMIT $5[0m  [["votable_id", 2], ["votable_type", "Post"], ["voter_id", 4], ["voter_type", "User"], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:84
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:84
+  [1m[36mActsAsVotable::Vote Update (0.4ms)[0m  [1m[33mUPDATE "votes" SET "updated_at" = $1, "vote_flag" = $2 WHERE "votes"."id" = $3[0m  [["updated_at", "2018-07-29 22:20:55.853537"], ["vote_flag", false], ["id", 8]]
+  ↳ app/controllers/posts_controller.rb:84
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:84
+Redirected to http://localhost:3000/postlist
+Completed 302 Found in 23ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/postlist" for 127.0.0.1 at 2018-07-29 18:20:55 -0400
+Processing by PostsController#postlist as HTML
+  Rendering posts/postlist.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/postlist.html.erb:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 4], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 4], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 4], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 4], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 3], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 3], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 3], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 3], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 2], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 2], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 2], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 2], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Post"], ["name", "audio"], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/postlist.html.erb:20
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 1], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 1], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 1], ["votable_type", "Post"], ["vote_flag", true]]
+  ↳ app/models/post.rb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3[0m  [["votable_id", 1], ["votable_type", "Post"], ["vote_flag", false]]
+  ↳ app/models/post.rb:10
+  Rendered posts/postlist.html.erb within layouts/application (62.7ms)
+Completed 200 OK in 87ms (Views: 75.2ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d4daf8f4b7397909ff69d2498e8fdc9cb9ac4153/DJ%20Khaled%20audio.mp3" for 127.0.0.1 at 2018-07-29 18:21:19 -0400
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d4daf8f4b7397909ff69d2498e8fdc9cb9ac4153", "filename"=>"DJ Khaled audio"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (3.0ms) [0m[34mGenerated URL for file at key: oFrQ3WGP4jSjXDfy2DSwKnB9 (https://beat-making-lab.s3.amazonaws.com/oFrQ3WGP4jSjXDfy2DSwKnB9?response-content-disposition=inline%3B%20filename%3D%22DJ%20Khaled%20audio.mp3%22%3B%20filename%2A%3DUTF-8%27%27DJ%2520Khaled%2520audio.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180729T222119Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=a579f136a9f09f1cb92e261ebad0b66ed03bc56e0cc39e30f138e1ecbb56fbe7)[0m
+Redirected to https://beat-making-lab.s3.amazonaws.com/oFrQ3WGP4jSjXDfy2DSwKnB9?response-content-disposition=inline%3B%20filename%3D%22DJ%20Khaled%20audio.mp3%22%3B%20filename%2A%3DUTF-8%27%27DJ%2520Khaled%2520audio.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAYFCIANWHAL2ECA%2F20180729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180729T222119Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=a579f136a9f09f1cb92e261ebad0b66ed03bc56e0cc39e30f138e1ecbb56fbe7
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
 
 
