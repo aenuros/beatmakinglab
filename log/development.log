@@ -7138,3 +7138,56 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 18:12:26 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 78ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sounds" for 127.0.0.1 at 2018-07-29 18:13:25 -0400
+Processing by PagesController#sounds as HTML
+  Rendering pages/sounds.html.erb within layouts/application
+  Rendered pages/sounds.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 119ms (Views: 115.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 18:13:28 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 174ms (Views: 169.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-29 18:13:31 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (34.0ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:9
+  Rendered tutorials/learn.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 281ms (Views: 243.6ms | ActiveRecord: 34.0ms)
+
+
+Started GET "/postlist" for 127.0.0.1 at 2018-07-29 18:13:35 -0400
+Processing by PostsController#postlist as HTML
+  Rendering posts/postlist.html.erb within layouts/application
+  [1m[36mPost Load (11.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/postlist.html.erb:9
+  Rendered posts/postlist.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 123ms (Views: 105.9ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 18:18:00 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 194ms (Views: 189.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 18:18:00 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 101ms (Views: 97.5ms | ActiveRecord: 0.0ms)
+
+
