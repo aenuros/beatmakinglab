@@ -61,7 +61,7 @@ export default class Sounds extends Component {
 
        </div>
 
-       <div><h5>Paid Sounds:</h5></div>
+       <div><h5 class="com">Paid Sounds:</h5></div>
 
        <Row>
          <Col s={12} m={2}>
