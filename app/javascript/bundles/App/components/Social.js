@@ -7,7 +7,7 @@ class Social extends Component {
     render() {
       return (
         <div class="social">
-        <h2>Social Media</h2>
+        <h3>Social Media</h3>
 
         <div class="twitter">
             <TwitterTimelineEmbed
@@ -37,5 +37,3 @@ options={{height: 500, width: 400}}
   }
 
   export default Social;
-
-
