@@ -31,6 +31,7 @@ options={{height: 500, width: 400}}
   onFailure={() => {}}
 />
 </div>
+
         </div>
       );
     }
