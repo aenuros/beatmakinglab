@@ -6,11 +6,11 @@ class Home extends Component {
     render() {
       return (
         <div class="home">
-        <h5 class="headerText"><p class="headerText"> Beat Making Lab is a music education program to teach music production
-          and beat making.  
-          This website will guide you through learning how to make beats, 
-          sell and compete with your beats, find new sounds, and connect to the beat making
-          community.  A one stop place online for all things beat making.
+        <h5 class="headerText"><p class="headerText"> <img class="homelogo" alt="logo" src="https://i.imgur.com/nUdXlaC.png"/><br/><br/><br/>
+          Welcome to BEAT MAKING LAB, the only resource you'll ever need to learn the art of dropping sick beats.
+          Whether you're a complete beginner or on your way to becoming the next Yeezy, BEAT MAKING LAB gives you all the tools you need...
+          Browse tutorials, download soundpacks, and even share your own or explore sounds from all over the globe at THE LAB.
+          Long story short, you've come to the right place.
           </p> </h5>
         
         </div>

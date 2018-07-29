@@ -74,10 +74,12 @@ p,h3 {
   color: white
 }
 .home {
-  background-image: url(https://i.imgur.com/wsBA66V.jpg);
+  background-image: url(https://i.imgur.com/Rcfy8DH.jpg);
   background-attachment:fixed;
   min-height:200vh;
   color: white;
+  background-color: black;
+  opacity: 1.5;
 }
 #sounds {
   background-image: url(https://i.imgur.com/G2JA2ux.jpg);
@@ -123,4 +125,9 @@ min-height:200vh;
 
 #sidenav-overlay {
   position: relative !important;
+}
+
+.homelogo {
+  height: 20%;
+  width: 20%;
 }
