@@ -40,7 +40,7 @@ const Navigation = (props) => {
           <NavItem href='/sounds'>Sound Packs</NavItem>
           <NavItem href='/compete'>Compete</NavItem>
           <NavItem href='/sell'>Sell</NavItem>
-          <NavItem href='#'>The BML Story</NavItem>
+          <NavItem href="http://www.beatmakinglab.com/" target="_blank">The BML Story</NavItem>
           <NavItem href='/postlist'>The Lab</NavItem>
           {checkLogin(props)}
           {checkAdmin2(props)}

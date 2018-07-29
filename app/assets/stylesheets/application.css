@@ -77,6 +77,7 @@ p,h3 {
   background-image: url(https://i.imgur.com/wsBA66V.jpg);
   background-attachment:fixed;
   min-height:200vh;
+  color: white;
 }
 #sounds {
   background-image: url(https://i.imgur.com/zzy0vEJ.jpg);
@@ -84,7 +85,7 @@ p,h3 {
   min-height:200vh;}
 
 .learn {
-  background-image: url(https://i.imgur.com/zzy0vEJ.jpg);
+  background-image: url(https://i.imgur.com/Z8d5bC4.png);
   min-height:200vh;
   color: white;
   background-attachment:fixed;
@@ -113,4 +114,12 @@ min-height:200vh;
 .sign {
   background-color: rgb(32,141,178);
   color: white;
+}
+
+.headerText {
+  margin:0;
+}
+
+#sidenav-overlay {
+  position: relative !important;
 }
