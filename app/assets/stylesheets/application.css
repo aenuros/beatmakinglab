@@ -13,6 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+p,h3 {
+  padding: 10px;
+}
+
  .header {
    text-align:center;
  }
@@ -54,36 +59,52 @@
    display:inline-block;
  }
 
-.compete-page { background-image: url(https://i.imgur.com/gbgjm65.jpg);
+.compete-page {
+  background-image: url(https://i.imgur.com/gbgjm65.jpg);
+  background-attachment:fixed;
   min-height:200vh;
 }
-.sell { background-image: url(https://i.imgur.com/gbgjm65.jpg);
+.sell {
+  background-image: url(https://i.imgur.com/gbgjm65.jpg);
+  background-attachment:fixed;
   min-height:200vh;
 }
-.social { background-image: url(https://i.imgur.com/jHHbYxo.jpg);
+.social {
+  background-image: url(https://i.imgur.com/jHHbYxo.jpg);
+  background-attachment:fixed;
   min-height:200vh;
   color: white
 }
-.home { background-image: url(https://i.imgur.com/wsBA66V.jpg);
+.home {
+  background-image: url(https://i.imgur.com/wsBA66V.jpg);
+  background-attachment:fixed;
   min-height:200vh;
 }
-#sounds { background-image: url(https://i.imgur.com/zzy0vEJ.jpg);
+#sounds {
+  background-image: url(https://i.imgur.com/zzy0vEJ.jpg);
+  background-attachment:fixed;
   min-height:200vh;}
-.learn { background-image: url(https://i.imgur.com/zzy0vEJ.jpg);
-min-height:200vh;
-color: white}
+
+.learn {
+  background-image: url(https://i.imgur.com/zzy0vEJ.jpg);
+  min-height:200vh;
+  color: white;
+  background-attachment:fixed;
+}
+
 .tut {
   padding: 50px
 }
 .com {color: white}
-.post { background-image: url(https://i.imgur.com/dkWfiIf.jpg);
-min-height:200vh;
-color: white}
 
+/* .post { background-image: url(https://i.imgur.com/dkWfiIf.jpg);
+min-height:200vh;
+}
+*/
 .twitter {
   float: left;
   padding: 100px
-  
+
 }
 
 .instagram {

@@ -6,7 +6,7 @@ export default class Sounds extends Component {
       return (
         <div id="sounds">
           <div class="sounds-page">
-            <h1 class="com">Sound Packs</h1>
+            <h3 class="com">Sound Packs</h3>
               <p class="com">Explore these sites to find the best drum kits, loops, samples and more!</p>
 
 

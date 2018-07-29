@@ -4,8 +4,8 @@ class Compete extends Component {
     render() {
       return (
 
-       <div class="compete-page"> 
-        <h1 class="com">Compete</h1>
+       <div class="compete-page">
+        <h3 class="com">Compete</h3>
            <p class="com">
         Think your beats are up to the test? Compete with your beats online and in person!
         </p>
