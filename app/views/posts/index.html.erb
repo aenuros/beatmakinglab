@@ -17,12 +17,12 @@
         <td><%= post.title %></td>
         <td><%= post.content %></td>
         <td><%= post.user_id %></td>
-        <td><%= link.score %></td>
+        <td><%= post.score %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td><%= link_to "upvote", like_link_path(link), method: :put %></td>
-        <td><%= link_to "downvote", dislike_link_path(link), method: :put %></td>
+        <td><%= link_to "upvote", like_post_path(post), method: :put %></td>
+        <td><%= link_to "downvote", dislike_post_path(post), method: :put %></td>
       </tr>
     <% end %>
   </tbody>
