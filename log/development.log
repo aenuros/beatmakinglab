@@ -6940,3 +6940,194 @@ Redirected to https://beat-making-lab.s3.amazonaws.com/hzDxjRvkXyYaH85v17Q4Zvqt?
 Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-29 16:55:15 -0400
+  [1m[35m (29.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (4690.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/oscar/Desktop/BML/beatmakinglab/public/packs
+Completed 200 OK in 29055ms (Views: 28998.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sounds" for 127.0.0.1 at 2018-07-29 16:56:00 -0400
+Processing by PagesController#sounds as HTML
+  Rendering pages/sounds.html.erb within layouts/application
+  Rendered pages/sounds.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 108ms (Views: 81.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 16:56:04 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 160ms (Views: 152.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-29 16:56:32 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (23.6ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:9
+  Rendered tutorials/learn.html.erb within layouts/application (87.3ms)
+Completed 200 OK in 242ms (Views: 89.6ms | ActiveRecord: 63.2ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 17:40:37 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 115ms (Views: 109.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 17:41:17 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/oscar/Desktop/BML/beatmakinglab/public/packs
+Completed 200 OK in 8334ms (Views: 8328.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-29 17:52:42 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 86ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-29 17:52:43 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (27.3ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:9
+  Rendered tutorials/learn.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 120ms (Views: 88.5ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 17:52:51 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 140ms (Views: 134.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-29 17:52:52 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (9.7ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:9
+  Rendered tutorials/learn.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 303ms (Views: 287.5ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-29 17:52:53 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 144ms (Views: 138.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sounds" for 127.0.0.1 at 2018-07-29 17:52:56 -0400
+Processing by PagesController#sounds as HTML
+  Rendering pages/sounds.html.erb within layouts/application
+  Rendered pages/sounds.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 88ms (Views: 83.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compete" for 127.0.0.1 at 2018-07-29 17:53:00 -0400
+Processing by PagesController#compete as HTML
+  Rendering pages/compete.html.erb within layouts/application
+  Rendered pages/compete.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 116ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-07-29 17:53:03 -0400
+Processing by PagesController#sell as HTML
+  Rendering pages/sell.html.erb within layouts/application
+  Rendered pages/sell.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 114ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/postlist" for 127.0.0.1 at 2018-07-29 17:53:07 -0400
+Processing by PostsController#postlist as HTML
+  Rendering posts/postlist.html.erb within layouts/application
+  [1m[36mPost Load (70.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/postlist.html.erb:9
+  Rendered posts/postlist.html.erb within layouts/application (138.2ms)
+Completed 200 OK in 394ms (Views: 71.9ms | ActiveRecord: 134.8ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 17:53:13 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 120ms (Views: 111.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/learn" for 127.0.0.1 at 2018-07-29 17:53:17 -0400
+Processing by TutorialsController#learn as HTML
+  Rendering tutorials/learn.html.erb within layouts/application
+  [1m[36mTutorial Load (6.2ms)[0m  [1m[34mSELECT "tutorials".* FROM "tutorials"[0m
+  ↳ app/views/tutorials/learn.html.erb:9
+  Rendered tutorials/learn.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 296ms (Views: 285.0ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-29 17:53:20 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 285ms (Views: 280.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-29 17:53:43 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 82ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-29 17:54:27 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 82ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-29 17:54:33 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 103ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-29 17:54:36 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 93ms (Views: 89.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/social" for 127.0.0.1 at 2018-07-29 17:54:53 -0400
+Processing by PagesController#social as HTML
+  Rendering pages/social.html.erb within layouts/application
+  Rendered pages/social.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 70ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 18:00:11 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 87ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 18:00:11 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 90ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
