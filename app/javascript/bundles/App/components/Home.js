@@ -5,7 +5,7 @@ import { } from 'react-materialize';
 class Home extends Component {
     render() {
       return (
-        <div>
+        <div class="home">
         
         </div>
       )
