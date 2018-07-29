@@ -7131,3 +7131,10 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 90ms (Views: 84.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/welcome" for 127.0.0.1 at 2018-07-29 18:06:35 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
