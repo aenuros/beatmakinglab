@@ -133,3 +133,11 @@ min-height:200vh;
   height: 20%;
   width: 20%;
 }
+
+@media only screen and (max-width: 786px) {
+
+body {
+  font-size:2em;
+}
+
+}
