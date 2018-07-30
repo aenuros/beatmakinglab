@@ -73,6 +73,8 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+  def testing
+  end
 
 
   def upvote
