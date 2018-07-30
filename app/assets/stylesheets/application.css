@@ -55,17 +55,21 @@ p,h3 {
    display:inline;
  }
 
+ 
+
  ull li {
    display:inline-block;
  }
 
-.compete-page {
+ .compete-header {
   background-image: url(https://i.imgur.com/gbgjm65.jpg);
   background-attachment:fixed;
-  min-height:200vh;
-}
-.sell { background-image: url(https://i.imgur.com/KwVz7QZ.jpg);
-  min-height:200vh;
+  min-height:50vh;
+  }
+
+.sell-header { background-image: url(https://i.imgur.com/KwVz7QZ.jpg);
+min-height:50vh;
+background-attachment:fixed;
 }
 .social {
   background-image: url(https://i.imgur.com/jHHbYxo.jpg);
@@ -81,17 +85,26 @@ p,h3 {
   background-color: black;
   opacity: 1.5;
 }
-#sounds {
-  background-image: url(https://i.imgur.com/zzy0vEJ.jpg);
+.sounds-header {
+  background-image: url(https://i.imgur.com/G2JA2ux.jpg);
+  min-height: 50vh;
   background-attachment:fixed;
-  min-height:200vh;}
+  }
 
-.learn {
-  background-image: url(https://i.imgur.com/Z8d5bC4.png);
-  min-height:200vh;
-  color: white;
-  background-attachment:fixed;
-}
+  .learn {
+    background-image: url(https://i.imgur.com/Z8d5bC4.png);
+    min-height:200vh;
+    color: white;
+    background-attachment:fixed;
+  }
+  
+#sounds {
+      background-color:#ff8900;
+      }
+      
+.compete-page {
+      background-color: #a69065;
+      }
 
 .tut {
   padding: 50px
@@ -104,13 +117,13 @@ min-height:200vh;
 */
 .twitter {
   float: left;
-  padding: 100px
+  padding: 50px
 
 }
 
 .instagram {
   float: right;
-  padding: 100px
+  padding: 50px
 }
 
 .sign {
@@ -129,10 +142,34 @@ min-height:200vh;
   position: relative !important;
 }
 
+.sell {
+    background-color:#ad9b8a;}
+
+
 .homelogo {
   height: 20%;
   width: 20%;
 }
+
+.lab {
+  background-image: url(https://i.imgur.com/zzy0vEJ.jpg);
+  min-height: 20vh;
+  background-attachment:fixed;
+  }
+  .post {
+    color: white;
+  }
+
+  .lab2 {
+    background-image: url(https://i.imgur.com/eWPontS.jpg);
+    min-height: 20vh;
+    background-attachment:fixed;
+    }
+
+    .fb {
+      float: left;
+      padding: 40px;
+    }
 
 @media only screen and (max-width: 786px) {
 
@@ -141,3 +178,4 @@ body {
 }
 
 }
+
