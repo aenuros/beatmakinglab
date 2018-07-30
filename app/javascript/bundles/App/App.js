@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <div class="sign">
       <span className="App">
-        <Navigation adminvalue={this.props.adminvalue} userlogin={this.props.userlogin}/>
+        <Navigation adminvalue={this.props.adminvalue} userlogin={this.props.userlogin} path={this.props.route}/>
         <UserInfo user={this.props.user}/>
       </span>
       </div>
