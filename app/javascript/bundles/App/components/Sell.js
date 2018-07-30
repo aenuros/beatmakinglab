@@ -8,9 +8,9 @@ return (
 
 <div class="sell-header">
 <h3 class="com headerText">Sell</h3>
-<p class="com headerText">
+<h5><p class="com headerText">
 Sell your beats on the online market.
-</p>
+</p></h5>
 </div>
 
 <Row>
