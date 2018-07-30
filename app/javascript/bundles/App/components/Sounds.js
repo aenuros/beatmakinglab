@@ -7,13 +7,16 @@ return (
 <div id="sounds">
 
 <div class="sounds-header">
-<h3 class="com headerText">Sound Packs</h3>
-<h5><p class="com headerText">Explore these sites to find the best drum kits, loops, samples and more!</p></h5>
+<h3 class="com headerText">SOUND PACKS</h3>
+<h5><p class="com headerText">One of the secrets of making great music is keeping it unique.
+                              You won't want to use the same stale default samples on every track,
+                              so our certified beat scientists have handpicked these unique SOUND PACKS
+                              to help you expand your musical palette.</p></h5>
 </div>
 
 
 <div>
-<h5 class="com">Free Sounds:</h5>
+<h5 class="com">FREE SOUNDS</h5>
 
 <Row>
 <Col s={12} m={2}>
@@ -63,7 +66,7 @@ Music production, creation and performance.
 </div>
 
 <div>
-<h5 class="com">Paid Sounds:</h5>
+<h5 class="com">PAID SOUNDS</h5>
 
 <Row>
 <Col s={12} m={2}>

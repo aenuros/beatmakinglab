@@ -7,10 +7,12 @@ return (
 <div class="compete-page">
 
 <div class="compete-header">
-<h3 class="com headerText">Compete</h3>
+<h3 class="com headerText">COMPETE</h3>
 <h5><p class="com headerText">
-Think your beats are up to the test? Compete with your beats online and in person!
-</p></h5>
+So you've seen all our tutorials and you've made some pretty decent beats.
+You're gonna want someone other than your friends and your grandma to hear them, right?
+Our beat scientists recommend entering your beats into these global competitons.
+You'll get honest feedback and see how your tracks stack up against the rest.</p></h5>
 </div>
 
 <Row>

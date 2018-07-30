@@ -7,10 +7,11 @@ return (
 <div class="sell">
 
 <div class="sell-header">
-<h3 class="com headerText">Sell</h3>
+<h3 class="com headerText">SELL</h3>
 <h5><p class="com headerText">
-Sell your beats on the online market.
-</p></h5>
+After you've made a few beats and entered a few competitions, you may want to take it to the next level.
+Artists are always looking for new beats and yours might just be the backbone for the next big hit.
+Our beat scientists have handpicked these marketplaces where you can sell your tracks and get them into the hands of real artists and media makers.</p></h5>
 </div>
 
 <Row>
