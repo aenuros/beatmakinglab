@@ -55,7 +55,7 @@ p,h3 {
    display:inline;
  }
 
- 
+
 
  ull li {
    display:inline-block;
@@ -97,11 +97,11 @@ background-attachment:fixed;
     color: white;
     background-attachment:fixed;
   }
-  
+
 #sounds {
       background-color:#ff8900;
       }
-      
+
 .compete-page {
       background-color: #a69065;
       }
@@ -177,5 +177,9 @@ body {
   font-size:2em;
 }
 
+.voting {
+  font-size:1.7em;
+  text-align: right;
 }
 
+}
