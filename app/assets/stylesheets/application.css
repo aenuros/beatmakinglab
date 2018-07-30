@@ -117,13 +117,13 @@ min-height:200vh;
 */
 .twitter {
   float: left;
-  padding: 100px
+  padding: 50px
 
 }
 
 .instagram {
   float: right;
-  padding: 100px
+  padding: 50px
 }
 
 .sign {
@@ -164,6 +164,11 @@ min-height:200vh;
     background-image: url(https://i.imgur.com/eWPontS.jpg);
     min-height: 20vh;
     background-attachment:fixed;
+    }
+
+    .fb {
+      float: left;
+      padding: 40px;
     }
 
 @media only screen and (max-width: 786px) {
