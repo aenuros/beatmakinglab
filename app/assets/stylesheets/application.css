@@ -67,6 +67,7 @@ p,h3 {
 
 .sell-header { background-image: url(https://i.imgur.com/KwVz7QZ.jpg);
 min-height:50vh;
+background-attachment:fixed;
 }
 .social {
   background-image: url(https://i.imgur.com/jHHbYxo.jpg);
@@ -84,6 +85,8 @@ min-height:50vh;
 }
 .sounds-header {
   background-image: url(https://i.imgur.com/G2JA2ux.jpg);
+  min-height: 50vh;
+  background-attachment:fixed;
   }
 
   .learn {
