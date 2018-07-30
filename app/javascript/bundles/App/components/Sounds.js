@@ -8,7 +8,7 @@ return (
 
 <div class="sounds-header">
 <h3 class="com headerText">Sound Packs</h3>
-<p class="com headerText">Explore these sites to find the best drum kits, loops, samples and more!</p>
+<h5><p class="com headerText">Explore these sites to find the best drum kits, loops, samples and more!</p></h5>
 </div>
 
 

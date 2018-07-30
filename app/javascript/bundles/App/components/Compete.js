@@ -8,9 +8,9 @@ return (
 
 <div class="compete-header">
 <h3 class="com headerText">Compete</h3>
-<p class="com headerText">
+<h5><p class="com headerText">
 Think your beats are up to the test? Compete with your beats online and in person!
-</p>
+</p></h5>
 </div>
 
 <Row>
