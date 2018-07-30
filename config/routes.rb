@@ -16,7 +16,7 @@ Rails.application.routes.draw do
 resources :tutorials
 
 get '/' => 'pages#index'
-get '/welcome' => 'pages#index'
+get '/home' => 'pages#index'
 
 # Learn and tutorials
 get '/learn' => 'tutorials#learn'
