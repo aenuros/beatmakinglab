@@ -38,5 +38,6 @@ get '/postlist' => 'posts#postlist'
 
 get '/myposts' => 'posts#myposts'
 
+get 'testing' => 'posts#testing'
 
 end
