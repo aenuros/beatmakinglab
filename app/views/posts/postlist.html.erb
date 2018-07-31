@@ -4,7 +4,12 @@
 <h5><p class="headerText">Welcome to the Lab! This is a space for everyone to share snippets of the sounds they're working on.
   If you like someone else's sound, feel free to download it or show them some love! Experimentation, as always, is highly encouraged!</p></h5>
 
-<%= link_to 'New Post', new_post_path %>
+
+<% if user_signed_in? %>
+<span id=>
+<a href="/posts/new"><button>New post</button></a>
+</span>
+<% end %>
 
 <% @posts.order("created_at DESC").each do |post| %>
 

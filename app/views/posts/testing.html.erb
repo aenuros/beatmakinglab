@@ -1,3 +1,62 @@
 
 
-<div id="waveform"></div>
+ <div class="post lab">
+ <h3 class="headerText">THE LAB</h3>
+
+ <h5><p class="headerText">Welcome to the Lab! This is a space for everyone to share snippets of the sounds they're working on.
+   If you like someone else's sound, feel free to download it or show them some love! Experimentation, as always, is highly encouraged!</p></h5>
+
+ <%= link_to 'New Post', new_post_path %>
+
+ <% post = @posts.last %>
+
+   <div class="micropost">
+
+     <% waveform = AudioWaveform::WaveformDataFile.new(filename: "http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--21f4f71cb8a0a2905fab4391ca97224eda143179/bless%20up.mp3")%>
+
+     <%= waveform.sample_rate %>
+
+
+
+
+   Uploaded by: <%= User.find(post.user_id).email %><br/>
+   <%= post.created_at.strftime("%B %e, %Y (%m:%M %p )") %><br/>
+   <% if post.title != "" %>
+   Title: <%= post.title %><br/>
+   <%end%>
+   <!-- remove description if it there isn't any -->
+   <% if post.content != "" %>
+   <blockquote><%= post.content %></blockquote>
+   <%end%>
+   <!-- If something is attached, let you download it -->
+
+   <% if post.audio.attached? %>
+   <audio controls>
+       <source src="<%= url_for(post.audio) %>" type="audio/mp3">
+   </audio>
+   <p><a href="<%= url_for(post.audio) %>">DOWNLOAD</a></p>
+   <%end%>
+
+   <!-- Show the controls for your own post -->
+   <% if user_signed_in? && post.user_id === current_user.id %>
+   <%= link_to 'Edit', edit_post_path(post) %>
+   <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+   <% end %>
+
+   <!-- Conditional for upvote -->
+
+     <div class="voting"><%= post.score %>
+     <% if post.score > -1 %>
+     💖
+     <% else %>
+     💔
+     <% end %>
+
+     <!-- Upvote/downvote arrows -->
+     <%= link_to "⬆️", like_post_path(post), method: :put %> |
+     <%= link_to "⬇️", dislike_post_path(post), method: :put %>
+     </div>
+   </div>
+
+
+ </div>

@@ -74,6 +74,7 @@ class PostsController < ApplicationController
   end
 
   def testing
+    @posts = Post.all
   end
 
 

@@ -3,7 +3,11 @@
 
 <h5><p class="headerText">This is where you can see and edit all the posts you've made to the Lab!</p></h5>
 
-<%= link_to 'New Post', new_post_path %>
+<% if user_signed_in? %>
+<span id=>
+<a href="/posts/new"><button>New post</button></a>
+</span>
+<% end %>
 
 <% @posts.order("created_at DESC").each do |post| %>
 
