@@ -61,7 +61,7 @@ deleteTutorial = (tutorial) => {
   render() {
     return (
       <div>
-      
+
 
         <Form createTutorial={this.createTutorial} />
         <Tutorials tutorials={this.state.tutorials}

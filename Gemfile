@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+gem 'geocoder'
 gem 'acts_as_votable'
 gem 'dotenv-rails', groups: [:development, :test]
 # amazon s3
@@ -73,3 +74,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'mini_racer', platforms: :ruby
+
+gem 'mocha', group: :test
